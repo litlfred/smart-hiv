@@ -52,7 +52,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "33c162a4339000b660c8300ce61963c770a70983",
+          "ref": "39e3caf74262d6b98f7ffbbeaf49fc30891b33c6",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -62,8 +62,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "33c162a4339000b660c8300ce61963c770a70983",
-              "evidence": "owner (litlfred) in session https://claude.ai/code/session_01HASyYFZaS45Q7EtJErhq2V on 2026-10-14: 'Merge one green and ready and repin as necessary for the next 3 hours', after cat-harness-tools#204 and fhir-harness#48 (an IG repository publishes the folio site from index.config.json alone); smart-base stays at its pin (owner: keep IG repos on old smart-base pin)"
+              "ref": "39e3caf74262d6b98f7ffbbeaf49fc30891b33c6",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary for the next 3 hours'; smart-hiv staging preview of thin tab views (fhir-harness#59,#61) and rail (cat-harness#213)"
             }
           }
         }
@@ -102,7 +102,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "641b19053140e11af9afb4db8237aa3f0d048a91",
+          "ref": "c065dee00694191b7f0f96a130df363aeb48bab1",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -118,8 +118,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "641b19053140e11af9afb4db8237aa3f0d048a91",
-              "evidence": "owner (litlfred) in session https://claude.ai/code/session_01HASyYFZaS45Q7EtJErhq2V on 2026-10-14: 'Merge one green and ready and repin as necessary for the next 3 hours', after cat-harness-tools#204 and fhir-harness#48 (an IG repository publishes the folio site from index.config.json alone); smart-base stays at its pin (owner: keep IG repos on old smart-base pin)"
+              "ref": "c065dee00694191b7f0f96a130df363aeb48bab1",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary for the next 3 hours'; smart-hiv staging preview of thin tab views (fhir-harness#59,#61) and rail (cat-harness#213)"
             }
           }
         }
@@ -130,7 +130,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "993aaa6aa1c1bc783880640a48cfa74a5b945035",
+          "ref": "2d97ef4c4c6f6c1704140dd4313d7d00735ea742",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -143,8 +143,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "993aaa6aa1c1bc783880640a48cfa74a5b945035",
-              "evidence": "owner (litlfred) in session https://claude.ai/code/session_01HASyYFZaS45Q7EtJErhq2V on 2026-10-14: 'Merge one green and ready and repin as necessary for the next 3 hours', after cat-harness-tools#204 and fhir-harness#48 (an IG repository publishes the folio site from index.config.json alone); smart-base stays at its pin (owner: keep IG repos on old smart-base pin)"
+              "ref": "2d97ef4c4c6f6c1704140dd4313d7d00735ea742",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary for the next 3 hours'; smart-hiv staging preview with the IG site rail (cat-harness-tools#213)"
             }
           }
         }
