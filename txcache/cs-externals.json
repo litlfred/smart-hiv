@@ -1,0 +1,19 @@
+{
+  "http://fhir.org/guides/cqf/common/Library/FHIRHelpers|4.0.1" : null,
+  "https://worldhealthorganization.github.io/smart-hiv/CodeSystem/missing-concepts" : null,
+  "http://smart.who.int/hiv/Library/HIVConceptsCustom|0.0.1" : null,
+  "https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi" : null,
+  "https://cielterminology.org" : null,
+  "http://snomed.info/sct|http://snomed.info/sct/900000000000207008" : null,
+  "http://smart.who.int/hiv/Library/HIVCommon|0.0.1" : null,
+  "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE21" : null,
+  "http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1" : null,
+  "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE22" : null,
+  "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE19" : null,
+  "http://smart.who.int/hiv/Library/HIVConcepts|0.0.2" : null,
+  "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE2" : null,
+  "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE5" : null,
+  "http://smart.who.int/hiv/Library/WHOConcepts|0.0.2" : null,
+  "http://snomed.info/sct|2018-03" : null,
+  "http://smart.who.int/hiv/ValueSet/pregnancystatus-values " : null
+}

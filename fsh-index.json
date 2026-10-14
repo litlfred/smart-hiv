@@ -1,0 +1,5162 @@
+[
+  {
+    "outputFile": "ActivityDefinition-HIVB9DTScheduleFollowUp.json",
+    "fshName": "HIVB9DTScheduleFollowUp",
+    "fshType": "Instance",
+    "fshFile": "activitydefinition/HIVB9DTScheduleFollowUp.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "ActivityDefinition-HIVGuidanceCommunicationRequestActivity.json",
+    "fshName": "HIVGuidanceCommunicationRequestActivity",
+    "fshType": "Instance",
+    "fshFile": "activitydefinition/HIVGuidanceCommunicationRequestActivity.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ActorDefinition-Client.json",
+    "fshName": "Client",
+    "fshType": "Instance",
+    "fshFile": "actors/Client.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-CommunityHealthWorker.json",
+    "fshName": "CommunityHealthWorker",
+    "fshType": "Instance",
+    "fshFile": "actors/CommunityHealthWorker.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-DataEntryClerk.json",
+    "fshName": "DataEntryClerk",
+    "fshType": "Instance",
+    "fshFile": "actors/DataEntryClerk.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-DistrictHealthInformationOfficer.json",
+    "fshName": "DistrictHealthInformationOfficer",
+    "fshType": "Instance",
+    "fshFile": "actors/DistrictHealthInformationOfficer.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-KeyPopulations.json",
+    "fshName": "KeyPopulations",
+    "fshType": "Instance",
+    "fshFile": "actors/KeyPopulations.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-LabTechnician.json",
+    "fshName": "LabTechnician",
+    "fshType": "Instance",
+    "fshFile": "actors/LabTechnician.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-Nurse.json",
+    "fshName": "Nurse",
+    "fshType": "Instance",
+    "fshFile": "actors/Nurse.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-Pharmacist.json",
+    "fshName": "Pharmacist",
+    "fshType": "Instance",
+    "fshFile": "actors/Pharmacist.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-Physician.json",
+    "fshName": "Physician",
+    "fshType": "Instance",
+    "fshFile": "actors/Physician.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-SpecialPopulationClient.json",
+    "fshName": "SpecialPopulationClient",
+    "fshType": "Instance",
+    "fshFile": "actors/SpecialPopulationClient.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-SpecialistMedicalDoctor.json",
+    "fshName": "SpecialistMedicalDoctor",
+    "fshType": "Instance",
+    "fshFile": "actors/SpecialistMedicalDoctor.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-TrainedLayProvider.json",
+    "fshName": "TrainedLayProvider",
+    "fshType": "Instance",
+    "fshFile": "actors/TrainedLayProvider.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-TrainedNonPhysicianClinician.json",
+    "fshName": "TrainedNonPhysicianClinician",
+    "fshType": "Instance",
+    "fshFile": "actors/TrainedNonPhysicianClinician.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-HIVConcepts.json",
+    "fshName": "HIVConcepts",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/HIVConcepts.fsh",
+    "startLine": 1,
+    "endLine": 2105
+  },
+  {
+    "outputFile": "Condition-ExampleElevatedHivRiskCondition.json",
+    "fshName": "ExampleElevatedHivRiskCondition",
+    "fshType": "Instance",
+    "fshFile": "examples/HivElevatedRiskForAcquisition.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "Condition-ExampleHivInvasiveCervicalCancerDiagnosis.json",
+    "fshName": "ExampleHivInvasiveCervicalCancerDiagnosis",
+    "fshType": "Instance",
+    "fshFile": "examples/HivInvasiveCervicalCancerDiagnosis.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Condition-ExampleHivPositiveCondition.json",
+    "fshName": "ExampleHivPositiveCondition",
+    "fshType": "Instance",
+    "fshFile": "examples/HivStatusCondition.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ExampleScenario-HIV.A.REGISTRATION.json",
+    "fshName": "HIV.A.REGISTRATION",
+    "fshType": "Instance",
+    "fshFile": "scenarios/HIV.A.Registration.fsh",
+    "startLine": 1,
+    "endLine": 73
+  },
+  {
+    "outputFile": "ExampleScenario-HIV.B.HIVtesting.json",
+    "fshName": "HIV.B.HIVtesting",
+    "fshType": "Instance",
+    "fshFile": "scenarios/HIV.B.HIVtesting.fsh",
+    "startLine": 1,
+    "endLine": 155
+  },
+  {
+    "outputFile": "ExampleScenario-HIV.PrEP.Visit.Scenario.json",
+    "fshName": "HIV.PrEP.Visit.Scenario",
+    "fshType": "Instance",
+    "fshFile": "scenarios/HIV.PrEP.VISIT.fsh",
+    "startLine": 1,
+    "endLine": 102
+  },
+  {
+    "outputFile": "Library-HIVB2DTLogic.json",
+    "fshName": "HIVB2DTLogic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVB2DTLogic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVB7DTLogic.json",
+    "fshName": "HIVB7DTLogic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVB7DTLogic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVB9DTLogic.json",
+    "fshName": "HIVB9DTLogic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVB9DTLogic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVC23DTLogic.json",
+    "fshName": "HIVC23DTLogic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVC23DTLogic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVC7DTLogic.json",
+    "fshName": "HIVC7DTLogic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVC7DTLogic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVCommon.json",
+    "fshName": "HIVCommon",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVCommon.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVConcepts.json",
+    "fshName": "HIVConcepts",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVConcepts.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVConceptsCustom.json",
+    "fshName": "HIVConceptsCustom",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVConceptsCustom.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVConfig.json",
+    "fshName": "HIVConfig",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVConfig.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVD12DTLogic.json",
+    "fshName": "HIVD12DTLogic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVD12DTLogic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVD15DTLogic.json",
+    "fshName": "HIVD15DTLogic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVD15DTLogic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVD4DTLogic.json",
+    "fshName": "HIVD4DTLogic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVD4DTLogic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVElements.json",
+    "fshName": "HIVElements",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVElements.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVEncounterElements.json",
+    "fshName": "HIVEncounterElements",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVEncounterElements.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND11Logic.json",
+    "fshName": "HIVIND11Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND11Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND12Logic.json",
+    "fshName": "HIVIND12Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND12Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND13Logic.json",
+    "fshName": "HIVIND13Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND13Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND14Logic.json",
+    "fshName": "HIVIND14Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND14Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND15Logic.json",
+    "fshName": "HIVIND15Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND15Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND16Logic.json",
+    "fshName": "HIVIND16Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND16Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND18Logic.json",
+    "fshName": "HIVIND18Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND18Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND19Logic.json",
+    "fshName": "HIVIND19Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND19Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND20Logic.json",
+    "fshName": "HIVIND20Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND20Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND21Logic.json",
+    "fshName": "HIVIND21Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND21Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND22Logic.json",
+    "fshName": "HIVIND22Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND22Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND24Logic.json",
+    "fshName": "HIVIND24Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND24Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND25Logic.json",
+    "fshName": "HIVIND25Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND25Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND27Logic.json",
+    "fshName": "HIVIND27Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND27Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND28Logic.json",
+    "fshName": "HIVIND28Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND28Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND29Logic.json",
+    "fshName": "HIVIND29Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND29Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND2Logic.json",
+    "fshName": "HIVIND2Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND2Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND30Logic.json",
+    "fshName": "HIVIND30Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND30Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND31Logic.json",
+    "fshName": "HIVIND31Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND31Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND32Logic.json",
+    "fshName": "HIVIND32Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND32Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND33Logic.json",
+    "fshName": "HIVIND33Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND33Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND34Logic.json",
+    "fshName": "HIVIND34Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND34Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND35Logic.json",
+    "fshName": "HIVIND35Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND35Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND37Logic.json",
+    "fshName": "HIVIND37Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND37Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND38Logic.json",
+    "fshName": "HIVIND38Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND38Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND39Logic.json",
+    "fshName": "HIVIND39Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND39Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND3Logic.json",
+    "fshName": "HIVIND3Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND3Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND40Logic.json",
+    "fshName": "HIVIND40Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND40Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND41Logic.json",
+    "fshName": "HIVIND41Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND41Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND42Logic.json",
+    "fshName": "HIVIND42Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND42Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND43Logic.json",
+    "fshName": "HIVIND43Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND43Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND44Logic.json",
+    "fshName": "HIVIND44Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND44Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND45Logic.json",
+    "fshName": "HIVIND45Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND45Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND46Logic.json",
+    "fshName": "HIVIND46Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND46Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND47Logic.json",
+    "fshName": "HIVIND47Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND47Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND48Logic.json",
+    "fshName": "HIVIND48Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND48Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND49Logic.json",
+    "fshName": "HIVIND49Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND49Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND4Logic.json",
+    "fshName": "HIVIND4Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND4Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND50Logic.json",
+    "fshName": "HIVIND50Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND50Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND51Logic.json",
+    "fshName": "HIVIND51Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND51Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND52Logic.json",
+    "fshName": "HIVIND52Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND52Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND53Logic.json",
+    "fshName": "HIVIND53Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND53Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND54Logic.json",
+    "fshName": "HIVIND54Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND54Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND55Logic.json",
+    "fshName": "HIVIND55Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND55Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND56Logic.json",
+    "fshName": "HIVIND56Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND56Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND57Logic.json",
+    "fshName": "HIVIND57Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND57Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND58Logic.json",
+    "fshName": "HIVIND58Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND58Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND59Logic.json",
+    "fshName": "HIVIND59Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND59Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND5Logic.json",
+    "fshName": "HIVIND5Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND5Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND60Logic.json",
+    "fshName": "HIVIND60Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND60Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND61Logic.json",
+    "fshName": "HIVIND61Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND61Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND62Logic.json",
+    "fshName": "HIVIND62Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND62Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND63Logic.json",
+    "fshName": "HIVIND63Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND63Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND64Logic.json",
+    "fshName": "HIVIND64Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND64Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND65Logic.json",
+    "fshName": "HIVIND65Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND65Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND66Logic.json",
+    "fshName": "HIVIND66Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND66Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND67Logic.json",
+    "fshName": "HIVIND67Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND67Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND68Logic.json",
+    "fshName": "HIVIND68Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND68Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND69Logic.json",
+    "fshName": "HIVIND69Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND69Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND6Logic.json",
+    "fshName": "HIVIND6Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND6Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND70Logic.json",
+    "fshName": "HIVIND70Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND70Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND71Logic.json",
+    "fshName": "HIVIND71Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND71Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND72Logic.json",
+    "fshName": "HIVIND72Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND72Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND73Logic.json",
+    "fshName": "HIVIND73Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND73Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND74Logic.json",
+    "fshName": "HIVIND74Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND74Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND75Logic.json",
+    "fshName": "HIVIND75Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND75Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND76Logic.json",
+    "fshName": "HIVIND76Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND76Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND77Logic.json",
+    "fshName": "HIVIND77Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND77Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND78Logic.json",
+    "fshName": "HIVIND78Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND78Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND79Logic.json",
+    "fshName": "HIVIND79Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND79Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND7Logic.json",
+    "fshName": "HIVIND7Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND7Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND80Logic.json",
+    "fshName": "HIVIND80Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND80Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND81Logic.json",
+    "fshName": "HIVIND81Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND81Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND82Logic.json",
+    "fshName": "HIVIND82Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND82Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND83Logic.json",
+    "fshName": "HIVIND83Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND83Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND84Logic.json",
+    "fshName": "HIVIND84Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND84Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND85Logic.json",
+    "fshName": "HIVIND85Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND85Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND86Logic.json",
+    "fshName": "HIVIND86Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND86Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND87Logic.json",
+    "fshName": "HIVIND87Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND87Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND88Logic.json",
+    "fshName": "HIVIND88Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND88Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND89Logic.json",
+    "fshName": "HIVIND89Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND89Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND8Logic.json",
+    "fshName": "HIVIND8Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND8Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND90Logic.json",
+    "fshName": "HIVIND90Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND90Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND91Logic.json",
+    "fshName": "HIVIND91Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND91Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND92Logic.json",
+    "fshName": "HIVIND92Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND92Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND93Logic.json",
+    "fshName": "HIVIND93Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND93Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND94Logic.json",
+    "fshName": "HIVIND94Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND94Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND95Logic.json",
+    "fshName": "HIVIND95Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND95Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND96Logic.json",
+    "fshName": "HIVIND96Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND96Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIND9Logic.json",
+    "fshName": "HIVIND9Logic",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIND9Logic.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-HIVIndicatorElements.json",
+    "fshName": "HIVIndicatorElements",
+    "fshType": "Instance",
+    "fshFile": "libraries/HIVIndicatorElements.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-WHOCommon.json",
+    "fshName": "WHOCommon",
+    "fshType": "Instance",
+    "fshFile": "libraries/WHOCommon.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-WHOConcepts.json",
+    "fshName": "WHOConcepts",
+    "fshType": "Instance",
+    "fshFile": "libraries/WHOConcepts.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-WHOElements.json",
+    "fshName": "WHOElements",
+    "fshType": "Instance",
+    "fshFile": "libraries/WHOElements.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Library-WHOEncounterElements.json",
+    "fshName": "WHOEncounterElements",
+    "fshType": "Instance",
+    "fshFile": "libraries/WHOEncounterElements.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Measure-HIVIND11.json",
+    "fshName": "HIVIND11",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND11.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND12.json",
+    "fshName": "HIVIND12",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND12.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND13.json",
+    "fshName": "HIVIND13",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND13.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND14.json",
+    "fshName": "HIVIND14",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND14.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND15.json",
+    "fshName": "HIVIND15",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND15.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Measure-HIVIND16.json",
+    "fshName": "HIVIND16",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND16.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND18.json",
+    "fshName": "HIVIND18",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND18.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Measure-HIVIND19.json",
+    "fshName": "HIVIND19",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND19.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND2.json",
+    "fshName": "HIVIND2",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND2.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Measure-HIVIND20.json",
+    "fshName": "HIVIND20",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND20.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND21.json",
+    "fshName": "HIVIND21",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND21.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND22.json",
+    "fshName": "HIVIND22",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND22.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Measure-HIVIND24.json",
+    "fshName": "HIVIND24",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND24.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND25.json",
+    "fshName": "HIVIND25",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND25.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND27.json",
+    "fshName": "HIVIND27",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND27.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Measure-HIVIND28.json",
+    "fshName": "HIVIND28",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND28.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND29.json",
+    "fshName": "HIVIND29",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND29.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND3.json",
+    "fshName": "HIVIND3",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND3.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND30.json",
+    "fshName": "HIVIND30",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND30.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Measure-HIVIND31.json",
+    "fshName": "HIVIND31",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND31.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND32.json",
+    "fshName": "HIVIND32",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND32.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND33.json",
+    "fshName": "HIVIND33",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND33.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND34.json",
+    "fshName": "HIVIND34",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND34.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND35.json",
+    "fshName": "HIVIND35",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND35.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND37.json",
+    "fshName": "HIVIND37",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND37.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND38.json",
+    "fshName": "HIVIND38",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND38.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND39.json",
+    "fshName": "HIVIND39",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND39.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND4.json",
+    "fshName": "HIVIND4",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND4.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Measure-HIVIND40.json",
+    "fshName": "HIVIND40",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND40.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND41.json",
+    "fshName": "HIVIND41",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND41.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND42.json",
+    "fshName": "HIVIND42",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND42.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND43.json",
+    "fshName": "HIVIND43",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND43.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND44.json",
+    "fshName": "HIVIND44",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND44.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND45.json",
+    "fshName": "HIVIND45",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND45.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND46.json",
+    "fshName": "HIVIND46",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND46.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND47.json",
+    "fshName": "HIVIND47",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND47.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND48.json",
+    "fshName": "HIVIND48",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND48.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND49.json",
+    "fshName": "HIVIND49",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND49.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND5.json",
+    "fshName": "HIVIND5",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND5.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Measure-HIVIND50.json",
+    "fshName": "HIVIND50",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND50.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND51.json",
+    "fshName": "HIVIND51",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND51.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND52.json",
+    "fshName": "HIVIND52",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND52.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND53.json",
+    "fshName": "HIVIND53",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND53.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND54.json",
+    "fshName": "HIVIND54",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND54.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND55.json",
+    "fshName": "HIVIND55",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND55.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND56.json",
+    "fshName": "HIVIND56",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND56.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND57.json",
+    "fshName": "HIVIND57",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND57.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND58.json",
+    "fshName": "HIVIND58",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND58.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND59.json",
+    "fshName": "HIVIND59",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND59.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND6.json",
+    "fshName": "HIVIND6",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND6.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND60.json",
+    "fshName": "HIVIND60",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND60.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND61.json",
+    "fshName": "HIVIND61",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND61.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND62.json",
+    "fshName": "HIVIND62",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND62.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND63.json",
+    "fshName": "HIVIND63",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND63.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND64.json",
+    "fshName": "HIVIND64",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND64.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND65.json",
+    "fshName": "HIVIND65",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND65.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND66.json",
+    "fshName": "HIVIND66",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND66.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND67.json",
+    "fshName": "HIVIND67",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND67.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND68.json",
+    "fshName": "HIVIND68",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND68.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND69.json",
+    "fshName": "HIVIND69",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND69.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND7.json",
+    "fshName": "HIVIND7",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND7.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND70.json",
+    "fshName": "HIVIND70",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND70.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND71.json",
+    "fshName": "HIVIND71",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND71.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND72.json",
+    "fshName": "HIVIND72",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND72.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND73.json",
+    "fshName": "HIVIND73",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND73.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND74.json",
+    "fshName": "HIVIND74",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND74.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND75.json",
+    "fshName": "HIVIND75",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND75.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND76.json",
+    "fshName": "HIVIND76",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND76.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND77.json",
+    "fshName": "HIVIND77",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND77.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND78.json",
+    "fshName": "HIVIND78",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND78.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND79.json",
+    "fshName": "HIVIND79",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND79.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND8.json",
+    "fshName": "HIVIND8",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND8.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Measure-HIVIND80.json",
+    "fshName": "HIVIND80",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND80.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND81.json",
+    "fshName": "HIVIND81",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND81.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND82.json",
+    "fshName": "HIVIND82",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND82.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND83.json",
+    "fshName": "HIVIND83",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND83.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND84.json",
+    "fshName": "HIVIND84",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND84.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND85.json",
+    "fshName": "HIVIND85",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND85.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND86.json",
+    "fshName": "HIVIND86",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND86.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND87.json",
+    "fshName": "HIVIND87",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND87.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND88.json",
+    "fshName": "HIVIND88",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND88.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND89.json",
+    "fshName": "HIVIND89",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND89.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND9.json",
+    "fshName": "HIVIND9",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND9.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND90.json",
+    "fshName": "HIVIND90",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND90.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND91.json",
+    "fshName": "HIVIND91",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND91.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND92.json",
+    "fshName": "HIVIND92",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND92.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND93.json",
+    "fshName": "HIVIND93",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND93.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "Measure-HIVIND94.json",
+    "fshName": "HIVIND94",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND94.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND95.json",
+    "fshName": "HIVIND95",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND95.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Measure-HIVIND96.json",
+    "fshName": "HIVIND96",
+    "fshType": "Instance",
+    "fshFile": "measures/HIVIND96.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "MedicationRequest-ExampleCurrentPrepRegimenPrescription.json",
+    "fshName": "ExampleCurrentPrepRegimenPrescription",
+    "fshType": "Instance",
+    "fshFile": "examples/HivPrepPrescriptions.fsh",
+    "startLine": 11,
+    "endLine": 20
+  },
+  {
+    "outputFile": "MedicationStatement-ExampleAltPepBackbonePrescription.json",
+    "fshName": "ExampleAltPepBackbonePrescription",
+    "fshType": "Instance",
+    "fshFile": "examples/HivPepPrescriptions.fsh",
+    "startLine": 11,
+    "endLine": 19
+  },
+  {
+    "outputFile": "MedicationStatement-ExampleAltThirdPepPrescription.json",
+    "fshName": "ExampleAltThirdPepPrescription",
+    "fshType": "Instance",
+    "fshFile": "examples/HivPepPrescriptions.fsh",
+    "startLine": 32,
+    "endLine": 41
+  },
+  {
+    "outputFile": "MedicationStatement-ExampleHivOnArt.json",
+    "fshName": "ExampleHivOnArt",
+    "fshType": "Instance",
+    "fshFile": "examples/HivOnArt.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "MedicationStatement-ExamplePreferredPepBackbonePrescription.json",
+    "fshName": "ExamplePreferredPepBackbonePrescription",
+    "fshType": "Instance",
+    "fshFile": "examples/HivPepPrescriptions.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "MedicationStatement-ExamplePreferredThirdPepPrescription.json",
+    "fshName": "ExamplePreferredThirdPepPrescription",
+    "fshType": "Instance",
+    "fshFile": "examples/HivPepPrescriptions.fsh",
+    "startLine": 21,
+    "endLine": 30
+  },
+  {
+    "outputFile": "MedicationStatement-ExamplePrepProductPrescription.json",
+    "fshName": "ExamplePrepProductPrescription",
+    "fshType": "Instance",
+    "fshFile": "examples/HivPrepPrescriptions.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "Observation-ExampleCervicalCancerScreening.json",
+    "fshName": "ExampleCervicalCancerScreening",
+    "fshType": "Instance",
+    "fshFile": "examples/HivCervicalCancerScreening.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Observation-ExampleHcvTestObservation.json",
+    "fshName": "ExampleHcvTestObservation",
+    "fshType": "Instance",
+    "fshFile": "examples/HivHcvTest.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Observation-ExampleHivKeyPopulation.json",
+    "fshName": "ExampleHivKeyPopulation",
+    "fshType": "Instance",
+    "fshFile": "examples/HivKeyPopulation.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Observation-ExampleHivPreventionIntervention.json",
+    "fshName": "ExampleHivPreventionIntervention",
+    "fshType": "Instance",
+    "fshFile": "examples/HivPreventionIntervention.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "Observation-ExampleHivStatusPositiveObservation.json",
+    "fshName": "ExampleHivStatusPositiveObservation",
+    "fshType": "Instance",
+    "fshFile": "examples/HivStatusObservation.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Observation-ExampleHivTest.json",
+    "fshName": "ExampleHivTest",
+    "fshType": "Instance",
+    "fshFile": "examples/HivTest.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Patient-ExampleHivPatient.json",
+    "fshName": "ExampleHivPatient",
+    "fshType": "Instance",
+    "fshFile": "examples/HivPatient.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "PlanDefinition-CareAndTreatmentClinicalVisit-PlanDefinition.json",
+    "fshName": "CareAndTreatmentClinicalVisit-PlanDefinition",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVDCareAndTreatmentClinicalVisit.fsh",
+    "startLine": 3,
+    "endLine": 124
+  },
+  {
+    "outputFile": "PlanDefinition-HIV-A-Registration-PlanDefinition.json",
+    "fshName": "HIV-A-Registration-PlanDefinition",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVARegistration.fsh",
+    "startLine": 3,
+    "endLine": 87
+  },
+  {
+    "outputFile": "PlanDefinition-HIV-Testing-PlanDefinition.json",
+    "fshName": "HIV-Testing-PlanDefinition",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVBTestingServices.fsh",
+    "startLine": 3,
+    "endLine": 126
+  },
+  {
+    "outputFile": "PlanDefinition-HIVB2DT.json",
+    "fshName": "HIVB2DT",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVB2DT.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
+    "outputFile": "PlanDefinition-HIVB9DT.json",
+    "fshName": "HIVB9DT",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVB9DT.fsh",
+    "startLine": 1,
+    "endLine": 221
+  },
+  {
+    "outputFile": "PlanDefinition-HIVC23DT.json",
+    "fshName": "HIVC23DT",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVC23DT.fsh",
+    "startLine": 1,
+    "endLine": 47
+  },
+  {
+    "outputFile": "PlanDefinition-HIVC7DT.json",
+    "fshName": "HIVC7DT",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVC7DT.fsh",
+    "startLine": 1,
+    "endLine": 47
+  },
+  {
+    "outputFile": "PlanDefinition-HIVD12DT.json",
+    "fshName": "HIVD12DT",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVD12DT.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "PlanDefinition-HIVD15DT.json",
+    "fshName": "HIVD15DT",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVD15DT.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "PlanDefinition-HIVD4DT.json",
+    "fshName": "HIVD4DT",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVD4DT.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "PlanDefinition-PrEP-visit-PlanDefinition.json",
+    "fshName": "PrEP-visit-PlanDefinition",
+    "fshType": "Instance",
+    "fshFile": "plandefinition/HIVCPrEPVisit.fsh",
+    "startLine": 3,
+    "endLine": 109
+  },
+  {
+    "outputFile": "Practitioner-ExampleSurgeon.json",
+    "fshName": "ExampleHivPractitioner",
+    "fshType": "Instance",
+    "fshFile": "examples/HivPractitioner.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Procedure-ExampleHivInvasiveCervicalCancerTreatment.json",
+    "fshName": "ExampleHivInvasiveCervicalCancerTreatment",
+    "fshType": "Instance",
+    "fshFile": "examples/HivInvasiveCervicalCancerTreatment.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Procedure-HivVmmcProcedureExample.json",
+    "fshName": "HivVmmcProcedureExample",
+    "fshType": "Instance",
+    "fshFile": "examples/HivVmmcProcedure.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "Questionnaire-HIV.A2GatherClientDetails.json",
+    "fshName": "HIV.A2GatherClientDetails",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.A2.fsh",
+    "startLine": 1,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Questionnaire-HIV.A5CreateNewClientRecord.json",
+    "fshName": "HIV.A5CreateNewClientRecord",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.A5.fsh",
+    "startLine": 1,
+    "endLine": 218
+  },
+  {
+    "outputFile": "Questionnaire-HIV.A6.1ReviewSociodemographicDataWithClient.json",
+    "fshName": "HIV.A6.1ReviewSociodemographicDataWithClient",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.A6.1.fsh",
+    "startLine": 1,
+    "endLine": 218
+  },
+  {
+    "outputFile": "Questionnaire-HIV.B18ProvideVoluntaryPartnerAndFamilyServices.json",
+    "fshName": "HIV.B18ProvideVoluntaryPartnerAndFamilyServices",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.B18.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Questionnaire-HIV.B1DetermineReasonForVisit.json",
+    "fshName": "HIV.B1DetermineReasonForVisit",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.B1.fsh",
+    "startLine": 1,
+    "endLine": 82
+  },
+  {
+    "outputFile": "Questionnaire-HIV.B20ScheduleRetest.json",
+    "fshName": "HIV.B20ScheduleRetest",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.B20.fsh",
+    "startLine": 1,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Questionnaire-HIV.B21OfferPreventionOptions.json",
+    "fshName": "HIV.B21OfferPreventionOptions",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.B21.fsh",
+    "startLine": 1,
+    "endLine": 79
+  },
+  {
+    "outputFile": "Questionnaire-HIV.B23OfferSexualAndReproductiveHealthServices.json",
+    "fshName": "HIV.B23OfferSexualAndReproductiveHealthServices",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.B23.fsh",
+    "startLine": 1,
+    "endLine": 338
+  },
+  {
+    "outputFile": "Questionnaire-HIV.B6CaptureOrUpdateClientHistory.json",
+    "fshName": "HIV.B6CaptureOrUpdateClientHistory",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.B6.fsh",
+    "startLine": 1,
+    "endLine": 228
+  },
+  {
+    "outputFile": "Questionnaire-HIV.B7TestForHivUsingTestingAlgorithm.json",
+    "fshName": "HIV.B7TestForHivUsingTestingAlgorithm",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.B7.fsh",
+    "startLine": 1,
+    "endLine": 175
+  },
+  {
+    "outputFile": "Questionnaire-HIV.B8ProvidePostTestCounselling.json",
+    "fshName": "HIV.B8ProvidePostTestCounselling",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.B8.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "Questionnaire-HIV.B9DetermineRecommendedServices.json",
+    "fshName": "HIV.B9DetermineRecommendedServices",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.B9.fsh",
+    "startLine": 1,
+    "endLine": 121
+  },
+  {
+    "outputFile": "Questionnaire-HIV.C10CounselOnRiskAndPrevention.json",
+    "fshName": "HIV.C10CounselOnRiskAndPrevention",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.C10.fsh",
+    "startLine": 1,
+    "endLine": 98
+  },
+  {
+    "outputFile": "Questionnaire-HIV.C17DetermineRecommendedTests.json",
+    "fshName": "HIV.C17DetermineRecommendedTests",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.C17.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Questionnaire-HIV.C1DetermineReasonForVisit.json",
+    "fshName": "HIV.C1DetermineReasonForVisit",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.C1.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "Questionnaire-HIV.C21Diagnostics.json",
+    "fshName": "HIV.C21Diagnostics",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.C21.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Questionnaire-HIV.C23PrescribeOrAdministerPrepOrPep.json",
+    "fshName": "HIV.C23PrescribeOrAdministerPrepOrPep",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.C23.fsh",
+    "startLine": 1,
+    "endLine": 203
+  },
+  {
+    "outputFile": "Questionnaire-HIV.C24ScheduleFollowUp.json",
+    "fshName": "HIV.C24ScheduleFollowUp",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.C24.fsh",
+    "startLine": 1,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Questionnaire-HIV.C3CaptureOrUpdateClientHistory.json",
+    "fshName": "HIV.C3CaptureOrUpdateClientHistory",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.C3.fsh",
+    "startLine": 1,
+    "endLine": 182
+  },
+  {
+    "outputFile": "Questionnaire-HIV.C6PostTestPackageOfServices.json",
+    "fshName": "HIV.C6PostTestPackageOfServices",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.C6.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Questionnaire-HIV.C8SuitableForPrepOrPep.json",
+    "fshName": "HIV.C8SuitableForPrepOrPep",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.C8.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D10CounselReturningClient.json",
+    "fshName": "HIV.D10CounselReturningClient",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D10.fsh",
+    "startLine": 1,
+    "endLine": 86
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D12DetermineRecommendedScreeningsAndTests.json",
+    "fshName": "HIV.D12DetermineRecommendedScreeningsAndTests",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D12.fsh",
+    "startLine": 1,
+    "endLine": 174
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D14PreventScreenAndManageComorbiditiesAndCoinfections.json",
+    "fshName": "HIV.D14PreventScreenAndManageComorbiditiesAndCoinfections",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D14.fsh",
+    "startLine": 1,
+    "endLine": 45
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D15DetermineClinicalStageOfHiv.json",
+    "fshName": "HIV.D15DetermineClinicalStageOfHiv",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D15.fsh",
+    "startLine": 1,
+    "endLine": 47
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D16PerformOtherScreenings.json",
+    "fshName": "HIV.D16PerformOtherScreenings",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D16.fsh",
+    "startLine": 1,
+    "endLine": 126
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D17CheckForSignsOfTreatmentFailure.json",
+    "fshName": "HIV.D17CheckForSignsOfTreatmentFailure",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D17.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D19AssessForVaccinePreventableDiseases.json",
+    "fshName": "HIV.D19AssessForVaccinePreventableDiseases",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D19.fsh",
+    "startLine": 1,
+    "endLine": 105
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D1DetermineReasonForVisit.json",
+    "fshName": "HIV.D1DetermineReasonForVisit",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D1.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D20Diagnostics.json",
+    "fshName": "HIV.D20Diagnostics",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D20.fsh",
+    "startLine": 1,
+    "endLine": 531
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D21DetermineRegimenAndTreatmentOptions.json",
+    "fshName": "HIV.D21DetermineRegimenAndTreatmentOptions",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D21.fsh",
+    "startLine": 1,
+    "endLine": 323
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D23Prescribe.json",
+    "fshName": "HIV.D23Prescribe",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D23.fsh",
+    "startLine": 1,
+    "endLine": 193
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D24Counsel.json",
+    "fshName": "HIV.D24Counsel",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D24.fsh",
+    "startLine": 1,
+    "endLine": 182
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D25OfferVoluntaryPartnerAndFamilyServices.json",
+    "fshName": "HIV.D25OfferVoluntaryPartnerAndFamilyServices",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D25.fsh",
+    "startLine": 1,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D26OfferSexualAndReproductiveHealthServices.json",
+    "fshName": "HIV.D26OfferSexualAndReproductiveHealthServices",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D26.fsh",
+    "startLine": 1,
+    "endLine": 338
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D28OfferOtherServices.json",
+    "fshName": "HIV.D28OfferOtherServices",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D28.fsh",
+    "startLine": 1,
+    "endLine": 315
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D29ScheduleFollowUp.json",
+    "fshName": "HIV.D29ScheduleFollowUp",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D29.fsh",
+    "startLine": 1,
+    "endLine": 61
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D2TakeVitalSigns.json",
+    "fshName": "HIV.D2TakeVitalSigns",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D2.fsh",
+    "startLine": 1,
+    "endLine": 93
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D3CheckForSignsOfSeriousIllness.json",
+    "fshName": "HIV.D3CheckForSignsOfSeriousIllness",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D3.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D4ScreenForTb.json",
+    "fshName": "HIV.D4ScreenForTb",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D4.fsh",
+    "startLine": 1,
+    "endLine": 154
+  },
+  {
+    "outputFile": "Questionnaire-HIV.D8CaptureOrUpdateClientHistory.json",
+    "fshName": "HIV.D8CaptureOrUpdateClientHistory",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.D8.fsh",
+    "startLine": 1,
+    "endLine": 635
+  },
+  {
+    "outputFile": "Questionnaire-HIV.E1CaptureOrUpdateMotherSHistory.json",
+    "fshName": "HIV.E1CaptureOrUpdateMotherSHistory",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.E1.fsh",
+    "startLine": 1,
+    "endLine": 622
+  },
+  {
+    "outputFile": "Questionnaire-HIV.E4TestMotherForHivUsingTestingAlgorithm.json",
+    "fshName": "HIV.E4TestMotherForHivUsingTestingAlgorithm",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.E4.fsh",
+    "startLine": 1,
+    "endLine": 117
+  },
+  {
+    "outputFile": "Questionnaire-HIV.F12Prescribe.json",
+    "fshName": "HIV.F12Prescribe",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.F12.fsh",
+    "startLine": 1,
+    "endLine": 52
+  },
+  {
+    "outputFile": "Questionnaire-HIV.F16ImmediatelyStartInfantOnArt.json",
+    "fshName": "HIV.F16ImmediatelyStartInfantOnArt",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.F16.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Questionnaire-HIV.F20RecordInfantSChildSFinalHivDiagnosis.json",
+    "fshName": "HIV.F20RecordInfantSChildSFinalHivDiagnosis",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.F20.fsh",
+    "startLine": 1,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Questionnaire-HIV.F2TakeVitalSigns.json",
+    "fshName": "HIV.F2TakeVitalSigns",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.F2.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Questionnaire-HIV.F3CaptureOrUpdateInfantSChildSHistory.json",
+    "fshName": "HIV.F3CaptureOrUpdateInfantSChildSHistory",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.F3.fsh",
+    "startLine": 1,
+    "endLine": 157
+  },
+  {
+    "outputFile": "Questionnaire-HIV.F6CheckWhetherInfantChildHadHivExposure.json",
+    "fshName": "HIV.F6CheckWhetherInfantChildHadHivExposure",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.F6.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "Questionnaire-HIV.F8TestInfantChildForHivUsingTestingAlgorithm.json",
+    "fshName": "HIV.F8TestInfantChildForHivUsingTestingAlgorithm",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.F8.fsh",
+    "startLine": 1,
+    "endLine": 73
+  },
+  {
+    "outputFile": "Questionnaire-HIV.H1IdentifyClientForFollowUp.json",
+    "fshName": "HIV.H1IdentifyClientForFollowUp",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.H1.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "Questionnaire-HIV.H2AttemptToLocateClient.json",
+    "fshName": "HIV.H2AttemptToLocateClient",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.H2.fsh",
+    "startLine": 1,
+    "endLine": 62
+  },
+  {
+    "outputFile": "Questionnaire-HIV.H3RecordOutreachAndResult.json",
+    "fshName": "HIV.H3RecordOutreachAndResult",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.H3.fsh",
+    "startLine": 1,
+    "endLine": 177
+  },
+  {
+    "outputFile": "Questionnaire-HIV.HFollowingUpAndContactingClients.json",
+    "fshName": "HIV.HFollowingUpAndContactingClients",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.H.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "Questionnaire-HIV.I1EmergencyReferral.json",
+    "fshName": "HIV.I1EmergencyReferral",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.I1.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Questionnaire-HIV.I6ProvideInformationToReferralFacility.json",
+    "fshName": "HIV.I6ProvideInformationToReferralFacility",
+    "fshType": "Instance",
+    "fshFile": "questionnaires/HIV.I6.fsh",
+    "startLine": 1,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Requirements-HIV.A.Registration.json",
+    "fshName": "HIV.A.Registration",
+    "fshType": "Instance",
+    "fshFile": "requirements/HIV.A.fsh",
+    "startLine": 1,
+    "endLine": 149
+  },
+  {
+    "outputFile": "Requirements-HIV.B.HIVtestingservices.json",
+    "fshName": "HIV.B.HIVtestingservices",
+    "fshType": "Instance",
+    "fshFile": "requirements/HIV.B.fsh",
+    "startLine": 1,
+    "endLine": 93
+  },
+  {
+    "outputFile": "Requirements-HIV.C.PrEPvisit.json",
+    "fshName": "HIV.C.PrEPvisit",
+    "fshType": "Instance",
+    "fshFile": "requirements/HIV.C.fsh",
+    "startLine": 1,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Requirements-HIV.D.Careandtreatmentclinicalvisit.json",
+    "fshName": "HIV.D.Careandtreatmentclinicalvisit",
+    "fshType": "Instance",
+    "fshFile": "requirements/HIV.D.fsh",
+    "startLine": 1,
+    "endLine": 44
+  },
+  {
+    "outputFile": "Requirements-HIV.G.Diagnostics.json",
+    "fshName": "HIV.G.Diagnostics",
+    "fshType": "Instance",
+    "fshFile": "requirements/HIV.G.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "Requirements-HIV.H.Followingupandcontactingclients.json",
+    "fshName": "HIV.H.Followingupandcontactingclients",
+    "fshType": "Instance",
+    "fshFile": "requirements/HIV.H.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "Requirements-HIV.I.Referral.json",
+    "fshName": "HIV.I.Referral",
+    "fshType": "Instance",
+    "fshFile": "requirements/HIV.I.fsh",
+    "startLine": 1,
+    "endLine": 44
+  },
+  {
+    "outputFile": "Requirements-HIV.J.Aggregatereportinganddatause.json",
+    "fshName": "HIV.J.Aggregatereportinganddatause",
+    "fshType": "Instance",
+    "fshFile": "requirements/HIV.J.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "Requirements-HIVNonFunctionalRequirements.json",
+    "fshName": "HIVNonFunctionalRequirements",
+    "fshType": "Instance",
+    "fshFile": "requirements/HIV.Non_Functional.fsh",
+    "startLine": 1,
+    "endLine": 349
+  },
+  {
+    "outputFile": "StructureDefinition-ChildDeliveryObservation.json",
+    "fshName": "ChildDeliveryObservation",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivChildDeliveryObservation.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "StructureDefinition-HIVARegistration.json",
+    "fshName": "HIVARegistration",
+    "fshType": "Logical",
+    "fshFile": "models/HIVARegistration.fsh",
+    "startLine": 56,
+    "endLine": 132
+  },
+  {
+    "outputFile": "StructureDefinition-HIVBHTSvisit.json",
+    "fshName": "HIVBHTSvisit",
+    "fshType": "Logical",
+    "fshFile": "models/HIVBHTSvisit.fsh",
+    "startLine": 41,
+    "endLine": 344
+  },
+  {
+    "outputFile": "StructureDefinition-HIVCPrEPvisit.json",
+    "fshName": "HIVCPrEPvisit",
+    "fshType": "Logical",
+    "fshFile": "models/HIVCPrEPvisit.fsh",
+    "startLine": 16,
+    "endLine": 179
+  },
+  {
+    "outputFile": "StructureDefinition-HIVConfiguration.json",
+    "fshName": "HIVConfiguration",
+    "fshType": "Logical",
+    "fshFile": "models/HIVConfiguration.fsh",
+    "startLine": 46,
+    "endLine": 97
+  },
+  {
+    "outputFile": "StructureDefinition-HIVDCareTreatment.json",
+    "fshName": "HIVDCareTreatment",
+    "fshType": "Logical",
+    "fshFile": "models/HIVDCareTreatment.fsh",
+    "startLine": 81,
+    "endLine": 841
+  },
+  {
+    "outputFile": "StructureDefinition-HIVDHIVTB.json",
+    "fshName": "HIVDHIVTB",
+    "fshType": "Logical",
+    "fshFile": "models/HIVDHIVTB.fsh",
+    "startLine": 11,
+    "endLine": 109
+  },
+  {
+    "outputFile": "StructureDefinition-HIVEPMTCT.json",
+    "fshName": "HIVEPMTCT",
+    "fshType": "Logical",
+    "fshFile": "models/HIVEFPMTCT.fsh",
+    "startLine": 141,
+    "endLine": 453
+  },
+  {
+    "outputFile": "StructureDefinition-HIVGDiagnostics.json",
+    "fshName": "HIVGDiagnostics",
+    "fshType": "Logical",
+    "fshFile": "models/HIVGDiagnostics.fsh",
+    "startLine": 11,
+    "endLine": 112
+  },
+  {
+    "outputFile": "StructureDefinition-HIVHFollowup.json",
+    "fshName": "HIVHFollowup",
+    "fshType": "Logical",
+    "fshFile": "models/HIVHFollowup.fsh",
+    "startLine": 11,
+    "endLine": 89
+  },
+  {
+    "outputFile": "StructureDefinition-HIVIReferral.json",
+    "fshName": "HIVIReferral",
+    "fshType": "Logical",
+    "fshFile": "models/HIVIReferral.fsh",
+    "startLine": 6,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-HIVPrevention.json",
+    "fshName": "HIVPrevention",
+    "fshType": "Logical",
+    "fshFile": "models/HIVPrevention.fsh",
+    "startLine": 6,
+    "endLine": 55
+  },
+  {
+    "outputFile": "StructureDefinition-HIVSurveillance.json",
+    "fshName": "HIVSurveillance",
+    "fshType": "Logical",
+    "fshFile": "models/HIVSurveillance.fsh",
+    "startLine": 11,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-HcvViralLoadTest.json",
+    "fshName": "HcvViralLoadTest",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivHcvViralLoadTest.fsh",
+    "startLine": 12,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-HivAltPepBackbonePrescription.json",
+    "fshName": "HivAltPepBackbonePrescription",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivAltPepBackbonePrescription.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivAltThirdPepPrescription.json",
+    "fshName": "HivAltThirdPepPrescription",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivAltThirdPepPrescription.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivAncEncounter.json",
+    "fshName": "HivAncEncounter",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivAncEncounter.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivAntiRetroviralEpisode.json",
+    "fshName": "HivAntiRetroviralEpisode",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivAntiRetroviralEpisode.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-HivAntiRetroviralTreatment.json",
+    "fshName": "HivAntiRetroviralTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivAntiRetroviralTreatment.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-HivCervicalCancerScreening.json",
+    "fshName": "HivCervicalCancerScreening",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivCervicalCancerScreening.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-HivCondition.json",
+    "fshName": "HivCondition",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivCondition.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivCurrentPrepRegimenPrescription.json",
+    "fshName": "HivCurrentPrepRegimenPrescription",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivCurrentPrepRegimenPrescription.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivElevatedHivAcquisitionRiskCondition.json",
+    "fshName": "HivElevatedHivAcquisitionRiskCondition",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivElevatedHivAcquisitionRiskCondition.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivElevatedRiskForAcquisition.json",
+    "fshName": "HivElevatedRiskForAcquisition",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivElevatedRiskForAcquisition.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivEncounter.json",
+    "fshName": "HivEncounter",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivEncouner.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivGonorhoeaTest.json",
+    "fshName": "HivGonorhoeaTest",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivGonorrhoeaTest.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivGonorrhoeaTreatment.json",
+    "fshName": "HivGonorrhoeaTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivGonorrhoeaTreatment.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivHBsAgTest.json",
+    "fshName": "HivHBsAgTest",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivHBsAgTest.fsh",
+    "startLine": 11,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-HivHBsAgTestD.json",
+    "fshName": "HivHBsAgTestD",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivHBsAgTest.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivHcvTest.json",
+    "fshName": "HivHcvTest",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivHcvTest.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivHcvTestD.json",
+    "fshName": "HivHcvTestD",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivHcvTest.fsh",
+    "startLine": 11,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-HivHcvTreatment.json",
+    "fshName": "HivHcvTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivHcvTreatment.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-HivHcvViralLoadTest.json",
+    "fshName": "HivHcvViralLoadTest",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivHcvViralLoadTest.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-HivHivTest.json",
+    "fshName": "HivHivTest",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivHivTest.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "StructureDefinition-HivHtsVisit.json",
+    "fshName": "HivHtsVisit",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivHtsVisit.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivInfantPatient.json",
+    "fshName": "HivInfantPatient",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivInfant.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivInvasiveCervicalCancerDiagnosis.json",
+    "fshName": "HivInvasiveCervicalCancerDiagnosis",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivInvasiveCervicalCancerDiagnosis.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-HivInvasiveCervicalCancerTreatment.json",
+    "fshName": "HivInvasiveCervicalCancerTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivInvasiveCervicalCancerTreatment.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-HivKeyPopulation.json",
+    "fshName": "HivKeyPopulation",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivKeyPopulation.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-HivLabTestObservation.json",
+    "fshName": "HivLabTestObservation",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivLabTestObservation.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-HivLabTestServiceRequest.json",
+    "fshName": "HivLabTestServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivLabTestServiceRequest.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-HivLabTestSpecimen.json",
+    "fshName": "HivLabTestSpecimen",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivLabTestSpecimen.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivMother.json",
+    "fshName": "HivMother",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivMother.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivOamTreatment.json",
+    "fshName": "HivOamTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivOamtEpisodeOfCare.fsh",
+    "startLine": 30,
+    "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-HivOnArt.json",
+    "fshName": "HivOnArt",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivOnArt.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-HivPatient.json",
+    "fshName": "HivPatient",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivPatient.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-HivPepBackboneAlternativeTreatment.json",
+    "fshName": "HivPepBackboneAlternativeTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivPepBackboneAlternativeTreatment.fsh",
+    "startLine": 2,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-HivPepBackbonePreferredTreatment.json",
+    "fshName": "HivPepBackbonePreferredTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivPepBackbonePreferredTreatment.fsh",
+    "startLine": 2,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-HivPepThirdAlternativeTreatment.json",
+    "fshName": "HivPepThirdAlternativeTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivPepThirdAlternativeTreatment.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivPepThirdPreferredTreatment.json",
+    "fshName": "HivPepThirdPreferredTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivPreferredThirdPepTreatment.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivPregnancyCondition.json",
+    "fshName": "HivPregnancyCondition",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivPregnancyCondition.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivPrepTreatment.json",
+    "fshName": "HivPrepTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivPrepTreament.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-HivPreventionIntervention.json",
+    "fshName": "HivPreventionIntervention",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivPreventionIntervention.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-HivStatusCondition.json",
+    "fshName": "HivStatusCondition",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivStatusCondition.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-HivStatusObservation.json",
+    "fshName": "HivStatusObservation",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivStatusObservation.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-HivStiServices.json",
+    "fshName": "HivStiServices",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivStiServices.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivSyndromeStiDiagnosis.json",
+    "fshName": "HivSyndromeStiDiagnosis",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivSyndromeStiDiagnosisCondition.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-HivTreatment.json",
+    "fshName": "HivTreatment",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivOamtTreatment.fsh",
+    "startLine": 30,
+    "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-HivTreatmentMedicationRequest.json",
+    "fshName": "HivTreatmentMedicationRequest",
+    "fshType": "Profile",
+    "fshFile": "profiles/HIvTreatmentMedicationRequest.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-HivTreatmentMedicationStatement.json",
+    "fshName": "HivTreatmentMedicationStatement",
+    "fshType": "Profile",
+    "fshFile": "profiles/HIvTreatmentMedicationStatement.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivTreatmentProcedure.json",
+    "fshName": "HivTreatmentProcedure",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivTreatmentProcedure.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-HivVmmcAdverseEvent.json",
+    "fshName": "HivVmmcAdverseEvent",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivVmmcAdverseEvent.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-HivVmmcProcedure.json",
+    "fshName": "HivVmmcProcedure",
+    "fshType": "Profile",
+    "fshFile": "profiles/HivVmmcProcedure.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-HIV.A.DE13.json",
+    "fshName": "HIV.A.DE13",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.A.DE13.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.A.DE18.json",
+    "fshName": "HIV.A.DE18",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.A.DE18.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.A.DE25.json",
+    "fshName": "HIV.A.DE25",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.A.DE25.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.A.DE30.json",
+    "fshName": "HIV.A.DE30",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.A.DE30.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-HIV.A.DE43.json",
+    "fshName": "HIV.A.DE43",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.A.DE43.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.A.DE46.json",
+    "fshName": "HIV.A.DE46",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.A.DE46.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.A.DE5.json",
+    "fshName": "HIV.A.DE5",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.A.DE5.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE1.json",
+    "fshName": "HIV.B.DE1",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE1.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE102.json",
+    "fshName": "HIV.B.DE102",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE102.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE106.json",
+    "fshName": "HIV.B.DE106",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE106.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE111.json",
+    "fshName": "HIV.B.DE111",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE111.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE115.json",
+    "fshName": "HIV.B.DE115",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE115.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE120.json",
+    "fshName": "HIV.B.DE120",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE120.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE121.json",
+    "fshName": "HIV.B.DE121",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE121.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE132.json",
+    "fshName": "HIV.B.DE132",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE132.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE136.json",
+    "fshName": "HIV.B.DE136",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE136.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE142.json",
+    "fshName": "HIV.B.DE142",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE142.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE149.json",
+    "fshName": "HIV.B.DE149",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE149.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE15.json",
+    "fshName": "HIV.B.DE15",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE15.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE158.json",
+    "fshName": "HIV.B.DE158",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE158.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE165.json",
+    "fshName": "HIV.B.DE165",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE165.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE172.json",
+    "fshName": "HIV.B.DE172",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE172.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE179.json",
+    "fshName": "HIV.B.DE179",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE179.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE18.json",
+    "fshName": "HIV.B.DE18",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE18.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE191.json",
+    "fshName": "HIV.B.DE191",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE191.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE201.json",
+    "fshName": "HIV.B.DE201",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE201.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE204.json",
+    "fshName": "HIV.B.DE204",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE204.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE207.json",
+    "fshName": "HIV.B.DE207",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE207.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE22.json",
+    "fshName": "HIV.B.DE22",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE22.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE226.json",
+    "fshName": "HIV.B.DE226",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE226.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE237.json",
+    "fshName": "HIV.B.DE237",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE237.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE250.json",
+    "fshName": "HIV.B.DE250",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE250.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE256.json",
+    "fshName": "HIV.B.DE256",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE256.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE261.json",
+    "fshName": "HIV.B.DE261",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE261.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE269.json",
+    "fshName": "HIV.B.DE269",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE269.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE276.json",
+    "fshName": "HIV.B.DE276",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE276.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE284.json",
+    "fshName": "HIV.B.DE284",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE284.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE293.json",
+    "fshName": "HIV.B.DE293",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE293.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE301.json",
+    "fshName": "HIV.B.DE301",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE301.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE306.json",
+    "fshName": "HIV.B.DE306",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE306.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE312.json",
+    "fshName": "HIV.B.DE312",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE312.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE317.json",
+    "fshName": "HIV.B.DE317",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE317.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE325.json",
+    "fshName": "HIV.B.DE325",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE325.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE33.json",
+    "fshName": "HIV.B.DE33",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE33.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE37.json",
+    "fshName": "HIV.B.DE37",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE37.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE44.json",
+    "fshName": "HIV.B.DE44",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE44.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE5.json",
+    "fshName": "HIV.B.DE5",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE5.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE50.json",
+    "fshName": "HIV.B.DE50",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE50.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE61.json",
+    "fshName": "HIV.B.DE61",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE61.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE66.json",
+    "fshName": "HIV.B.DE66",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE66.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE68.json",
+    "fshName": "HIV.B.DE68",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE68.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE74.json",
+    "fshName": "HIV.B.DE74",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE74.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE8.json",
+    "fshName": "HIV.B.DE8",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE8.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE81.json",
+    "fshName": "HIV.B.DE81",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE81.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE88.json",
+    "fshName": "HIV.B.DE88",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE88.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE94.json",
+    "fshName": "HIV.B.DE94",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE94.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.B.DE98.json",
+    "fshName": "HIV.B.DE98",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.B.DE98.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE1.json",
+    "fshName": "HIV.C.DE1",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE1.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE101.json",
+    "fshName": "HIV.C.DE101",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE101.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE107.json",
+    "fshName": "HIV.C.DE107",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE107.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE11.json",
+    "fshName": "HIV.C.DE11",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE11.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE112.json",
+    "fshName": "HIV.C.DE112",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE112.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE122.json",
+    "fshName": "HIV.C.DE122",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE122.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE125.json",
+    "fshName": "HIV.C.DE125",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE125.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE131.json",
+    "fshName": "HIV.C.DE131",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE131.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE138.json",
+    "fshName": "HIV.C.DE138",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE138.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE143.json",
+    "fshName": "HIV.C.DE143",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE143.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE149.json",
+    "fshName": "HIV.C.DE149",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE149.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE157.json",
+    "fshName": "HIV.C.DE157",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE157.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE164.json",
+    "fshName": "HIV.C.DE164",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE164.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE17.json",
+    "fshName": "HIV.C.DE17",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE17.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE24.json",
+    "fshName": "HIV.C.DE24",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE24.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE31.json",
+    "fshName": "HIV.C.DE31",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE31.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE36.json",
+    "fshName": "HIV.C.DE36",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE36.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE41.json",
+    "fshName": "HIV.C.DE41",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE41.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE46.json",
+    "fshName": "HIV.C.DE46",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE46.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE55.json",
+    "fshName": "HIV.C.DE55",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE55.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE63.json",
+    "fshName": "HIV.C.DE63",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE63.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE75.json",
+    "fshName": "HIV.C.DE75",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE75.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE80.json",
+    "fshName": "HIV.C.DE80",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE80.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE91.json",
+    "fshName": "HIV.C.DE91",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE91.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE95.json",
+    "fshName": "HIV.C.DE95",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE95.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.C.DE99.json",
+    "fshName": "HIV.C.DE99",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.C.DE99.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.Config.DE12.json",
+    "fshName": "HIV.Config.DE12",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.Config.DE12.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.Config.DE19.json",
+    "fshName": "HIV.Config.DE19",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.Config.DE19.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE1.json",
+    "fshName": "HIV.D.DE1",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE1.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE1002.json",
+    "fshName": "HIV.D.DE1002",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE1002.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE1010.json",
+    "fshName": "HIV.D.DE1010",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE1010.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE1019.json",
+    "fshName": "HIV.D.DE1019",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE1019.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE1028.json",
+    "fshName": "HIV.D.DE1028",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE1028.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE1034.json",
+    "fshName": "HIV.D.DE1034",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE1034.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE128.json",
+    "fshName": "HIV.D.DE128",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE128.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE146.json",
+    "fshName": "HIV.D.DE146",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE146.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE152.json",
+    "fshName": "HIV.D.DE152",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE152.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE156.json",
+    "fshName": "HIV.D.DE156",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE156.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE162.json",
+    "fshName": "HIV.D.DE162",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE162.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE168.json",
+    "fshName": "HIV.D.DE168",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE168.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE17.json",
+    "fshName": "HIV.D.DE17",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE17.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE170.json",
+    "fshName": "HIV.D.DE170",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE170.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE177.json",
+    "fshName": "HIV.D.DE177",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE177.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE179.json",
+    "fshName": "HIV.D.DE179",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE179.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE182.json",
+    "fshName": "HIV.D.DE182",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE182.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE186.json",
+    "fshName": "HIV.D.DE186",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE186.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE197.json",
+    "fshName": "HIV.D.DE197",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE197.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE217.json",
+    "fshName": "HIV.D.DE217",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE217.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE225.json",
+    "fshName": "HIV.D.DE225",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE225.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE229.json",
+    "fshName": "HIV.D.DE229",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE229.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE247.json",
+    "fshName": "HIV.D.DE247",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE247.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE259.json",
+    "fshName": "HIV.D.DE259",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE259.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE289.json",
+    "fshName": "HIV.D.DE289",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE289.fsh",
+    "startLine": 1,
+    "endLine": 79
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE358.json",
+    "fshName": "HIV.D.DE358",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE358.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE370.json",
+    "fshName": "HIV.D.DE370",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE370.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE383.json",
+    "fshName": "HIV.D.DE383",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE383.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE391.json",
+    "fshName": "HIV.D.DE391",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE391.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE399.json",
+    "fshName": "HIV.D.DE399",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE399.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE418.json",
+    "fshName": "HIV.D.DE418",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE418.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE43.json",
+    "fshName": "HIV.D.DE43",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE43.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE430.json",
+    "fshName": "HIV.D.DE430",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE430.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE444.json",
+    "fshName": "HIV.D.DE444",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE444.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE446.json",
+    "fshName": "HIV.D.DE446",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE446.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE449.json",
+    "fshName": "HIV.D.DE449",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE449.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE457.json",
+    "fshName": "HIV.D.DE457",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE457.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE461.json",
+    "fshName": "HIV.D.DE461",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE461.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE466.json",
+    "fshName": "HIV.D.DE466",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE466.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE482.json",
+    "fshName": "HIV.D.DE482",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE482.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE483.json",
+    "fshName": "HIV.D.DE483",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE483.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE485.json",
+    "fshName": "HIV.D.DE485",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE485.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE486.json",
+    "fshName": "HIV.D.DE486",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE486.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE488.json",
+    "fshName": "HIV.D.DE488",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE488.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE489.json",
+    "fshName": "HIV.D.DE489",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE489.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE491.json",
+    "fshName": "HIV.D.DE491",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE491.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE492.json",
+    "fshName": "HIV.D.DE492",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE492.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE494.json",
+    "fshName": "HIV.D.DE494",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE494.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE495.json",
+    "fshName": "HIV.D.DE495",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE495.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE514.json",
+    "fshName": "HIV.D.DE514",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE514.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE519.json",
+    "fshName": "HIV.D.DE519",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE519.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE52.json",
+    "fshName": "HIV.D.DE52",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE52.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE525.json",
+    "fshName": "HIV.D.DE525",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE525.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE532.json",
+    "fshName": "HIV.D.DE532",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE532.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE537.json",
+    "fshName": "HIV.D.DE537",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE537.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE55.json",
+    "fshName": "HIV.D.DE55",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE55.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE56.json",
+    "fshName": "HIV.D.DE56",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE56.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE560.json",
+    "fshName": "HIV.D.DE560",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE560.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE569.json",
+    "fshName": "HIV.D.DE569",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE569.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE593.json",
+    "fshName": "HIV.D.DE593",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE593.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE603.json",
+    "fshName": "HIV.D.DE603",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE603.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE604.json",
+    "fshName": "HIV.D.DE604",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE604.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE606.json",
+    "fshName": "HIV.D.DE606",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE606.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE610.json",
+    "fshName": "HIV.D.DE610",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE610.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE63.json",
+    "fshName": "HIV.D.DE63",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE63.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE636.json",
+    "fshName": "HIV.D.DE636",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE636.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE64.json",
+    "fshName": "HIV.D.DE64",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE64.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE646.json",
+    "fshName": "HIV.D.DE646",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE646.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE65.json",
+    "fshName": "HIV.D.DE65",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE65.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE658.json",
+    "fshName": "HIV.D.DE658",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE658.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE664.json",
+    "fshName": "HIV.D.DE664",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE664.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE668.json",
+    "fshName": "HIV.D.DE668",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE668.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE673.json",
+    "fshName": "HIV.D.DE673",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE673.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE681.json",
+    "fshName": "HIV.D.DE681",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE681.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE688.json",
+    "fshName": "HIV.D.DE688",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE688.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE691.json",
+    "fshName": "HIV.D.DE691",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE691.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE697.json",
+    "fshName": "HIV.D.DE697",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE697.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE706.json",
+    "fshName": "HIV.D.DE706",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE706.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE709.json",
+    "fshName": "HIV.D.DE709",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE709.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE712.json",
+    "fshName": "HIV.D.DE712",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE712.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE719.json",
+    "fshName": "HIV.D.DE719",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE719.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE731.json",
+    "fshName": "HIV.D.DE731",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE731.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE74.json",
+    "fshName": "HIV.D.DE74",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE74.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE746.json",
+    "fshName": "HIV.D.DE746",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE746.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE75.json",
+    "fshName": "HIV.D.DE75",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE75.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE753.json",
+    "fshName": "HIV.D.DE753",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE753.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE764.json",
+    "fshName": "HIV.D.DE764",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE764.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE77.json",
+    "fshName": "HIV.D.DE77",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE77.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE778.json",
+    "fshName": "HIV.D.DE778",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE778.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE78.json",
+    "fshName": "HIV.D.DE78",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE78.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE789.json",
+    "fshName": "HIV.D.DE789",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE789.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE79.json",
+    "fshName": "HIV.D.DE79",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE79.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE80.json",
+    "fshName": "HIV.D.DE80",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE80.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE802.json",
+    "fshName": "HIV.D.DE802",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE802.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE808.json",
+    "fshName": "HIV.D.DE808",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE808.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE81.json",
+    "fshName": "HIV.D.DE81",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE81.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE813.json",
+    "fshName": "HIV.D.DE813",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE813.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE82.json",
+    "fshName": "HIV.D.DE82",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE82.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE821.json",
+    "fshName": "HIV.D.DE821",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE821.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE828.json",
+    "fshName": "HIV.D.DE828",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE828.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE83.json",
+    "fshName": "HIV.D.DE83",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE83.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE836.json",
+    "fshName": "HIV.D.DE836",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE836.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE845.json",
+    "fshName": "HIV.D.DE845",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE845.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE853.json",
+    "fshName": "HIV.D.DE853",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE853.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE858.json",
+    "fshName": "HIV.D.DE858",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE858.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE864.json",
+    "fshName": "HIV.D.DE864",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE864.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE869.json",
+    "fshName": "HIV.D.DE869",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE869.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE877.json",
+    "fshName": "HIV.D.DE877",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE877.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE893.json",
+    "fshName": "HIV.D.DE893",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE893.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE897.json",
+    "fshName": "HIV.D.DE897",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE897.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE90.json",
+    "fshName": "HIV.D.DE90",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE90.fsh",
+    "startLine": 1,
+    "endLine": 47
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE903.json",
+    "fshName": "HIV.D.DE903",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE903.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE934.json",
+    "fshName": "HIV.D.DE934",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE934.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE939.json",
+    "fshName": "HIV.D.DE939",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE939.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE942.json",
+    "fshName": "HIV.D.DE942",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE942.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE947.json",
+    "fshName": "HIV.D.DE947",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE947.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE956.json",
+    "fshName": "HIV.D.DE956",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE956.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE973.json",
+    "fshName": "HIV.D.DE973",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE973.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE986.json",
+    "fshName": "HIV.D.DE986",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE986.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.D.DE992.json",
+    "fshName": "HIV.D.DE992",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.D.DE992.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE104.json",
+    "fshName": "HIV.E.DE104",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE104.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE108.json",
+    "fshName": "HIV.E.DE108",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE108.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE114.json",
+    "fshName": "HIV.E.DE114",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE114.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE127.json",
+    "fshName": "HIV.E.DE127",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE127.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE136.json",
+    "fshName": "HIV.E.DE136",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE136.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE141.json",
+    "fshName": "HIV.E.DE141",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE141.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE145.json",
+    "fshName": "HIV.E.DE145",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE145.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE149.json",
+    "fshName": "HIV.E.DE149",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE149.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE155.json",
+    "fshName": "HIV.E.DE155",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE155.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE168.json",
+    "fshName": "HIV.E.DE168",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE168.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE17.json",
+    "fshName": "HIV.E.DE17",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE17.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE173.json",
+    "fshName": "HIV.E.DE173",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE173.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE180.json",
+    "fshName": "HIV.E.DE180",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE180.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE183.json",
+    "fshName": "HIV.E.DE183",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE183.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE186.json",
+    "fshName": "HIV.E.DE186",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE186.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE190.json",
+    "fshName": "HIV.E.DE190",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE190.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE194.json",
+    "fshName": "HIV.E.DE194",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE194.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE200.json",
+    "fshName": "HIV.E.DE200",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE200.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE204.json",
+    "fshName": "HIV.E.DE204",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE204.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE208.json",
+    "fshName": "HIV.E.DE208",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE208.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE212.json",
+    "fshName": "HIV.E.DE212",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE212.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE216.json",
+    "fshName": "HIV.E.DE216",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE216.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE220.json",
+    "fshName": "HIV.E.DE220",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE220.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE225.json",
+    "fshName": "HIV.E.DE225",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE225.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE230.json",
+    "fshName": "HIV.E.DE230",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE230.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE234.json",
+    "fshName": "HIV.E.DE234",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE234.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE240.json",
+    "fshName": "HIV.E.DE240",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE240.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE246.json",
+    "fshName": "HIV.E.DE246",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE246.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE255.json",
+    "fshName": "HIV.E.DE255",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE255.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE259.json",
+    "fshName": "HIV.E.DE259",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE259.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE264.json",
+    "fshName": "HIV.E.DE264",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE264.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE41.json",
+    "fshName": "HIV.E.DE41",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE41.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE47.json",
+    "fshName": "HIV.E.DE47",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE47.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE52.json",
+    "fshName": "HIV.E.DE52",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE52.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE6.json",
+    "fshName": "HIV.E.DE6",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE6.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE62.json",
+    "fshName": "HIV.E.DE62",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE62.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE67.json",
+    "fshName": "HIV.E.DE67",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE67.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE75.json",
+    "fshName": "HIV.E.DE75",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE75.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.E.DE91.json",
+    "fshName": "HIV.E.DE91",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.E.DE91.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE13.json",
+    "fshName": "HIV.G.DE13",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE13.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE18.json",
+    "fshName": "HIV.G.DE18",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE18.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE22.json",
+    "fshName": "HIV.G.DE22",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE22.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE29.json",
+    "fshName": "HIV.G.DE29",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE29.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE35.json",
+    "fshName": "HIV.G.DE35",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE35.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE43.json",
+    "fshName": "HIV.G.DE43",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE43.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE48.json",
+    "fshName": "HIV.G.DE48",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE48.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE51.json",
+    "fshName": "HIV.G.DE51",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE51.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE55.json",
+    "fshName": "HIV.G.DE55",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE55.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE62.json",
+    "fshName": "HIV.G.DE62",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE62.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE70.json",
+    "fshName": "HIV.G.DE70",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE70.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.G.DE74.json",
+    "fshName": "HIV.G.DE74",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.G.DE74.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-HIV.H.DE1.json",
+    "fshName": "HIV.H.DE1",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.H.DE1.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-HIV.H.DE13.json",
+    "fshName": "HIV.H.DE13",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.H.DE13.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.H.DE17.json",
+    "fshName": "HIV.H.DE17",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.H.DE17.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.H.DE23.json",
+    "fshName": "HIV.H.DE23",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.H.DE23.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.H.DE34.json",
+    "fshName": "HIV.H.DE34",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.H.DE34.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.H.DE41.json",
+    "fshName": "HIV.H.DE41",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.H.DE41.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-HIV.H.DE50.json",
+    "fshName": "HIV.H.DE50",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.H.DE50.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-HIV.H.DE53.json",
+    "fshName": "HIV.H.DE53",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.H.DE53.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "ValueSet-HIV.H.DE74.json",
+    "fshName": "HIV.H.DE74",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.H.DE74.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-HIV.I.DE2.json",
+    "fshName": "HIV.I.DE2",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.I.DE2.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV.PRV.DE11.json",
+    "fshName": "HIV.PRV.DE11",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.PRV.DE11.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-HIV.PRV.DE2.json",
+    "fshName": "HIV.PRV.DE2",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/HIV.PRV.DE2.fsh",
+    "startLine": 1,
+    "endLine": 17
+  }
+]
