@@ -1,0 +1,17 @@
+# The IG build recipe, as smart-trust and smart-immunizations declare it:
+# a call to smart-base's fhirbuild.yml. The agent's site publish
+# (site-publish.yml, stage-local.ts) mirrors this call to build the site.
+# fhirbuild.yml here only triggers the HL7 auto-build, so it is not a recipe.
+
+name: IG build (by hand)
+
+permissions:
+  contents: write
+
+# Manual trigger only (owner decision, 2026-10-06).
+on:
+  workflow_dispatch:
+
+jobs:
+  call_build:
+    uses: WorldHealthOrganization/smart-base/.github/workflows/fhirbuild.yml@main
