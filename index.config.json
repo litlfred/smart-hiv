@@ -32,7 +32,9 @@
                 "smart-base-scripts",
                 "smart-base-skills",
                 "smart-base-scenarios",
-                "smart-base-code-lists"
+                "smart-base-code-lists",
+                "smart-base-typologies",
+                "smart-base-validators"
               ]
             }
           },
