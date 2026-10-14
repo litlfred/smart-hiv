@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "f1bcb146b214896156bce63c15e92003c78f3368",
+          "ref": "ecd192c4eda6105530ab0f27951d9b36e5e70732",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -39,9 +39,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-10",
-              "ref": "f1bcb146b214896156bce63c15e92003c78f3368",
-              "evidence": "owner, session_017fFnGmbJcfqqrHXz9oqxdG 2026-10-10: 'you can work on the litlfred/smart-* go ahead and harness them with index.config.json' and 'keep going. keep migrating environment' — smart-hiv mounts smart-base and its closure at each repository's main (bean n3h9)"
+              "on": "2026-10-14",
+              "ref": "ecd192c4eda6105530ab0f27951d9b36e5e70732",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'extend repin+merge window 3 hrs'; IG route from the cached AST with smart-base's DAK API (fhir-harness#70, smart-base#63, cat-harness-tools#235)"
             }
           }
         }
@@ -52,7 +52,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "39e3caf74262d6b98f7ffbbeaf49fc30891b33c6",
+          "ref": "4b4eac91f71a8cebcb4415067c28231847c64876",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -62,8 +62,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "39e3caf74262d6b98f7ffbbeaf49fc30891b33c6",
-              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary for the next 3 hours'; smart-hiv staging preview of thin tab views (fhir-harness#59,#61) and rail (cat-harness#213)"
+              "ref": "4b4eac91f71a8cebcb4415067c28231847c64876",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'extend repin+merge window 3 hrs'; IG route from the cached AST (fhir-harness#70, #72 untracks node_modules)"
             }
           }
         }
