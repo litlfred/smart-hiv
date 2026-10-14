@@ -15,7 +15,7 @@
  
 % of people testing HIV-negative who tested again within a defined period of time after their previous test 
 
-**Exception parsing generated Narrative (see /tmp/liquid-ec780fc1-f912-4562-93e8-5a211b31c9d6.html): Unable to read attribute on <15> at line 208 column 15**
+**Exception parsing generated Narrative (see /tmp/liquid-c9e17395-25a9-4760-be41-511923ae1405.html): Unable to read attribute on <15> at line 208 column 15**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

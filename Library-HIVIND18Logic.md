@@ -15,7 +15,7 @@
  
 Number and % of people living with HIV who know their HIV status 
 
-**Exception parsing generated Narrative (see /tmp/liquid-19f319cf-f005-4898-8a91-097c2790d717.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 313 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-b33ac49b-f0b3-4540-815c-1834db56c6b3.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 313 column 8**
 
 
 
@@ -47,7 +47,7 @@ Number and % of people living with HIV who know their HIV status
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

@@ -15,7 +15,7 @@
  
 % of people living with HIV who tested positive for gonorrhoea during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-564d2bbf-0999-4777-a3f2-bce72c92dbb0.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 380 column 52**
+**Exception parsing generated Narrative (see /tmp/liquid-8b7971ad-18d9-49af-b9ed-e0cc725ec5f7.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 380 column 52**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

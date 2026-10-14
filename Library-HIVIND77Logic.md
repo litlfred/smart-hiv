@@ -15,7 +15,7 @@
  
 % of people living with HIV diagnosed with a particular STI syndrome during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-a56be602-f843-4afc-9862-636be98914fa.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 364 column 42**
+**Exception parsing generated Narrative (see /tmp/liquid-605cde0b-7ecb-4ebb-9bc1-c9fa71bed74f.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 364 column 42**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

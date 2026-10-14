@@ -15,7 +15,7 @@
  
 Number of people living with HIV who initiated ART 
 
-**Exception parsing generated Narrative (see /tmp/liquid-6094f1cc-a6ff-4400-a817-ad477206f017.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 310 column 41**
+**Exception parsing generated Narrative (see /tmp/liquid-e53c03f8-8fcd-4633-830c-60df4f7cbc6c.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 310 column 41**
 
 
 
@@ -47,7 +47,7 @@ Number of people living with HIV who initiated ART
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

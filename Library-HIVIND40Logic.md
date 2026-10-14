@@ -15,7 +15,7 @@
  
 % of HIV-positive pregnant women who received ART during pregnancy and/or at labour and delivery 
 
-**Exception parsing generated Narrative (see /tmp/liquid-891e3673-7368-42b6-a566-c68a4b2571fb.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 321 column 46**
+**Exception parsing generated Narrative (see /tmp/liquid-bc833209-423e-4c62-88d9-937128bf28c4.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 321 column 46**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

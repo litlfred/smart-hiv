@@ -15,7 +15,7 @@
  
 % of people living with HIV who were tested for HCV (HCV antibody, HCV RNA or HCV core antigen) during the reporting period (laboratory-based test or rapid test) 
 
-**Exception parsing generated Narrative (see /tmp/liquid-e45c2bc0-6447-4dc4-ad47-ab2551823a30.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 339 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-0212f395-3596-4446-9e16-1ea60379e08c.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 339 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

@@ -8,7 +8,7 @@
     <profile value="http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module" />
   </meta>
   <text>
-    <status value="extensions" /><html:div><html:p><html:b style="color: maroon">Exception parsing generated Narrative (see /tmp/liquid-5f2ec8b1-88b6-42eb-8a34-86c258bb9575.html): Unable to read attribute 'months' value on &lt;2&gt; at line 232 column 31</html:b></html:p></html:div>
+    <status value="extensions" /><html:div><html:p><html:b style="color: maroon">Exception parsing generated Narrative (see /tmp/liquid-5fe82815-1c2c-4790-8bee-7412c30a0fb1.html): Unable to read attribute 'months' value on &lt;2&gt; at line 232 column 31</html:b></html:p></html:div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
     <valueCode value="computable" />
@@ -25,7 +25,7 @@
       <code value="logic-library" />
     </coding>
   </type>
-  <date value="2026-10-14T11:09:56+00:00" />
+  <date value="2026-10-14T17:13:14+00:00" />
   <publisher value="WHO" />
   <contact>
     <name value="WHO" />

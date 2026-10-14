@@ -15,7 +15,7 @@
  
 % of HIV-exposed infants who receive a virological test for HIV within two months (and 12 months) of birth 
 
-**Exception parsing generated Narrative (see /tmp/liquid-5f2ec8b1-88b6-42eb-8a34-86c258bb9575.html): Unable to read attribute 'months' value on <2> at line 232 column 31**
+**Exception parsing generated Narrative (see /tmp/liquid-5fe82815-1c2c-4790-8bee-7412c30a0fb1.html): Unable to read attribute 'months' value on <2> at line 232 column 31**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

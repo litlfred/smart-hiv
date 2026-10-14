@@ -15,7 +15,7 @@
  
 % of people attending HIV prevention services tested positive for syphilis who were treated based on national guidelines during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-d620a500-7996-4ea4-a5b3-cf9ef7068703.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 364 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-377c23e4-ca7c-47a3-a7e1-4f610b95f49b.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 364 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

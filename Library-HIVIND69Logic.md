@@ -15,7 +15,7 @@
  
 % of pregnant women who tested positive for syphilis who were treated based on national guidelines during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-9ae5685c-5515-436c-8f96-f07cadb43245.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 327 column 49**
+**Exception parsing generated Narrative (see /tmp/liquid-e6a85b2b-bb02-4b8d-952d-4f8af7c2944e.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 327 column 49**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

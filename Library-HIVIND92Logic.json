@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-795800fc-f379-4233-8f3f-61fd68685bc9.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine &quot;Initial Population&quot;:\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of people living with HIV diagnosed with HCV infection who have completed HCV treatment and had a sustained virological response (SVR). SVR is assessed by a viral load measurement 12–24 weeks after the end of treatment.\n * Calculation: COUNT of clients with &quot;HIV status&quot;='HIV-positive' with &quot;HCV treatment completion date&quot; in the reporting period AND with &quot;HCV viral load test date&quot; is BETWEEN '12, 24' weeks after &quot;HCV treatment completion date&quot; AND &quot;HCV viral load test result&quot;='Not detected'\n */\n\ndefine &quot;Numerator&quot;:\n  HIE.&quot;Has HIV-positive Status&quot; and\n  HIE.&quot;HCV treatment completion date&quot; and\n  exists(\n    HE.&quot;Not detected D.DE181&quot; O \n    with HE.&quot;HCV viral load test date D.DE178&quot; P\n    such that O.partOf.references(P) and (weeks between end of P.performed.toInterval() and date from end of Last(HE.&quot;HCV treatment completion date&quot;).effective.toInterval()&gt; 12 weeks) and \n    (weeks between end of P.performed.toInterval() and date from end of Last(HE.&quot;HCV treatment completion date&quot;).effective.toInterval()' at line 316 column 137</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-a90c9617-ba78-422e-bd52-210b00e6e5a1.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine &quot;Initial Population&quot;:\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of people living with HIV diagnosed with HCV infection who have completed HCV treatment and had a sustained virological response (SVR). SVR is assessed by a viral load measurement 12–24 weeks after the end of treatment.\n * Calculation: COUNT of clients with &quot;HIV status&quot;='HIV-positive' with &quot;HCV treatment completion date&quot; in the reporting period AND with &quot;HCV viral load test date&quot; is BETWEEN '12, 24' weeks after &quot;HCV treatment completion date&quot; AND &quot;HCV viral load test result&quot;='Not detected'\n */\n\ndefine &quot;Numerator&quot;:\n  HIE.&quot;Has HIV-positive Status&quot; and\n  HIE.&quot;HCV treatment completion date&quot; and\n  exists(\n    HE.&quot;Not detected D.DE181&quot; O \n    with HE.&quot;HCV viral load test date D.DE178&quot; P\n    such that O.partOf.references(P) and (weeks between end of P.performed.toInterval() and date from end of Last(HE.&quot;HCV treatment completion date&quot;).effective.toInterval()&gt; 12 weeks) and \n    (weeks between end of P.performed.toInterval() and date from end of Last(HE.&quot;HCV treatment completion date&quot;).effective.toInterval()' at line 316 column 137</b></p></div>"
   },
   "extension": [
     {
@@ -33,7 +33,7 @@
       }
     ]
   },
-  "date": "2026-10-14T11:09:56+00:00",
+  "date": "2026-10-14T17:13:14+00:00",
   "publisher": "WHO",
   "contact": [
     {

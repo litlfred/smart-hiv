@@ -15,7 +15,7 @@
  
 % of people retained in DSD ART models during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-1e546728-1e25-4b90-997c-753c4a01fb61.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 356 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-a70fb880-1cdb-4500-ade2-9373dd243c56.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 356 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

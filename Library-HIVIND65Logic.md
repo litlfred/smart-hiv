@@ -15,7 +15,7 @@
  
 % of pregnant women who tested positive for syphilis during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-7fdb4ee0-eb23-41cf-91a9-6966240b3057.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 324 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-817c9b87-0175-489f-aeb5-614afc87960b.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 324 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

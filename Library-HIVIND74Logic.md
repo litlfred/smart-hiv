@@ -15,7 +15,7 @@
  
 % of people attending HIV prevention services tested positive for gonorrhoea who were treated based on national guidelines during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-cb2be787-7163-424c-a1d3-8f065cb29fea.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 359 column 49**
+**Exception parsing generated Narrative (see /tmp/liquid-a0d201c2-8f5d-4e43-904a-32ebafc0a93e.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 359 column 49**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

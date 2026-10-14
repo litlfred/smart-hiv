@@ -15,7 +15,7 @@
  
 % of people living with HIV who were tested for syphilis and had a positive syphilis test result during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-bf263748-ef90-4d0a-bc77-c59415fe0680.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 344 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-da49f2b9-f457-4cb1-a823-d339a3801fd7.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 344 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

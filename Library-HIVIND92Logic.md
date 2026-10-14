@@ -15,7 +15,7 @@
  
 % of people living with HIV and co-infected with HCV who were confirmed to be cured of HCV during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-795800fc-f379-4233-8f3f-61fd68685bc9.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30] context Patient /* Populations */ /* *Initial Population */ define "Initial Population": true /** * Numerator * * Definition: Number of people living with HIV diagnosed with HCV infection who have completed HCV treatment and had a sustained virological response (SVR). SVR is assessed by a viral load measurement 12–24 weeks after the end of treatment. * Calculation: COUNT of clients with "HIV status"='HIV-positive' with "HCV treatment completion date" in the reporting period AND with "HCV viral load test date" is BETWEEN '12, 24' weeks after "HCV treatment completion date" AND "HCV viral load test result"='Not detected' */ define "Numerator": HIE."Has HIV-positive Status" and HIE."HCV treatment completion date" and exists( HE."Not detected D.DE181" O with HE."HCV viral load test date D.DE178" P such that O.partOf.references(P) and (weeks between end of P.performed.toInterval() and date from end of Last(HE."HCV treatment completion date").effective.toInterval()> 12 weeks) and (weeks between end of P.performed.toInterval() and date from end of Last(HE."HCV treatment completion date").effective.toInterval()' at line 316 column 137**
+**Exception parsing generated Narrative (see /tmp/liquid-a90c9617-ba78-422e-bd52-210b00e6e5a1.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30] context Patient /* Populations */ /* *Initial Population */ define "Initial Population": true /** * Numerator * * Definition: Number of people living with HIV diagnosed with HCV infection who have completed HCV treatment and had a sustained virological response (SVR). SVR is assessed by a viral load measurement 12–24 weeks after the end of treatment. * Calculation: COUNT of clients with "HIV status"='HIV-positive' with "HCV treatment completion date" in the reporting period AND with "HCV viral load test date" is BETWEEN '12, 24' weeks after "HCV treatment completion date" AND "HCV viral load test result"='Not detected' */ define "Numerator": HIE."Has HIV-positive Status" and HIE."HCV treatment completion date" and exists( HE."Not detected D.DE181" O with HE."HCV viral load test date D.DE178" P such that O.partOf.references(P) and (weeks between end of P.performed.toInterval() and date from end of Last(HE."HCV treatment completion date").effective.toInterval()> 12 weeks) and (weeks between end of P.performed.toInterval() and date from end of Last(HE."HCV treatment completion date").effective.toInterval()' at line 316 column 137**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

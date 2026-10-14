@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-72d64c02-4207-4b4b-bb64-ede835a57c43.html): Unable to read attribute on &lt;25&gt; at line 192 column 15</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-6a611ab9-445e-4b80-a779-17a6bf5ce919.html): Unable to read attribute on &lt;25&gt; at line 192 column 15</b></p></div>"
   },
   "extension": [
     {
@@ -33,7 +33,7 @@
       }
     ]
   },
-  "date": "2026-10-14T11:09:56+00:00",
+  "date": "2026-10-14T17:13:14+00:00",
   "publisher": "WHO",
   "contact": [
     {

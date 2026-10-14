@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-197",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-197",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-197",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-197",
   "name" : "UnionHivKeyPopulationAndHivKeyPopulation",
   "title" : "Union of Patient Key Population Status And Patient Key Population Status",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Observation",
@@ -221,7 +221,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       }
     },
     {
@@ -571,7 +571,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-11"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -611,7 +611,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-14"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1104,7 +1104,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing anatomical locations. May include laterality.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-17"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1151,7 +1151,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Methods for simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-20"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-20"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1494,7 +1494,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Code for the meaning of a reference range.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-26"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-26"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1537,7 +1537,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes identifying the population the reference range applies to.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-29"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-29"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1858,7 +1858,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-14"
       },
       "mapping" : [{
         "identity" : "w5",

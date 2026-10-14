@@ -15,7 +15,7 @@
  
 HIV.D12.DT Logic 
 
-**Exception parsing generated Narrative (see /tmp/liquid-a2dc702c-306a-4f30-9b0c-098004141f92.html): Unable to read attribute 'years' value on <20> at line 271 column 2**
+**Exception parsing generated Narrative (see /tmp/liquid-3909d16a-5fec-4b6e-9daf-4c93252f8bbb.html): Unable to read attribute 'years' value on <20> at line 271 column 2**
 
 
 
@@ -47,7 +47,7 @@ HIV.D12.DT Logic
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

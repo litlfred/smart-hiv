@@ -29,7 +29,7 @@
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-4198b630-9155-4639-bd5c-0f84bd28c18d.html): Malformed XHTML: Found \"&lt;/code&gt;\" expecting \"&lt;/Date&gt;\" at line 331 column 8</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-d9e3ae2d-010a-4e92-b0d5-62a3c16e8b18.html): Malformed XHTML: Found \"&lt;/code&gt;\" expecting \"&lt;/Date&gt;\" at line 331 column 8</b></p></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -49,7 +49,7 @@
        fhir:Coding.code [ fhir:value "logic-library" ]
      ]
   ] ;
-  fhir:Library.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:Library.date [ fhir:value "2026-10-14T17:13:14+00:00"^^xsd:dateTime] ;
   fhir:Library.publisher [ fhir:value "WHO"] ;
   fhir:Library.contact [
      fhir:index 0 ;

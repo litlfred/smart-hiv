@@ -15,7 +15,7 @@
  
 % of people attending HIV prevention services who were tested for hepatitis B surface antigen (HBsAg) during the reporting period (laboratory-based test or rapid test) 
 
-**Exception parsing generated Narrative (see /tmp/liquid-59b33466-6ab0-47cc-8eb6-40c826ae6e88.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 343 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-039c6b5f-60eb-4f0a-a123-0896d838199c.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 343 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

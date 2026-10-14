@@ -15,7 +15,7 @@
  
 HIV.B2.DT Logic 
 
-**Exception parsing generated Narrative (see /tmp/liquid-da31a3d4-7450-4b66-877e-24c2c407afaf.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/** Library: HIV.B2.DT Logic @DecisionID: HIV.B2.DT @BusinessRule: Check for signs of serious illness @Trigger: HIV.B2 Check for signs of serious illness @Trigger: HIV.D3 Check for signs of serious illness @HitPolicy: Rule Order @Description: Check for serious illness Data Concepts: * HIV.A.DE17: Age | Calculated age (number of years) of the client based on date of birth * HIV.D.DE17: Signs of serious illness | Signs that may indicate the client has a serious illness and needs triage or an emergency referral * HIV.D.DE9: Body temperature | Temperature of the client in Celsius Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease. */ library HIVB2DTLogic using FHIR version '4.0.1' include HIVCommon version '0.0.1' called HIC include HIVConcepts called Concepts include HIVEncounterElements called Elements include FHIRHelpers version '4.0.1' include WHOCommon called WCom parameter Today default Today() context Patient /* @input: "Age" @pseudocode: 'Age' >= 10 years */ define "Age 10 or older": Elements."Current Patient Age In Years" >= 10 /* @input: "Age" @pseudocode: 'Age' ' at line 235 column 23**
+**Exception parsing generated Narrative (see /tmp/liquid-f089d8f9-d4b1-4af1-9570-c98549ae9a1b.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/** Library: HIV.B2.DT Logic @DecisionID: HIV.B2.DT @BusinessRule: Check for signs of serious illness @Trigger: HIV.B2 Check for signs of serious illness @Trigger: HIV.D3 Check for signs of serious illness @HitPolicy: Rule Order @Description: Check for serious illness Data Concepts: * HIV.A.DE17: Age | Calculated age (number of years) of the client based on date of birth * HIV.D.DE17: Signs of serious illness | Signs that may indicate the client has a serious illness and needs triage or an emergency referral * HIV.D.DE9: Body temperature | Temperature of the client in Celsius Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease. */ library HIVB2DTLogic using FHIR version '4.0.1' include HIVCommon version '0.0.1' called HIC include HIVConcepts called Concepts include HIVEncounterElements called Elements include FHIRHelpers version '4.0.1' include WHOCommon called WCom parameter Today default Today() context Patient /* @input: "Age" @pseudocode: 'Age' >= 10 years */ define "Age 10 or older": Elements."Current Patient Age In Years" >= 10 /* @input: "Age" @pseudocode: 'Age' ' at line 235 column 23**
 
 
 
@@ -47,7 +47,7 @@ HIV.B2.DT Logic
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

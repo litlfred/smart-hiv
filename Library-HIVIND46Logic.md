@@ -15,7 +15,7 @@
  
 % of people living with HIV with TB symptoms who receive a rapid molecular test, for example, Xpert MTB/RIF, as a first test for diagnosis of TB 
 
-**Exception parsing generated Narrative (see /tmp/liquid-324b7833-e381-41c8-ba42-792a1e66437b.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 360 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-561922f8-4e6a-4b01-bc30-a2fe57dc5a74.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 360 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

@@ -15,7 +15,7 @@
  
 % of people living with HIV tested positive for gonorrhoea who were treated based on national guidelines during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-a40a85f4-200e-49ca-9c26-7a16d01ccfb5.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 350 column 41**
+**Exception parsing generated Narrative (see /tmp/liquid-ec372e04-8c7d-467b-a95a-c07a31191a1e.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 350 column 41**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

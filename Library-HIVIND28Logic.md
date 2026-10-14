@@ -15,7 +15,7 @@
  
 Number and % of people living with HIV on ART at the end of the last reporting period and those newly initiating ART during the current reporting period who were not on ART at the end of the current reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-596411ec-bbab-44bd-a75f-e4c92dfb1adb.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 382 column 56**
+**Exception parsing generated Narrative (see /tmp/liquid-1f5154e6-9d9d-4117-b180-5834fd8b6ef0.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 382 column 56**
 
 
 
@@ -47,7 +47,7 @@ Number and % of people living with HIV on ART at the end of the last reporting p
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

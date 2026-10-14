@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-267",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-267",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-267",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-267",
   "name" : "IntersectionHivStatusConditionAndHivStatusCondition",
   "title" : "Intersection of HIV Status Condition And HIV Status Condition",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Condition",

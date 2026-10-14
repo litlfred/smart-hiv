@@ -266,13 +266,13 @@
                 "const": {
                   "@version": 1.1,
                   "fhir": "http://hl7.org/fhir/",
-                  "HIV.A.DE13": "http://smart.who.int/base/ValueSet-HIV.A.DE13.jsonld",
                   "HIV.A.DE43": "http://smart.who.int/base/ValueSet-HIV.A.DE43.jsonld",
-                  "HIV.A.DE5": "http://smart.who.int/base/ValueSet-HIV.A.DE5.jsonld",
-                  "HIV.A.DE30": "http://smart.who.int/base/ValueSet-HIV.A.DE30.jsonld",
+                  "HIV.A.DE13": "http://smart.who.int/base/ValueSet-HIV.A.DE13.jsonld",
                   "HIV.A.DE18": "http://smart.who.int/base/ValueSet-HIV.A.DE18.jsonld",
+                  "HIV.A.DE5": "http://smart.who.int/base/ValueSet-HIV.A.DE5.jsonld",
                   "HIV.A.DE46": "http://smart.who.int/base/ValueSet-HIV.A.DE46.jsonld",
-                  "HIV.A.DE25": "http://smart.who.int/base/ValueSet-HIV.A.DE25.jsonld"
+                  "HIV.A.DE25": "http://smart.who.int/base/ValueSet-HIV.A.DE25.jsonld",
+                  "HIV.A.DE30": "http://smart.who.int/base/ValueSet-HIV.A.DE30.jsonld"
                 }
               }
             }

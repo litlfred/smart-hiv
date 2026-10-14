@@ -15,7 +15,7 @@
  
 % of people living with HIV tested positive for syphilis who were treated based on national guidelines during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-332a4a98-a56f-4e3e-b325-06197654db72.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 349 column 41**
+**Exception parsing generated Narrative (see /tmp/liquid-b13e5483-47c0-432a-abde-0eb28a478010.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 349 column 41**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

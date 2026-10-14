@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-0b3376ee-7fdc-4916-8138-5ae3904dc562.html): Malformed XHTML: Found &quot;&lt;/code&gt;&quot; expecting &quot;&lt;/DateTime&gt;&quot; at line 305 column 8</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-32e6c3f1-e926-4e4a-a5a4-c6acf5757ea7.html): Malformed XHTML: Found &quot;&lt;/code&gt;&quot; expecting &quot;&lt;/DateTime&gt;&quot; at line 305 column 8</b></p></div>"
   },
   "extension": [
     {
@@ -33,7 +33,7 @@
       }
     ]
   },
-  "date": "2026-10-14T11:09:56+00:00",
+  "date": "2026-10-14T17:13:14+00:00",
   "publisher": "WHO",
   "contact": [
     {

@@ -56,7 +56,7 @@
         "fhir:displays": "http://smart.who.int/hiv/ValueSet-HIV.C.DE24.displays.json",
         "fhir:valueSet": "http://smart.who.int/hiv/ValueSet/HIV.C.DE24",
         "fhir:version": "0.4.4",
-        "fhir:expansionTimestamp": "2026-10-14T11:17:21+00:00"
+        "fhir:expansionTimestamp": "2026-10-14T17:19:22+00:00"
       }
     }
   }

@@ -15,7 +15,7 @@
  
 Percentage of people attending HIV prevention services who were tested for HBsAg and had a positive HBsAg test during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-adeb6353-b55e-4eb8-8d0e-bdbd2654f747.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 354 column 28**
+**Exception parsing generated Narrative (see /tmp/liquid-6599d2bd-d342-433d-af42-1eb961bc3ff5.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 354 column 28**
 
 
 
@@ -47,7 +47,7 @@ Percentage of people attending HIV prevention services who were tested for HBsAg
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

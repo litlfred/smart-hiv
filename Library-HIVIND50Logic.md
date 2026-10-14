@@ -15,7 +15,7 @@
  
 % of people living with HIV newly initiated on ART and screened positive for TB symptoms who then are tested for TB 
 
-**Exception parsing generated Narrative (see /tmp/liquid-a766becf-b0e7-4c63-96a3-06c1eca6d109.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 337 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-4e7a91ff-a6b7-4ce3-8454-54081ebb35b2.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 337 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

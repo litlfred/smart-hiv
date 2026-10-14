@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-905",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-905",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-905",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-905",
   "name" : "UnionHIVDDE942AndHIVDDE942",
   "title" : "Union of Method of TB diagnosis ValueSet And Method of TB diagnosis ValueSet",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:05+00:00",
   "compose" : {
     "include" : [{
       "concept" : [{

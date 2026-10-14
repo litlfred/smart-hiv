@@ -295,17 +295,17 @@
             "@version": 1.1,
             "fhir": "http://hl7.org/fhir/",
             "HIV.G.DE29": "http://smart.who.int/base/ValueSet-HIV.G.DE29.jsonld",
-            "HIV.G.DE43": "http://smart.who.int/base/ValueSet-HIV.G.DE43.jsonld",
-            "HIV.G.DE35": "http://smart.who.int/base/ValueSet-HIV.G.DE35.jsonld",
+            "HIV.G.DE18": "http://smart.who.int/base/ValueSet-HIV.G.DE18.jsonld",
+            "HIV.G.DE55": "http://smart.who.int/base/ValueSet-HIV.G.DE55.jsonld",
+            "HIV.G.DE74": "http://smart.who.int/base/ValueSet-HIV.G.DE74.jsonld",
             "HIV.G.DE22": "http://smart.who.int/base/ValueSet-HIV.G.DE22.jsonld",
-            "HIV.G.DE51": "http://smart.who.int/base/ValueSet-HIV.G.DE51.jsonld",
+            "HIV.G.DE62": "http://smart.who.int/base/ValueSet-HIV.G.DE62.jsonld",
+            "HIV.G.DE48": "http://smart.who.int/base/ValueSet-HIV.G.DE48.jsonld",
             "HIV.G.DE70": "http://smart.who.int/base/ValueSet-HIV.G.DE70.jsonld",
             "HIV.G.DE13": "http://smart.who.int/base/ValueSet-HIV.G.DE13.jsonld",
-            "HIV.G.DE48": "http://smart.who.int/base/ValueSet-HIV.G.DE48.jsonld",
-            "HIV.G.DE62": "http://smart.who.int/base/ValueSet-HIV.G.DE62.jsonld",
-            "HIV.G.DE55": "http://smart.who.int/base/ValueSet-HIV.G.DE55.jsonld",
-            "HIV.G.DE18": "http://smart.who.int/base/ValueSet-HIV.G.DE18.jsonld",
-            "HIV.G.DE74": "http://smart.who.int/base/ValueSet-HIV.G.DE74.jsonld"
+            "HIV.G.DE35": "http://smart.who.int/base/ValueSet-HIV.G.DE35.jsonld",
+            "HIV.G.DE43": "http://smart.who.int/base/ValueSet-HIV.G.DE43.jsonld",
+            "HIV.G.DE51": "http://smart.who.int/base/ValueSet-HIV.G.DE51.jsonld"
           }
         }
       }

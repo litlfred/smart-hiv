@@ -15,7 +15,7 @@
  
 % of women living with HIV diagnosed with invasive cancer who were treated 
 
-**Exception parsing generated Narrative (see /tmp/liquid-cbbcb32c-8c31-45f1-973a-f8b2d320f82f.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 336 column 38**
+**Exception parsing generated Narrative (see /tmp/liquid-0d3083a0-5b05-4d43-9ddc-497f9cf6d4ee.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 336 column 38**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

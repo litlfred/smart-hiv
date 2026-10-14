@@ -15,7 +15,7 @@
  
 Crude probability of surviving 1 year after a diagnosis of cervical cancer 
 
-**Exception parsing generated Narrative (see /tmp/liquid-f07101a8-2ec8-497d-b610-f324f6bd19d8.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 339 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-0baa8491-658b-4655-b173-2f0c0b793ae6.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 339 column 8**
 
 
 
@@ -47,7 +47,7 @@ Crude probability of surviving 1 year after a diagnosis of cervical cancer
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

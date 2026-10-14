@@ -169,8 +169,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HIVBHTSvisit.html" : "HIV.B HTS visit",
-    "StructureDefinition-HivHivTest.html" : "HIV Test"
+    "StructureDefinition-HivHivTest.html" : "HIV Test",
+    "StructureDefinition-HIVBHTSvisit.html" : "HIV.B HTS visit"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.B.DE115",
@@ -182,9 +182,9 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivStatusObservation.html" : "HIV Status Observation",
     "StructureDefinition-HIVBHTSvisit.html" : "HIV.B HTS visit",
-    "StructureDefinition-HivStatusCondition.html" : "HIV Status Condition"
+    "StructureDefinition-HivStatusCondition.html" : "HIV Status Condition",
+    "StructureDefinition-HivStatusObservation.html" : "HIV Status Observation"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.B.DE120",
@@ -472,8 +472,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivGonorhoeaTest.html" : "Gonorrhoea Test",
-    "StructureDefinition-HIVBHTSvisit.html" : "HIV.B HTS visit"
+    "StructureDefinition-HIVBHTSvisit.html" : "HIV.B HTS visit",
+    "StructureDefinition-HivGonorhoeaTest.html" : "Gonorrhoea Test"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.B.DE284",
@@ -894,8 +894,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HIVCPrEPvisit.html" : "HIV.C PrEP visit",
-    "StructureDefinition-HivCurrentPrepRegimenPrescription.html" : "Current PrEP Regimen Prescription"
+    "StructureDefinition-HivCurrentPrepRegimenPrescription.html" : "Current PrEP Regimen Prescription",
+    "StructureDefinition-HIVCPrEPvisit.html" : "HIV.C PrEP visit"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.C.DE24",
@@ -1029,9 +1029,9 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivAltPepBackbonePrescription.html" : "Alternative PEP Backbone Prescription",
+    "StructureDefinition-HivPepBackboneAlternativeTreatment.html" : "Preferred PEP Backbone Prescription",
     "StructureDefinition-HIVCPrEPvisit.html" : "HIV.C PrEP visit",
-    "StructureDefinition-HivPepBackboneAlternativeTreatment.html" : "Preferred PEP Backbone Prescription"
+    "StructureDefinition-HivAltPepBackbonePrescription.html" : "Alternative PEP Backbone Prescription"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.C.DE99",
@@ -1199,8 +1199,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivHBsAgTestD.html" : "HBsAg Test",
-    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment"
+    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
+    "StructureDefinition-HivHBsAgTestD.html" : "HBsAg Test"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE168",
@@ -1235,8 +1235,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivHcvTest.html" : "HCV Test",
-    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment"
+    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
+    "StructureDefinition-HivHcvTest.html" : "HCV Test"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE177",
@@ -1259,8 +1259,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivHcvViralLoadTest.html" : "HCV Viral Load Test",
-    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment"
+    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
+    "StructureDefinition-HivHcvViralLoadTest.html" : "HCV Viral Load Test"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE182",
@@ -1272,8 +1272,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivHcvTreatment.html" : "HCV Treatment",
-    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment"
+    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
+    "StructureDefinition-HivHcvTreatment.html" : "HCV Treatment"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE186",
@@ -1716,8 +1716,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivTreatmentMedicationRequest.html" : "HIV Treatment Medication Statement",
-    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment"
+    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
+    "StructureDefinition-HivTreatmentMedicationRequest.html" : "HIV Treatment Medication Statement"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE55",
@@ -1892,8 +1892,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivCervicalCancerScreening.html" : "Cervical Cancer Screening",
-    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment"
+    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
+    "StructureDefinition-HivCervicalCancerScreening.html" : "Cervical Cancer Screening"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE664",
@@ -1989,8 +1989,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivCervicalCancerScreening.html" : "Cervical Cancer Screening",
-    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment"
+    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
+    "StructureDefinition-HivCervicalCancerScreening.html" : "Cervical Cancer Screening"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE709",
@@ -2002,8 +2002,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivInvasiveCervicalCancerDiagnosis.html" : "Invasive Cervical Cancer Diagnosis",
-    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment"
+    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
+    "StructureDefinition-HivInvasiveCervicalCancerDiagnosis.html" : "Invasive Cervical Cancer Diagnosis"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE712",
@@ -2191,8 +2191,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivGonorhoeaTest.html" : "Gonorrhoea Test",
-    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment"
+    "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
+    "StructureDefinition-HivGonorhoeaTest.html" : "Gonorrhoea Test"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE81",
@@ -2382,9 +2382,9 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HivAntiRetroviralTreatment.html" : "Art Regimen",
     "StructureDefinition-HIVDCareTreatment.html" : "HIV.D Care-Treatment",
-    "StructureDefinition-HivOnArt.html" : "On ART Medication Statement"
+    "StructureDefinition-HivOnArt.html" : "On ART Medication Statement",
+    "StructureDefinition-HivAntiRetroviralTreatment.html" : "Art Regimen"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.D.DE903",
@@ -2936,8 +2936,8 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HIVEPMTCT.html" : "HIV.E-F PMTCT",
-    "StructureDefinition-ChildDeliveryObservation.html" : "Child Delivery Observation"
+    "StructureDefinition-ChildDeliveryObservation.html" : "Child Delivery Observation",
+    "StructureDefinition-HIVEPMTCT.html" : "HIV.E-F PMTCT"
   },
   {
     "url" : "http://smart.who.int/hiv/ValueSet/HIV.E.DE75",
@@ -3252,7 +3252,7 @@
     "systems" : ["http://smart.who.int/hiv/CodeSystem/HIVConcepts"],
     "uses" : {
     },
-    "StructureDefinition-HIVPrevention.html" : "HIV.Prevention",
-    "StructureDefinition-HivPreventionIntervention.html" : "HIV Prevention Intervention"
+    "StructureDefinition-HivPreventionIntervention.html" : "HIV Prevention Intervention",
+    "StructureDefinition-HIVPrevention.html" : "HIV.Prevention"
   }]
 }

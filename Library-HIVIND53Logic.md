@@ -15,7 +15,7 @@
  
 % of people living with HIV and On ART who are receiving multi-month dispensing of ARV medicine during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-77188ddf-fe6d-494c-b52d-f5e438c003b7.html): Unable to read attribute 'collected' value on <3> at line 266 column 216**
+**Exception parsing generated Narrative (see /tmp/liquid-1071f1d6-7f79-4911-b12e-1c3665328392.html): Unable to read attribute 'collected' value on <3> at line 266 column 216**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

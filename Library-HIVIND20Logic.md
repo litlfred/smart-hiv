@@ -15,7 +15,7 @@
  
 % testing positive among people who received an HIV test in the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-ce202fd8-f413-40ed-9f56-a32d8710bca3.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 340 column 29**
+**Exception parsing generated Narrative (see /tmp/liquid-dd632cc5-51c8-4c3a-9751-0dad3a7c994b.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 340 column 29**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

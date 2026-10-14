@@ -15,7 +15,7 @@
  
 % of people attending HIV prevention services diagnosed with a particular STI syndrome during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-8e95d2b7-062e-4ee6-adcf-38bd1230f219.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 373 column 42**
+**Exception parsing generated Narrative (see /tmp/liquid-4ccd8a88-5cfa-4508-8062-ce28ad71eb9c.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 373 column 42**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

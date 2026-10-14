@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-266",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-266",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-266",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-266",
   "name" : "UnionHivStatusConditionAndHivStatusCondition",
   "title" : "Union of HIV Status Condition And HIV Status Condition",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Condition",
@@ -235,7 +235,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       }
     },
     {
@@ -591,7 +591,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A subjective assessment of the severity of the condition as evaluated by the clinician.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-113"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-113"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -695,7 +695,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing anatomical locations. May include laterality.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-17"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1183,7 +1183,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing condition stages (e.g. Cancer stages).",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-116"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-116"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1255,7 +1255,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing the kind of condition staging (e.g. clinical or pathological).",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-119"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-119"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1436,7 +1436,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes that describe the manifestation or symptoms of a condition.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-122"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-122"
       },
       "mapping" : [{
         "identity" : "workflow",

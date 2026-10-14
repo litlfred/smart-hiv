@@ -65,7 +65,7 @@ This should be a context-specific list of Hepatitis B virus treatment regimens
   "title" : "HBV treatment regimen prescribed ValueSet",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

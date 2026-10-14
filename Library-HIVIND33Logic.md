@@ -15,7 +15,7 @@
  
 Number and % of people living with HIV on ART who had a viral load result reviewed by six months after initiation of ART 
 
-**Exception parsing generated Narrative (see /tmp/liquid-8717a90c-895b-4c32-a6c6-8f7a1f6c44bd.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30] context Patient /* Populations */ /* *Initial Population */ define "Initial Population": true /** * Numerator * * Definition: Number of people living with HIV on ART who were eligible for VL monitoring at six months after initiation of ART during the reporting period and who had a VL test performed and result reviewed by six months after ART initiation * Calculation: COUNT of clients with "HIV status"='HIV-positive' AND "On ART"=True AND "ART start date" is within reporting period AND "Date viral load test results received by client" within 6 months of "ART start date" */ define "Numerator": HIE."Has HIV-positive Status" and HIE."On ART H.DE47" and (date from start of HE."First On ART".effective.toInterval() during "Measurement Period") and (months between (start of First(HE."Viral load tests received after ART intitiation").issued.toInterval()) and (date from start of HE."First On ART".effective.toInterval()) ' at line 296 column 182**
+**Exception parsing generated Narrative (see /tmp/liquid-7abf7ad9-e0c0-4817-90fc-52c4a6a59a64.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30] context Patient /* Populations */ /* *Initial Population */ define "Initial Population": true /** * Numerator * * Definition: Number of people living with HIV on ART who were eligible for VL monitoring at six months after initiation of ART during the reporting period and who had a VL test performed and result reviewed by six months after ART initiation * Calculation: COUNT of clients with "HIV status"='HIV-positive' AND "On ART"=True AND "ART start date" is within reporting period AND "Date viral load test results received by client" within 6 months of "ART start date" */ define "Numerator": HIE."Has HIV-positive Status" and HIE."On ART H.DE47" and (date from start of HE."First On ART".effective.toInterval() during "Measurement Period") and (months between (start of First(HE."Viral load tests received after ART intitiation").issued.toInterval()) and (date from start of HE."First On ART".effective.toInterval()) ' at line 296 column 182**
 
 
 
@@ -47,7 +47,7 @@ Number and % of people living with HIV on ART who had a viral load result review
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

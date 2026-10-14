@@ -15,7 +15,7 @@
  
 % of people attending HIV prevention services diagnosed with a particular STI syndrome who were diagnosed with the same STI syndrome two or more times during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-39cb41d8-b619-4eff-85df-40259b43002f.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 376 column 42**
+**Exception parsing generated Narrative (see /tmp/liquid-213b75dd-104e-4d72-94ea-c4b2b9197884.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 376 column 42**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

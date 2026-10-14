@@ -15,7 +15,7 @@
  
 Total number of voluntary medical male circumcisions (VMMCs) performed according to national standard during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-4efdc3db-7745-4086-9efe-c98091aa46ba.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 302 column 49**
+**Exception parsing generated Narrative (see /tmp/liquid-8534c611-24a5-4bba-a547-72d913601a37.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 302 column 49**
 
 
 
@@ -47,7 +47,7 @@ Total number of voluntary medical male circumcisions (VMMCs) performed according
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

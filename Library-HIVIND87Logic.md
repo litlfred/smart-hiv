@@ -15,7 +15,7 @@
  
 Percentage of pregnant women who were tested for HBsAg and had a positive HBsAg test during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-0dfbe75a-eeee-455d-a4a2-cdb88f3978cc.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 356 column 28**
+**Exception parsing generated Narrative (see /tmp/liquid-fbb19900-4be7-4b14-acd0-aac3e9c1d491.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 356 column 28**
 
 
 
@@ -47,7 +47,7 @@ Percentage of pregnant women who were tested for HBsAg and had a positive HBsAg 
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

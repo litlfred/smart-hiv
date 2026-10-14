@@ -15,7 +15,7 @@
  
 HIV.C23.DT Logic 
 
-**Exception parsing generated Narrative (see /tmp/liquid-d0e08772-7ac1-40fd-a8ec-0662f94f2f61.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/** Library: HIV.C23.DT Logic @DecisionID: HIV.C23.DT @BusinessRule: Determine PEP or PrEP regimen @Trigger: HIV.C23 Prescribe or administer PrEP or PEP @HitPolicy: Rule Order @Description: Determine PEP or PrEP regimen Data Concepts: Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease. */ library HIVC23DTLogic using FHIR version '4.0.1' include HIVCommon version '0.0.1' called HIC include HIVConcepts called Concepts include HIVEncounterElements called Elements include FHIRHelpers version '4.0.1' include WHOCommon called WCom parameter Today Date default Today() context Patient /* @input: Age @pseudocode: "Age" >= 10 years */ define "Age 10 or older": Elements."Current Patient Age In Years" >= 10 /* @input: Age @pseudocode: 2 years ' at line 236 column 25**
+**Exception parsing generated Narrative (see /tmp/liquid-33d2bfb3-db19-449a-91d6-7b3cf3cb41ab.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/** Library: HIV.C23.DT Logic @DecisionID: HIV.C23.DT @BusinessRule: Determine PEP or PrEP regimen @Trigger: HIV.C23 Prescribe or administer PrEP or PEP @HitPolicy: Rule Order @Description: Determine PEP or PrEP regimen Data Concepts: Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease. */ library HIVC23DTLogic using FHIR version '4.0.1' include HIVCommon version '0.0.1' called HIC include HIVConcepts called Concepts include HIVEncounterElements called Elements include FHIRHelpers version '4.0.1' include WHOCommon called WCom parameter Today Date default Today() context Patient /* @input: Age @pseudocode: "Age" >= 10 years */ define "Age 10 or older": Elements."Current Patient Age In Years" >= 10 /* @input: Age @pseudocode: 2 years ' at line 236 column 25**
 
 
 
@@ -47,7 +47,7 @@ HIV.C23.DT Logic
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

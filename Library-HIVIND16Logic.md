@@ -15,7 +15,7 @@
  
 a) Number or (b) % of adverse events during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-cf41dea8-72c2-4857-b6e0-4a46be1683a0.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 347 column 53**
+**Exception parsing generated Narrative (see /tmp/liquid-e1bc30a9-dfd7-4d0a-8623-8098a218f5db.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 347 column 53**
 
 
 
@@ -47,7 +47,7 @@ a) Number or (b) % of adverse events during the reporting period
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

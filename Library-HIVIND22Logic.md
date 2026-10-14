@@ -15,7 +15,7 @@
  
 Number of people who were identified and tested using partner testing services and who received their results 
 
-**Exception parsing generated Narrative (see /tmp/liquid-7f64cfee-0992-434d-aab9-32a69fc51f7d.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 346 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-bc0b2123-44e6-416a-9338-9bb703aea5f1.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 346 column 8**
 
 
 
@@ -47,7 +47,7 @@ Number of people who were identified and tested using partner testing services a
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

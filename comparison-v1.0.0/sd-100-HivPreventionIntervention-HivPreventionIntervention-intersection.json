@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-264",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-264",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-264",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-264",
   "name" : "IntersectionHivPreventionInterventionAndHivPreventionIntervention",
   "title" : "Intersection of HIV Prevention Intervention And HIV Prevention Intervention",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Observation",

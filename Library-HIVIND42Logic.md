@@ -15,7 +15,7 @@
  
 % of HIV-exposed infants whose final HIV outcome status is known 
 
-**Exception parsing generated Narrative (see /tmp/liquid-164eaf8e-f0ff-4dd6-8c1b-668eb9017139.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30] context Patient /* Populations */ /* *Initial Population */ define "Initial Population": true /** * Numerator * * Definition: HIV-exposed infants born within the past 12 months (or 24 months in breastfeeding settings) who have known final HIV outcome status * Calculation: COUNT of infants who are an "HIV-exposed infant or child" AND [(with an "Infant date of birth" in past 12 months) OR (with an "Infant date of birth" in past 24 months IF mothers are "Breastfeeding")] AND "Registered in birth cohort"=True AND with a "Final diagnosis of HIV-exposed infant" of NOT NULL */ define "Numerator": HIE."is HIV-exposed infant or child E.DE112" and (exists(HIE."Live Birth Delivery" B where months between end of B.effective.toInterval() and end of "Measurement Period" ' at line 277 column 126**
+**Exception parsing generated Narrative (see /tmp/liquid-c6b903f8-fe30-49d1-9ef2-f396a3e1a643.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30] context Patient /* Populations */ /* *Initial Population */ define "Initial Population": true /** * Numerator * * Definition: HIV-exposed infants born within the past 12 months (or 24 months in breastfeeding settings) who have known final HIV outcome status * Calculation: COUNT of infants who are an "HIV-exposed infant or child" AND [(with an "Infant date of birth" in past 12 months) OR (with an "Infant date of birth" in past 24 months IF mothers are "Breastfeeding")] AND "Registered in birth cohort"=True AND with a "Final diagnosis of HIV-exposed infant" of NOT NULL */ define "Numerator": HIE."is HIV-exposed infant or child E.DE112" and (exists(HIE."Live Birth Delivery" B where months between end of B.effective.toInterval() and end of "Measurement Period" ' at line 277 column 126**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

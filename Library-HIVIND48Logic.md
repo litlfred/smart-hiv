@@ -15,7 +15,7 @@
  
 % of people living with HIV newly initiated on ART who were screened for TB 
 
-**Exception parsing generated Narrative (see /tmp/liquid-82aea944-0955-402a-9d24-631dbe316627.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 318 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-01e4e65c-4ed9-45c3-a545-6324beb8ac86.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 318 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

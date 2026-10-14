@@ -15,7 +15,7 @@
  
 % of people attending HIV prevention services with a positive HCV test result (HCV antibody, HCV RNA (PCR) or HCV core antigen) during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-6ff95442-86d9-4bf1-913b-d4bf2ef3b265.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 354 column 28**
+**Exception parsing generated Narrative (see /tmp/liquid-98a0d958-69b3-4a66-90c6-fae5a6011525.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 354 column 28**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

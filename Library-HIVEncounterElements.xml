@@ -8,7 +8,7 @@
     <profile value="http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module" />
   </meta>
   <text>
-    <status value="extensions" /><html:div><html:p><html:b style="color: maroon">Exception parsing generated Narrative (see /tmp/liquid-99d158ba-0d72-479c-a8f6-fb7e77a5c0fb.html): Unable to Parse HTML - node 'code' has unexpected content '-' (last text = 'library HIVEncounterElements
+    <status value="extensions" /><html:div><html:p><html:b style="color: maroon">Exception parsing generated Narrative (see /tmp/liquid-10834fe8-6ab2-4387-ab55-ec40a15fdb18.html): Unable to Parse HTML - node 'code' has unexpected content '-' (last text = 'library HIVEncounterElements
 
 using FHIR version '4.0.1'
 
@@ -6009,7 +6009,7 @@ define "Night sweats Observation":
       <code value="logic-library" />
     </coding>
   </type>
-  <date value="2026-10-14T11:09:56+00:00" />
+  <date value="2026-10-14T17:13:14+00:00" />
   <publisher value="WHO" />
   <contact>
     <name value="WHO" />

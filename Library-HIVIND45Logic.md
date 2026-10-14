@@ -15,7 +15,7 @@
  
 Number and % of people living with HIV on ART who completed a course of TB preventive treatment among those who initiated TPT 
 
-**Exception parsing generated Narrative (see /tmp/liquid-c2c204db-b020-47e5-b3b2-688cff052b77.html): Unable to read attribute 'ART' value on <12> at line 210 column 40**
+**Exception parsing generated Narrative (see /tmp/liquid-34aaac3e-03a2-4e26-8cf8-85cb4082d508.html): Unable to read attribute 'ART' value on <12> at line 210 column 40**
 
 
 
@@ -47,7 +47,7 @@ Number and % of people living with HIV on ART who completed a course of TB preve
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

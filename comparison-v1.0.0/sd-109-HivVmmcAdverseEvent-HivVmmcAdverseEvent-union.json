@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-290",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-290",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-290",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-290",
   "name" : "UnionHivVmmcAdverseEventAndHivVmmcAdverseEvent",
   "title" : "Union of Hiv Vmmc AdverseEvent And Hiv Vmmc AdverseEvent",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "AdverseEvent",
@@ -179,7 +179,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       }
     },
     {
@@ -439,7 +439,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Detailed type of event.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-293"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-293"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -668,7 +668,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Overall seriousness of this event for the patient.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-296"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-296"
       }
     },
     {
@@ -1105,7 +1105,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes for the assessment of whether the entity caused the event.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-302"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-302"
       }
     },
     {
@@ -1184,7 +1184,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "TODO.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-305"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-305"
       }
     },
     {

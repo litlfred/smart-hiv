@@ -8,7 +8,7 @@
     <profile value="http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module" />
   </meta>
   <text>
-    <status value="extensions" /><html:div><html:p><html:b style="color: maroon">Exception parsing generated Narrative (see /tmp/liquid-da31a3d4-7450-4b66-877e-24c2c407afaf.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/**
+    <status value="extensions" /><html:div><html:p><html:b style="color: maroon">Exception parsing generated Narrative (see /tmp/liquid-f089d8f9-d4b1-4af1-9570-c98549ae9a1b.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/**
 Library: HIV.B2.DT Logic
 
 @DecisionID: HIV.B2.DT
@@ -67,7 +67,7 @@ define "Age 10 or older":
       <code value="logic-library" />
     </coding>
   </type>
-  <date value="2026-10-14T11:09:56+00:00" />
+  <date value="2026-10-14T17:13:14+00:00" />
   <publisher value="WHO" />
   <contact>
     <name value="WHO" />

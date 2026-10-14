@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-167",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-167",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-167",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-167",
   "name" : "UnionHivInfantPatientAndHivInfantPatient",
   "title" : "Union of Infant Patient Profile And Infant Patient Profile",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Patient",
@@ -187,7 +187,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       }
     },
     {
@@ -1857,7 +1857,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       },
       "mapping" : [{
         "identity" : "v2",

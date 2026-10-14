@@ -15,7 +15,7 @@
  
 % of people attending HIV prevention services who were tested for HCV (HCV antibody, HCV RNA or HCV core antigen) during the reporting period (laboratory-based test or rapid test) 
 
-**Exception parsing generated Narrative (see /tmp/liquid-895220ea-5cb4-4c10-843b-0303dd171770.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 344 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-e82fb150-61a1-42ac-b621-6eec222b6890.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 344 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

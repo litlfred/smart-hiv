@@ -29,7 +29,7 @@
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-1ddd538b-0108-4280-8a91-2770e6db4fec.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine \"Initial Population\":\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of women living with HIV who received treatment after screening positive for pre-invasive cervical disease and were deemed eligible for treatment in line with the WHO recommendations\n * Calculation: COUNT of women with \"HIV status\"='HIV-positive' AND with a \"Date of cervical cancer screening test\" in the reporting period for \"Cervical cancer screening outcome\"='Positive for cervical precancer lesions' AND \"Date of treatment for cervical precancer lesions\" within 6 months of \"Date of cervical cancer screening test\"\n */\n\ndefine \"Numerator\":\n  HIE.\"Has HIV-positive Status\" and\n  exists(HE.\"Positive for cervical precancer lesions\" O\n  where O.effective.toInterval() during \"Measurement Period\"\n  and exists(HE.\"Date of treatment for cervical precancer lesions\" T where months between start of T.performed.toInterval() and start of O.effective.toInterval() ' at line 283 column 164</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-6c50d6b9-f035-45f3-9bdb-8d1249315816.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine \"Initial Population\":\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of women living with HIV who received treatment after screening positive for pre-invasive cervical disease and were deemed eligible for treatment in line with the WHO recommendations\n * Calculation: COUNT of women with \"HIV status\"='HIV-positive' AND with a \"Date of cervical cancer screening test\" in the reporting period for \"Cervical cancer screening outcome\"='Positive for cervical precancer lesions' AND \"Date of treatment for cervical precancer lesions\" within 6 months of \"Date of cervical cancer screening test\"\n */\n\ndefine \"Numerator\":\n  HIE.\"Has HIV-positive Status\" and\n  exists(HE.\"Positive for cervical precancer lesions\" O\n  where O.effective.toInterval() during \"Measurement Period\"\n  and exists(HE.\"Date of treatment for cervical precancer lesions\" T where months between start of T.performed.toInterval() and start of O.effective.toInterval() ' at line 283 column 164</b></p></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -49,7 +49,7 @@
        fhir:Coding.code [ fhir:value "logic-library" ]
      ]
   ] ;
-  fhir:Library.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:Library.date [ fhir:value "2026-10-14T17:13:14+00:00"^^xsd:dateTime] ;
   fhir:Library.publisher [ fhir:value "WHO"] ;
   fhir:Library.contact [
      fhir:index 0 ;

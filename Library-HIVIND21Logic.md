@@ -15,7 +15,7 @@
  
 % of people newly diagnosed with HIV initiated on ART 
 
-**Exception parsing generated Narrative (see /tmp/liquid-df46fffe-2a83-458a-b377-4c793bb472c7.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 338 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-bb6ebd94-e750-4195-8283-4de32932a8c9.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 338 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

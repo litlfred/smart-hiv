@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-396",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-396",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-396",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-396",
   "name" : "IntersectionHIVBDE226AndHIVBDE226",
   "title" : "Intersection of Syndrome/STI diagnosed ValueSet And Syndrome/STI diagnosed ValueSet",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "compose" : {
     "include" : [{
       "concept" : [{

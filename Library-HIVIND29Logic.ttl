@@ -29,7 +29,7 @@
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-a97a52c5-6d43-469a-a3c8-c04c4c93ee1d.html): unexpected non-end of element null::1000  at line 196 column 171</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-2314c8a2-df20-4fe9-aa6a-916707cd693a.html): unexpected non-end of element null::1000  at line 196 column 171</b></p></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -49,7 +49,7 @@
        fhir:Coding.code [ fhir:value "logic-library" ]
      ]
   ] ;
-  fhir:Library.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:Library.date [ fhir:value "2026-10-14T17:13:14+00:00"^^xsd:dateTime] ;
   fhir:Library.publisher [ fhir:value "WHO"] ;
   fhir:Library.contact [
      fhir:index 0 ;

@@ -15,7 +15,7 @@
  
 % of people who inject drugs provided with needles-syringes during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-76d32bbb-bd9d-463e-a0bd-cecbb619e348.html): Unable to read attribute on <25> at line 208 column 15**
+**Exception parsing generated Narrative (see /tmp/liquid-74b94e90-6f88-44f5-a1bc-c519f0e3b83e.html): Unable to read attribute on <25> at line 208 column 15**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

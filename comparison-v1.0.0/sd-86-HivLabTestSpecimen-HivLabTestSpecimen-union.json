@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-221",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-221",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-221",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-221",
   "name" : "UnionHivLabTestSpecimenAndHivLabTestSpecimen",
   "title" : "Union of HIV Lab Test Specimen And HIV Lab Test Specimen",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Specimen",
@@ -182,7 +182,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       }
     },
     {
@@ -930,7 +930,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The  technique that is used to perform the procedure.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-224"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-224"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -968,7 +968,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing anatomical locations. May include laterality.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-17"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1207,7 +1207,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Type indicating the technique used to process the specimen.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-227"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-227"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1500,7 +1500,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Type of specimen container.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-230"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-230"
       },
       "mapping" : [{
         "identity" : "v2",

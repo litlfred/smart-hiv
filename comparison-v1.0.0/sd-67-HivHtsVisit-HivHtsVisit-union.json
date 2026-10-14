@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-164",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-164",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-164",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-164",
   "name" : "UnionHivHtsVisitAndHivHtsVisit",
   "title" : "Union of HTS Visit And HTS Visit",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Encounter",
@@ -187,7 +187,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       }
     },
     {
@@ -878,7 +878,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The type of encounter.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-59"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-59"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -923,7 +923,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Broad categorization of the service that is to be provided.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-62"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-62"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1507,7 +1507,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Reason why the encounter takes place.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-65"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-65"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1781,7 +1781,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "The type of diagnosis this condition represents.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-68"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-68"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2071,7 +2071,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "From where the patient was admitted.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-71"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-71"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2147,7 +2147,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Medical, cultural or ethical food preferences to help with catering requirements.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-74"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-74"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2184,7 +2184,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Special courtesies.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-77"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-77"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2221,7 +2221,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Special arrangements.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-80"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-80"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2292,7 +2292,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Discharge Disposition.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-83"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-83"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -2542,7 +2542,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Physical form of the location.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-86"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-86"
       }
     },
     {

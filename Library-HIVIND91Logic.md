@@ -15,7 +15,7 @@
  
 % of people living with HIV and diagnosed with HCV infection who initiated HCV treatment (direct acting antivirals) during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-d445cb58-26b1-46ef-a9fb-f543cd9639a4.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 358 column 53**
+**Exception parsing generated Narrative (see /tmp/liquid-6aeb97c8-ebe5-4a4b-99d9-58f3f237e34c.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 358 column 53**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

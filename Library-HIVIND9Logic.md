@@ -15,7 +15,7 @@
  
 % of people who inject drugs accessing a needle-syringe programme (NSP) at least once per month during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-72d64c02-4207-4b4b-bb64-ede835a57c43.html): Unable to read attribute on <25> at line 192 column 15**
+**Exception parsing generated Narrative (see /tmp/liquid-6a611ab9-445e-4b80-a779-17a6bf5ce919.html): Unable to read attribute on <25> at line 192 column 15**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

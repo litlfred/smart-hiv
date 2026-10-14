@@ -15,7 +15,7 @@
  
 % of people living with HIV diagnosed with a particular STI syndrome who were diagnosed with the same STI syndrome two or more times during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-b7c531a0-1be4-49a8-befa-72714b4891cf.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 369 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-499dba37-8e1f-4a32-bcd7-83e331920d99.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 369 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

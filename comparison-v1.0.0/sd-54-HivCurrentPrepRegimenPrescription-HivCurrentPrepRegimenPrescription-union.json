@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-125",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-125",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-125",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-125",
   "name" : "UnionHivCurrentPrepRegimenPrescriptionAndHivCurrentPrepRegimenPrescription",
   "title" : "Union of Current PrEP Regimen Prescription And Current PrEP Regimen Prescription",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "MedicationRequest",
@@ -192,7 +192,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       }
     },
     {
@@ -452,7 +452,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Identifies the reasons for a given status.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-38"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-38"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -532,7 +532,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept identifying the category of medication request.  For example, where the medication is to be consumed or administered, or the type of medication treatment.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-41"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-41"
       },
       "mapping" : [{
         "identity" : "script10.6",
@@ -992,7 +992,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Identifies the type of individual that is desired to administer the medication.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-44"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-44"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1064,7 +1064,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept indicating why the medication was ordered.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-47"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-47"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1286,7 +1286,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Identifies the overall pattern of medication administratio.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-50"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-50"
       },
       "mapping" : [{
         "identity" : "rim",

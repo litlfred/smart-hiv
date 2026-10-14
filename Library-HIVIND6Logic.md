@@ -15,7 +15,7 @@
  
 % of PEP recipients completing PEP course 
 
-**Exception parsing generated Narrative (see /tmp/liquid-f9c48ed2-7ef9-434a-843b-7785da4896cf.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 331 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-d3746d81-3fca-4713-afd0-c9ac1258d11d.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 331 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

@@ -15,7 +15,7 @@
  
 % of people who tested positive for gonorrhoea during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-94588063-da7e-41ca-a808-9fa22aafc2e6.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 402 column 52**
+**Exception parsing generated Narrative (see /tmp/liquid-4357a2f2-b614-4aa4-a850-330a071692b2.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 402 column 52**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

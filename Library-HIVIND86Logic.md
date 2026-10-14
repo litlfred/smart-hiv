@@ -15,7 +15,7 @@
  
 Percentage of people living with HIV who were tested for HBsAg and had a positive HBsAg test during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-d69056b3-2156-43b5-af32-a88326ad0f6d.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 351 column 28**
+**Exception parsing generated Narrative (see /tmp/liquid-8b82d26e-e966-48e5-954f-ae5cc8c48927.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 351 column 28**
 
 
 
@@ -47,7 +47,7 @@ Percentage of people living with HIV who were tested for HBsAg and had a positiv
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

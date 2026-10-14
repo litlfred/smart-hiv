@@ -15,7 +15,7 @@
  
 % of people living with HIV with a positive HCV test result (HCV antibody, HCV RNA (PCR) or HCV core antigen) during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-566dc310-2e54-4bed-b735-39ff603890be.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 344 column 28**
+**Exception parsing generated Narrative (see /tmp/liquid-a2ee6db2-0235-4aad-bc3b-05264b1693b5.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 344 column 28**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

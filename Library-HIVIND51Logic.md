@@ -15,7 +15,7 @@
  
 % of people living with HIV newly initiated on ART and tested for TB who are diagnosed with active TB disease 
 
-**Exception parsing generated Narrative (see /tmp/liquid-b88a9893-9585-4baa-9778-7eef6c49e3b7.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 344 column 53**
+**Exception parsing generated Narrative (see /tmp/liquid-3f1af74c-ea37-4fd1-9222-c3fdf4b9dde0.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 344 column 53**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

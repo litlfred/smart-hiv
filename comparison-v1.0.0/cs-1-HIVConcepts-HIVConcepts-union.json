@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-2",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-2",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-2",
   "name" : "UnionHIVConceptsAndHIVConcepts",
   "title" : "Union of WHO SMART HIV Concepts CodeSystem And WHO SMART HIV Concepts CodeSystem",
   "status" : "active",
-  "date" : "2026-10-14T11:15:10+00:00",
+  "date" : "2026-10-14T17:18:02+00:00",
   "concept" : [{
     "code" : "HIV.A.DE1",
     "display" : "First name",

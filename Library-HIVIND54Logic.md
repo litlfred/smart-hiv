@@ -15,7 +15,7 @@
  
 % of people newly enrolled in DSD ART models among those eligible 
 
-**Exception parsing generated Narrative (see /tmp/liquid-bc237bd6-d739-4c0d-97c3-f6838312cd21.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 348 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-b3430a2f-fa7f-49ec-b6a0-79c371df3fdd.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 348 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

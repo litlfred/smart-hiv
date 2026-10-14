@@ -15,7 +15,7 @@
  
 % of people living with HIV on ART (for at least six months) who have virological suppression 
 
-**Exception parsing generated Narrative (see /tmp/liquid-a97a52c5-6d43-469a-a3c8-c04c4c93ee1d.html): unexpected non-end of element null::1000 at line 196 column 171**
+**Exception parsing generated Narrative (see /tmp/liquid-2314c8a2-df20-4fe9-aa6a-916707cd693a.html): unexpected non-end of element null::1000 at line 196 column 171**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

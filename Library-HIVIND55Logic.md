@@ -15,7 +15,7 @@
  
 % of people living with HIV enrolled in DSD ART models among those eligible for DSD ART (for facilities with electronic HIS) or among people living with HIV On ART (facilities with paper-based systems) during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-45dc116f-1e1d-499f-b1f7-d753c56b2233.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 347 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-bb2a79d6-0b5c-4538-be07-c0f74c881976.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 347 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

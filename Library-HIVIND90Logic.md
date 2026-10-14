@@ -15,7 +15,7 @@
  
 % of people living with HIV and diagnosed with HBV infection who are on TDF-based ART 
 
-**Exception parsing generated Narrative (see /tmp/liquid-045c5897-5cc3-48e9-9372-4ddc35ea8a2d.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 358 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-b732178a-3b4a-4924-a7a9-c6e5c761c64c.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 358 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

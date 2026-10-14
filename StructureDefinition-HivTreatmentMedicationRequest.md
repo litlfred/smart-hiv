@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-HivTreatmentMedicati
   "title" : "HIV Treatment Medication Statement",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

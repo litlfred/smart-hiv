@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-239",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-239",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-239",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-239",
   "name" : "UnionHivOnArtAndHivOnArt",
   "title" : "Union of On ART Medication Statement And On ART Medication Statement",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "MedicationStatement",
@@ -187,7 +187,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       }
     },
     {
@@ -509,7 +509,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept indicating the reason for the status of the statement.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-98"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-98"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -546,7 +546,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A coded concept identifying where the medication included in the MedicationStatement is expected to be consumed or administered.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-101"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-101"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -844,7 +844,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept identifying why the medication is being taken.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-47"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-47"
       },
       "mapping" : [{
         "identity" : "workflow",

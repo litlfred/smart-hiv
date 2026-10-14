@@ -15,7 +15,7 @@
  
 % of pregnant women who were tested for syphilis on any ANC visit during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-2133378a-3443-4052-ae81-b76ad89ae25e.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 311 column 49**
+**Exception parsing generated Narrative (see /tmp/liquid-1f1f2c4f-4cc7-4bb3-9276-301c2e9373f5.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 311 column 49**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

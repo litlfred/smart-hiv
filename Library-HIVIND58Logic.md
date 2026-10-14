@@ -15,7 +15,7 @@
  
 % of people attending HIV prevention services who were tested for syphilis during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-3fbe4cef-76c7-4f24-9cc7-3226aed766de.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 347 column 49**
+**Exception parsing generated Narrative (see /tmp/liquid-4114b85f-d77d-4d84-8d77-266da33df865.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 347 column 49**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

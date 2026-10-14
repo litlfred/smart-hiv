@@ -26,7 +26,7 @@ Description not yet available for HIVConfig.
 * * **Content: **application/elm+json: ````Encoded data (9396 characters)````: **Experimental: **
   * ?: true
 * * **Content: **application/elm+json: ````Encoded data (9396 characters)````: **Date: **
-  * ?: 2026-10-14 11:09:56+0000
+  * ?: 2026-10-14 17:13:14+0000
 * * **Content: **application/elm+json: ````Encoded data (9396 characters)````: **Publisher: **
   * ?: WHO
 * * **Content: **application/elm+json: ````Encoded data (9396 characters)````: **Description: **
@@ -62,7 +62,7 @@ Description not yet available for HIVConfig.
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

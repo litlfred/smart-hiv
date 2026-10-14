@@ -15,7 +15,7 @@
  
 Number of HIV tests performed (volume) and the % of HIV-positive results returned to people (positivity) 
 
-**Exception parsing generated Narrative (see /tmp/liquid-73000bc3-2c88-409c-b847-7666b4433572.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 330 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-15cc349b-5f17-4738-aa44-66a69f65d352.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 330 column 8**
 
 
 
@@ -47,7 +47,7 @@ Number of HIV tests performed (volume) and the % of HIV-positive results returne
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

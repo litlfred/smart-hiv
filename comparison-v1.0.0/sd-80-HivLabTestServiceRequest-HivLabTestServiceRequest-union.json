@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-203",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-203",
+  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-203",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-203",
   "name" : "UnionHivLabTestServiceRequestAndHivLabTestServiceRequest",
   "title" : "Union of Hiv Lab Test ServiceRequest And Hiv Lab Test ServiceRequest",
   "status" : "active",
-  "date" : "2026-10-14T11:15:12+00:00",
+  "date" : "2026-10-14T17:18:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "ServiceRequest",
@@ -205,7 +205,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-8"
       }
     },
     {
@@ -711,7 +711,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Classification of the requested service.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-206"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-206"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -835,7 +835,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes for tests or services that can be carried out by a designated individual, organization or healthcare service.  For laboratory, LOINC is  (preferred)[http://build.fhir.org/terminologies.html#preferred].",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-209"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-209"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -886,7 +886,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codified order entry details which are based on order context.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-212"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-212"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1118,7 +1118,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept identifying the pre-condition that should hold prior to performing a procedure.  For example \"pain\", \"on flare-up\", etc.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-215"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-215"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1255,7 +1255,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Indicates specific responsibility of an individual within the care team, such as \"Primary physician\", \"Team coordinator\", \"Caregiver\", etc.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-218"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-218"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1421,7 +1421,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Diagnosis or problem codes justifying the reason for requesting the service investigation.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-182"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-182"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1626,7 +1626,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing anatomical locations. May include laterality.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-17"
       },
       "mapping" : [{
         "identity" : "v2",

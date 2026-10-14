@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-991d44e2-bc4c-4d9e-805e-dd5f9cfde030.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine &quot;Initial Population&quot;:\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of people living with HIV on ART who received a follow-up VL test three months after a VL test result of ≥1000 copies/mL during the reporting period*\n * Calculation: COUNT of clients with &quot;HIV status&quot;='HIV-positive' AND &quot;On ART&quot;=True AND &quot;Date of viral load sample collection&quot; within reporting period AND &quot;Viral load test result&quot; GREATER THAN 1000 copies/mL AND follow-up &quot;Date of viral load sample collection&quot; LESS THAN 3 months AFTER elevated viral load result\n */\n\ndefine &quot;Numerator&quot;:\n  HIE.&quot;Has HIV-positive Status&quot;\n  and HIE.&quot;On ART H.DE47&quot;\n  and \n    exists(HIE.&quot;Elevated Viral load test during Measurement Period&quot;)\n  and \n    exists(\n      HE.&quot;viral load sample collection&quot; VL\n      where (months between (start of First(HIE.&quot;Elevated Viral load test during Measurement Period&quot;).issued.toInterval()) and (date from start of VL.performed.toInterval() ) ' at line 307 column 177</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-1477bf35-1913-41da-adfd-d24c36d5e4e6.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine &quot;Initial Population&quot;:\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of people living with HIV on ART who received a follow-up VL test three months after a VL test result of ≥1000 copies/mL during the reporting period*\n * Calculation: COUNT of clients with &quot;HIV status&quot;='HIV-positive' AND &quot;On ART&quot;=True AND &quot;Date of viral load sample collection&quot; within reporting period AND &quot;Viral load test result&quot; GREATER THAN 1000 copies/mL AND follow-up &quot;Date of viral load sample collection&quot; LESS THAN 3 months AFTER elevated viral load result\n */\n\ndefine &quot;Numerator&quot;:\n  HIE.&quot;Has HIV-positive Status&quot;\n  and HIE.&quot;On ART H.DE47&quot;\n  and \n    exists(HIE.&quot;Elevated Viral load test during Measurement Period&quot;)\n  and \n    exists(\n      HE.&quot;viral load sample collection&quot; VL\n      where (months between (start of First(HIE.&quot;Elevated Viral load test during Measurement Period&quot;).issued.toInterval()) and (date from start of VL.performed.toInterval() ) ' at line 307 column 177</b></p></div>"
   },
   "extension": [
     {
@@ -33,7 +33,7 @@
       }
     ]
   },
-  "date": "2026-10-14T11:09:56+00:00",
+  "date": "2026-10-14T17:13:14+00:00",
   "publisher": "WHO",
   "contact": [
     {

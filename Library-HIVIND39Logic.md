@@ -15,7 +15,7 @@
  
 % of HIV-exposed infants who initiated ARV prophylaxis 
 
-**Exception parsing generated Narrative (see /tmp/liquid-5987f09d-440c-4d78-a983-00f99b3e0bd7.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 311 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-51a55277-de0c-4c7d-9d07-c0eb23909de4.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 311 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

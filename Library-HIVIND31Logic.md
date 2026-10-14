@@ -15,7 +15,7 @@
  
 % of people living with HIV who initiate ART with a CD4 count of less than 200 cells/mm3 
 
-**Exception parsing generated Narrative (see /tmp/liquid-0f6de681-13e7-4e03-932b-08226d0d33b5.html): unexpected non-end of element null::200 at line 194 column 92**
+**Exception parsing generated Narrative (see /tmp/liquid-d0cf36a8-f04b-4b85-a096-f427ef85d1a4.html): unexpected non-end of element null::200 at line 194 column 92**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

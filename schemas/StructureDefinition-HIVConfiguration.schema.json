@@ -253,13 +253,13 @@
   "resourceDefinition": "http://smart.who.int/hiv/StructureDefinition/HIVConfiguration",
   "fhir:parent": "http://hl7.org/fhir/StructureDefinition/Base",
   "jsonld:valuesets": [
-    "HIV.Config.DE12",
-    "HIV.Config.DE19"
+    "HIV.Config.DE19",
+    "HIV.Config.DE12"
   ],
   "jsonld:contextTemplate": {
     "@version": 1.1,
     "fhir": "http://hl7.org/fhir/",
-    "HIV.Config.DE12": "http://smart.who.int/base/ValueSet-HIV.Config.DE12.jsonld",
-    "HIV.Config.DE19": "http://smart.who.int/base/ValueSet-HIV.Config.DE19.jsonld"
+    "HIV.Config.DE19": "http://smart.who.int/base/ValueSet-HIV.Config.DE19.jsonld",
+    "HIV.Config.DE12": "http://smart.who.int/base/ValueSet-HIV.Config.DE12.jsonld"
   }
 }

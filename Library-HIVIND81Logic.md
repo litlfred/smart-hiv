@@ -15,7 +15,7 @@
  
 % of people living with HIV who were tested for hepatitis B surface antigen (HBsAg) during the reporting period (laboratory-based test or rapid test) 
 
-**Exception parsing generated Narrative (see /tmp/liquid-312ee41f-de5e-4127-b3cf-8aabc7e22240.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 341 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-66ffa76f-1274-4771-a335-ca93ee47370a.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 341 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

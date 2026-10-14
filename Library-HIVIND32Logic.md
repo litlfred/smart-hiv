@@ -15,7 +15,7 @@
  
 % of people living with HIV on ART (for at least six months) with viral load test results 
 
-**Exception parsing generated Narrative (see /tmp/liquid-fe8da98a-8119-451a-88c7-d2573d4b4184.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 373 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-2df642b8-6a94-4c9b-b4f1-65f8c6df0ba5.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 373 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

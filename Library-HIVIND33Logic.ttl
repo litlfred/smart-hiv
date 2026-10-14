@@ -29,7 +29,7 @@
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-8717a90c-895b-4c32-a6c6-8f7a1f6c44bd.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine \"Initial Population\":\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of people living with HIV on ART who were eligible for VL monitoring at six months after initiation of ART during the reporting period and who had a VL test performed and result reviewed by six months after ART initiation\n * Calculation: COUNT of clients with \"HIV status\"='HIV-positive' AND \"On ART\"=True AND \"ART start date\" is within reporting period AND \"Date viral load test results received by client\" within 6 months of \"ART start date\"\n */\n\ndefine \"Numerator\":\n  HIE.\"Has HIV-positive Status\"\n  and HIE.\"On ART H.DE47\"\n   and (date from start of HE.\"First On ART\".effective.toInterval() during \"Measurement Period\")\n   and (months between (start of First(HE.\"Viral load tests received after ART intitiation\").issued.toInterval()) and (date from start of HE.\"First On ART\".effective.toInterval()) ' at line 296 column 182</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-7abf7ad9-e0c0-4817-90fc-52c4a6a59a64.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine \"Initial Population\":\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of people living with HIV on ART who were eligible for VL monitoring at six months after initiation of ART during the reporting period and who had a VL test performed and result reviewed by six months after ART initiation\n * Calculation: COUNT of clients with \"HIV status\"='HIV-positive' AND \"On ART\"=True AND \"ART start date\" is within reporting period AND \"Date viral load test results received by client\" within 6 months of \"ART start date\"\n */\n\ndefine \"Numerator\":\n  HIE.\"Has HIV-positive Status\"\n  and HIE.\"On ART H.DE47\"\n   and (date from start of HE.\"First On ART\".effective.toInterval() during \"Measurement Period\")\n   and (months between (start of First(HE.\"Viral load tests received after ART intitiation\").issued.toInterval()) and (date from start of HE.\"First On ART\".effective.toInterval()) ' at line 296 column 182</b></p></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -49,7 +49,7 @@
        fhir:Coding.code [ fhir:value "logic-library" ]
      ]
   ] ;
-  fhir:Library.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:Library.date [ fhir:value "2026-10-14T17:13:14+00:00"^^xsd:dateTime] ;
   fhir:Library.publisher [ fhir:value "WHO"] ;
   fhir:Library.contact [
      fhir:index 0 ;

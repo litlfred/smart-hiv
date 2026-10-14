@@ -15,7 +15,7 @@
  
 % of people attending HIV prevention services tested for gonorrhoea during the reporting period 
 
-**Exception parsing generated Narrative (see /tmp/liquid-8eec5527-ab60-441d-a90f-ada841ee1150.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 393 column 8**
+**Exception parsing generated Narrative (see /tmp/liquid-8b1445e7-d300-43a8-adaf-00fbd0907079.html): Malformed XHTML: Found "</code>" expecting "</Date>" at line 393 column 8**
 
 
 
@@ -47,7 +47,7 @@
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

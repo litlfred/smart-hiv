@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-164eaf8e-f0ff-4dd6-8c1b-668eb9017139.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine &quot;Initial Population&quot;:\n  true\n\n/**\n * Numerator\n * \n * Definition: HIV-exposed infants born within the past 12 months (or 24 months in breastfeeding settings) who have known final HIV outcome status\n * Calculation: COUNT of infants who are an &quot;HIV-exposed infant or child&quot; AND [(with an &quot;Infant date of birth&quot; in past 12 months) OR (with an &quot;Infant date of birth&quot; in past 24 months IF mothers are &quot;Breastfeeding&quot;)] AND &quot;Registered in birth cohort&quot;=True AND with a &quot;Final diagnosis of HIV-exposed infant&quot; of NOT NULL\n */\n\ndefine &quot;Numerator&quot;:\n  HIE.&quot;is HIV-exposed infant or child E.DE112&quot;\n  and\n  (exists(HIE.&quot;Live Birth Delivery&quot; B where months between end of B.effective.toInterval() and end of  &quot;Measurement Period&quot; ' at line 277 column 126</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-c6b903f8-fe30-49d1-9ef2-f396a3e1a643.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine &quot;Initial Population&quot;:\n  true\n\n/**\n * Numerator\n * \n * Definition: HIV-exposed infants born within the past 12 months (or 24 months in breastfeeding settings) who have known final HIV outcome status\n * Calculation: COUNT of infants who are an &quot;HIV-exposed infant or child&quot; AND [(with an &quot;Infant date of birth&quot; in past 12 months) OR (with an &quot;Infant date of birth&quot; in past 24 months IF mothers are &quot;Breastfeeding&quot;)] AND &quot;Registered in birth cohort&quot;=True AND with a &quot;Final diagnosis of HIV-exposed infant&quot; of NOT NULL\n */\n\ndefine &quot;Numerator&quot;:\n  HIE.&quot;is HIV-exposed infant or child E.DE112&quot;\n  and\n  (exists(HIE.&quot;Live Birth Delivery&quot; B where months between end of B.effective.toInterval() and end of  &quot;Measurement Period&quot; ' at line 277 column 126</b></p></div>"
   },
   "extension": [
     {
@@ -33,7 +33,7 @@
       }
     ]
   },
-  "date": "2026-10-14T11:09:56+00:00",
+  "date": "2026-10-14T17:13:14+00:00",
   "publisher": "WHO",
   "contact": [
     {

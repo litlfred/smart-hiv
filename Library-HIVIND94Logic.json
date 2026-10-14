@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-1ddd538b-0108-4280-8a91-2770e6db4fec.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine &quot;Initial Population&quot;:\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of women living with HIV who received treatment after screening positive for pre-invasive cervical disease and were deemed eligible for treatment in line with the WHO recommendations\n * Calculation: COUNT of women with &quot;HIV status&quot;='HIV-positive' AND with a &quot;Date of cervical cancer screening test&quot; in the reporting period for &quot;Cervical cancer screening outcome&quot;='Positive for cervical precancer lesions' AND &quot;Date of treatment for cervical precancer lesions&quot; within 6 months of &quot;Date of cervical cancer screening test&quot;\n */\n\ndefine &quot;Numerator&quot;:\n  HIE.&quot;Has HIV-positive Status&quot; and\n  exists(HE.&quot;Positive for cervical precancer lesions&quot; O\n  where O.effective.toInterval() during &quot;Measurement Period&quot;\n  and exists(HE.&quot;Date of treatment for cervical precancer lesions&quot; T where months between start of T.performed.toInterval() and start of O.effective.toInterval() ' at line 283 column 164</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-6c50d6b9-f035-45f3-9bdb-8d1249315816.html): Unable to Parse HTML - node 'Date' has unexpected content ' ' (last text = ' default Interval[@2023-01-01, @2023-01-30]\n\ncontext Patient\n/* Populations */\n\n/*\n *Initial Population\n */\n\ndefine &quot;Initial Population&quot;:\n  true\n\n/**\n * Numerator\n * \n * Definition: Number of women living with HIV who received treatment after screening positive for pre-invasive cervical disease and were deemed eligible for treatment in line with the WHO recommendations\n * Calculation: COUNT of women with &quot;HIV status&quot;='HIV-positive' AND with a &quot;Date of cervical cancer screening test&quot; in the reporting period for &quot;Cervical cancer screening outcome&quot;='Positive for cervical precancer lesions' AND &quot;Date of treatment for cervical precancer lesions&quot; within 6 months of &quot;Date of cervical cancer screening test&quot;\n */\n\ndefine &quot;Numerator&quot;:\n  HIE.&quot;Has HIV-positive Status&quot; and\n  exists(HE.&quot;Positive for cervical precancer lesions&quot; O\n  where O.effective.toInterval() during &quot;Measurement Period&quot;\n  and exists(HE.&quot;Date of treatment for cervical precancer lesions&quot; T where months between start of T.performed.toInterval() and start of O.effective.toInterval() ' at line 283 column 164</b></p></div>"
   },
   "extension": [
     {
@@ -33,7 +33,7 @@
       }
     ]
   },
-  "date": "2026-10-14T11:09:56+00:00",
+  "date": "2026-10-14T17:13:14+00:00",
   "publisher": "WHO",
   "contact": [
     {

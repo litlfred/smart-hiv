@@ -15,7 +15,7 @@
  
 Description not yet available for WHOCommon. 
 
-**Exception parsing generated Narrative (see /tmp/liquid-75cfccca-fd1a-4765-886c-97d99f4e28f7.html): Unable to read attribute on <FHIR.dateTime> at line 319 column 63**
+**Exception parsing generated Narrative (see /tmp/liquid-2f786e88-5bd1-4858-ba1a-958a0c092de5.html): Unable to read attribute on <FHIR.dateTime> at line 319 column 63**
 
 
 
@@ -47,7 +47,7 @@ Description not yet available for WHOCommon.
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-10-14T11:09:56+00:00",
+  "date" : "2026-10-14T17:13:14+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
