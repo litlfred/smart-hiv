@@ -130,7 +130,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "2d97ef4c4c6f6c1704140dd4313d7d00735ea742",
+          "ref": "d18472378fbbf910aff9ea21b19ae91e40559147",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -143,8 +143,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "2d97ef4c4c6f6c1704140dd4313d7d00735ea742",
-              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary for the next 3 hours'; smart-hiv staging preview with the IG site rail (cat-harness-tools#213)"
+              "ref": "d18472378fbbf910aff9ea21b19ae91e40559147",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'extend repin+merge window 3 hrs'; IG route from the cached AST (cat-harness-tools#235)"
             }
           }
         }
