@@ -2,14 +2,6 @@
   "$schema": "folio-index-config/v1",
   "instances": [
     {
-      "name": "smart-hiv",
-      "source": {
-        "local": {
-          "at": "."
-        }
-      }
-    },
-    {
       "name": "smart-base",
       "source": {
         "remote": {
