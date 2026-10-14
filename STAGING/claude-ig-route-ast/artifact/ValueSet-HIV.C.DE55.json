@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "ValueSet-HIV.C.DE55.jsonld",
+  "@type": "fhir:ValueSet",
+  "dcterms:identifier": "ValueSet/HIV.C.DE55",
+  "schema:name": "HIVCDE55",
+  "dcterms:title": "Sex partner's HIV treatment status ValueSet",
+  "dcterms:description": "Value set of treatment adherence of client's sex partner for partners that are HIV-positive",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Terminology: Value Sets",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/ValueSet/HIV.C.DE55"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../ast-data/resources/ValueSet/HIV.C.DE55--1c089cd5.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "03d94684b3007557313fe7ebdf0e80d229709a42"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

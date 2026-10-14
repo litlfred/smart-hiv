@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Library-HIVIND34Logic.jsonld",
+  "@type": "fhir:Library",
+  "dcterms:identifier": "Library/HIVIND34Logic",
+  "schema:name": "HIVIND34Logic",
+  "dcterms:title": "HIV.IND.34 Logic",
+  "dcterms:description": "% of people living with HIV receiving ART with VL >=1000 copies/mL who received a follow-up viral load test within three months",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Other",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/Library/HIVIND34Logic"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../ast-data/resources/Library/HIVIND34Logic--2ffd3712.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "03d94684b3007557313fe7ebdf0e80d229709a42"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

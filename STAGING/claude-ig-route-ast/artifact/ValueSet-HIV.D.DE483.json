@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "ValueSet-HIV.D.DE483.jsonld",
+  "@type": "fhir:ValueSet",
+  "dcterms:identifier": "ValueSet/HIV.D.DE483",
+  "schema:name": "HIVDDE483",
+  "dcterms:title": "New antiretroviral regimen after substitution within first-line regimen ValueSet",
+  "dcterms:description": "Value set of new antiretroviral (ARV) drugs after client changed regimen within the first-line regimen",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Terminology: Value Sets",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/ValueSet/HIV.D.DE483"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../ast-data/resources/ValueSet/HIV.D.DE483--29f2abb9.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "03d94684b3007557313fe7ebdf0e80d229709a42"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

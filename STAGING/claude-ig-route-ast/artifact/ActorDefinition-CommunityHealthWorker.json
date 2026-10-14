@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "ActorDefinition-CommunityHealthWorker.jsonld",
+  "@type": "fhir:ActorDefinition",
+  "dcterms:identifier": "ActorDefinition/CommunityHealthWorker",
+  "schema:name": "CommunityHealthWorker",
+  "dcterms:title": "Community health worker",
+  "dcterms:description": "A person who provides health education, referral and follow-up, case management and basic preventive health care and home visiting services to specific communities. Examples of HIV services that they provide include HIV testing, distributing HIV self-test (HIVST) kits, counselling in the community, monitoring adherence to ART and pre-exposure prophylaxis (PrEP) and drug pick- up, and following up and tracing lost patients. The occupation normally requires formal or informal training and supervision required by the health and social services authorities.",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Requirements: Actor Definitions",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/ActorDefinition/CommunityHealthWorker"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../ast-data/resources/ActorDefinition/CommunityHealthWorker--c52b44d4.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "03d94684b3007557313fe7ebdf0e80d229709a42"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}
