@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-230",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-230",
+  "name" : "UnionSpecimenContainerTypeAndSpecimenContainerType",
+  "title" : "Union of Specimen Container Type And Specimen Container Type",
+  "status" : "draft",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "706041008"
+      }]
+    }]
+  }
+}

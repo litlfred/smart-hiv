@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Library xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="HIVB9DTLogic" />
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary" />
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary" />
+    <profile value="http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library" />
+    <profile value="http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module" />
+  </meta>
+  <text>
+    <status value="extensions" /><html:div>
+<html:div>
+    <html:table class="grid dict">
+        
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Title: </html:b></html:th>
+            <html:td style="padding-left: 4px;">HIV.B9.DT Logic</html:td>
+        </html:tr>
+        
+
+        
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Id: </html:b></html:th>
+            <html:td style="padding-left: 4px;">HIVB9DTLogic</html:td>
+        </html:tr>
+        
+
+        
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Version: </html:b></html:th>
+            <html:td style="padding-left: 4px;">0.4.4</html:td>
+        </html:tr>
+        
+
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Url: </html:b></html:th>
+            <html:td style="padding-left: 4px;"><html:a href="Library-HIVB9DTLogic.html">HIV.B9.DT Logic</html:a></html:td>
+        </html:tr>
+        
+
+        
+
+        
+
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Status: </html:b></html:th>
+            <html:td style="padding-left: 4px;">draft</html:td>
+        </html:tr>
+        
+
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Experimental: </html:b></html:th>
+            <html:td style="padding-left: 4px;">true</html:td>
+        </html:tr>
+        
+
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Type: </html:b></html:th>
+            <html:td style="padding-left: 4px;">
+                
+                    
+                        
+                        <html:p style="margin-bottom: 5px;">
+                            <html:b>system: </html:b> <html:span><html:a href="http://terminology.hl7.org/6.1.0/CodeSystem-library-type.html">http://terminology.hl7.org/CodeSystem/library-type</html:a></html:span>
+                        </html:p>
+                        
+                        
+                        <html:p style="margin-bottom: 5px;">
+                            <html:b>code: </html:b> <html:span>logic-library</html:span>
+                        </html:p>
+                        
+                        
+                    
+                
+                
+            </html:td>
+        </html:tr>
+        
+
+        
+
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Date: </html:b></html:th>
+            <html:td style="padding-left: 4px;">2026-10-14 11:09:56+0000</html:td>
+        </html:tr>
+        
+
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Publisher: </html:b></html:th>
+            <html:td style="padding-left: 4px;">WHO</html:td>
+        </html:tr>
+        
+
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Description: </html:b></html:th>
+            <html:td style="padding-left: 4px;"><html:div><html:p>HIV.B9.DT Logic</html:p>
+</html:div></html:td>
+        </html:tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <html:tr>
+            <html:th scope="row"><html:b>Related Artifacts: </html:b></html:th>
+            <html:td style="padding-left: 4px;">
+                
+                
+                
+                <html:p><html:b>Dependencies</html:b></html:p>
+                <html:ul>
+                  
+                    <html:li><html:code>http://smart.who.int/hiv/Library/HIVCommon|0.0.1</html:code></html:li>
+                  
+                    <html:li><html:a href="Library-HIVConcepts.html">HIVConcepts</html:a></html:li>
+                  
+                    <html:li><html:a href="Library-HIVConfig.html">HIVConfig</html:a></html:li>
+                  
+                    <html:li><html:a href="Library-HIVEncounterElements.html">HIVEncounterElements</html:a></html:li>
+                  
+                    <html:li><html:a href="Library-WHOCommon.html">WHOCommon</html:a></html:li>
+                  
+                    <html:li><html:a href="Library-WHOConcepts.html">WHOConcepts</html:a></html:li>
+                  
+                    <html:li><html:a href="Library-WHOEncounterElements.html">WHOEncounterElements</html:a></html:li>
+                  
+                </html:ul>
+                
+                
+                
+                
+                
+            </html:td>
+        </html:tr>
+        
+
+        
+        <html:tr>
+          <html:th scope="row"><html:b>Parameters: </html:b></html:th>
+          <html:td style="padding-left: 4px;">
+            <html:table class="grid-dict">
+              <html:tr><html:th><html:b>Name</html:b></html:th><html:th><html:b>Type</html:b></html:th><html:th><html:b>Min</html:b></html:th><html:th><html:b>Max</html:b></html:th><html:th><html:b>In/Out</html:b></html:th></html:tr>
+              
+                <html:tr><html:th>Today</html:th><html:th>date</html:th><html:th>0</html:th><html:th>1</html:th><html:th>In</html:th></html:tr>
+              
+                <html:tr><html:th>Patient</html:th><html:th>Patient</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>HIV status negative or unknown</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Partner HIV positive</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Sex partner's HIV treatment status is partner not virally suppressed</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>HIV burden of setting is high HIV burden setting</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>HIV burden of setting is low HIV burden setting</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Key population member</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Currently pregnant</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>TB diagnosis result is diagnosed TB</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Presumptive TB</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Currently on PrEP</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>At elevated risk for HIV acquisition</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Partner has HIV and is not virally suppressed</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Schedule an annual follow-up test</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Follow-up test recommended</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Schedule quarterly retesting for PrEP users</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Pregnant in high HIV burden setting</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Schedule an HIV test, syphilis test, hepatitis B test as early as possible during this pregnancy</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Schedule a 'Follow-up test recommended date' during a third trimester visit</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Pregnant in low HIV burden setting</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Schedule a 'Follow-up test recommended date' at first ANC contact date</html:th><html:th>boolean</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Guidance</html:th><html:th>string</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+                <html:tr><html:th>Schedule Follow-up Date</html:th><html:th>date</html:th><html:th>0</html:th><html:th>1</html:th><html:th>Out</html:th></html:tr>
+              
+            </html:table>
+          </html:td>
+        </html:tr>
+        
+
+        
+
+        
+        
+        <html:tr>
+          <html:td colspan="2">
+            <html:table>
+              <html:tr><html:th><html:a id="cql-content"><html:b>Content: </html:b></html:a> text/cql</html:th></html:tr>
+              <html:tr><html:td><html:pre><html:code class="language-cql">/*
+Library: HIV.B9.DT Logic
+
+@DecisionID: HIV.B9.DT.HIV Re-testing Recommendations
+@BusinessRule: HIV restesting recommendations
+@Trigger: HIV.B9 Determine recommended services
+@HitPolicy: Rule order
+@Description: Determine retest recommendation
+
+Data Concepts:
+ * HIV.B.DE115: HIV status | HIV status reported after applying the national HIV testing algorithm. No single HIV test can provide an HIV-positive diagnosis.
+ * HIV.B.DE33: Partner HIV status (reported) | The HIV status of the client's partner.
+ * HIV.C.DE55: Sex partner's HIV treatment status | Treatment adherence of client's sex partner for partners that are HIV-positive
+ * HIV.Config.DE12: HIV burden of the setting | HIV burden of the setting (high or low) based on the national HIV prevalence or where the HIV prevalence and/or incidence in a geographical setting is higher than national prevalence and, therefore, needs priority in the HIV response
+ * HIV.B.DE49: Key population member | Client is a member of a key population that has an increased risk of HIV
+ * HIV.B.DE29: Currently pregnant | Client is currently pregnant
+ * HIV.D.DE939: TB diagnosis result | Final result of the TB investigation (bacteriological and/or clinical)
+ * HIV.D.DE282: Presumptive TB | Client's comorbidities or coinfections or symptoms of these include presumptive TB
+ * HIV.C.DE10: Currently on PrEP | The client is currently taking PrEP. Oral pre-exposure prophylaxis (PrEP) of HIV is the use of ARV drugs by people who are not infected with HIV to block the acquisition of HIV.
+ * HIV.B.DE225: At elevated risk for HIV acquisition | Client is at elevated risk for HIV acquisition
+*/
+library HIVB9DTLogic
+
+// Included Libraries
+using FHIR version '4.0.1'
+
+include HIVCommon version '0.0.1' called Common
+include HIVConcepts called Concepts
+include HIVConfig called Config
+include HIVEncounterElements called Elements
+include FHIRHelpers version '4.0.1'
+
+include WHOCommon called WCom
+// Included for PlanDefinition
+include WHOConcepts called WCx
+include WHOEncounterElements called WElm
+
+parameter Today Date default Today()
+
+context Patient
+
+ /*
+  @input: "HIV status negative or unknown"
+  @pseudocode: "HIV status" IN 'HIV-negative', 'Unknown'
+  */
+define "HIV status negative or unknown":
+  exists(Elements."HIV Status Observation" S
+    where S.value ~ Concepts."HIV-negative"
+       or S.value ~ Concepts."Unknown") 
+
+ /*
+  @input: "Partner HIV reported positive"
+  @pseudocode: "Partner HIV status (reported)"='HIV-positive'
+  */
+define "Partner HIV positive":
+  exists(Elements."Partner HIV status reported Observation" O
+    where O.value ~ Concepts."HIV-positive")
+
+ /*
+  @input: "Sex partner's HIV treatment status is partner not virally suppressed"
+  @pseudocode: "Sex partner's HIV treatment status"='Partner is not virally suppressed'
+  */
+define "Sex partner's HIV treatment status is partner not virally suppressed":
+  exists(Elements."Sex partners HIV treatment status" O
+    where O.value ~ Concepts."Partner is not virally suppressed")
+
+ /*
+  @input: "HIV burden of setting is high HIV burden setting"
+  @pseudocode: "HIV burden of the setting"='High HIV burden setting'
+  */
+define "HIV burden of setting is high HIV burden setting":
+  Config."HIV burden of setting" ~ Concepts."High HIV burden setting"
+
+ /*
+  @input: "HIV burden of setting is low HIV burden setting"
+  @pseudocode: "HIV burden of the setting"='Low HIV burden setting'
+  */
+define "HIV burden of setting is low HIV burden setting":
+  Config."HIV burden of setting" ~ Concepts."Low HIV burden setting"
+
+ /*
+  @input: "Key population member"
+  @pseudocode: "Key population member" = TRUE
+  */
+define "Key population member":
+  Elements."Is Key population member"
+
+ /*
+  @input: "Currently pregnant"
+  @pseudocode: "Currently pregnant"=True
+  */
+define "Currently pregnant":
+  exists(WElm."Pregnant Observation")
+
+ /*
+  @input: "TB diagnosis result is diagnosed TB"
+  @pseudocode: "Currently pregnant"=True
+  */
+define "TB diagnosis result is diagnosed TB":
+  exists(Elements."TB diagnosis result" O
+    where O.value ~ Concepts."Diagnosed TB")
+
+ /*
+  @input: "Presumptive TB"
+  @pseudocode: "Presumptive TB"=True
+  */
+define "Presumptive TB":
+  exists(Elements."Presumptive TB D.DE282 Observation" O
+    where O.value is true)
+
+/*
+  @input: "Currently on PrEP"
+  @pseudocode: "Currently on PrEP"=True
+  */
+define "Currently on PrEP":
+  exists(Elements."Currently on PrEP")
+
+ /*
+  @input: "At elevated risk for HIV acquisition"
+  @pseudocode: "At elevated risk for HIV acquisition"=True
+  */
+define "At elevated risk for HIV acquisition":
+  exists(Elements."At elevated risk for HIV acquisition PRV.DE1 Observation" O
+    where O.value is true)
+
+ /*
+  @output: "Schedule an annual follow-up test"
+  @pseudocode: "Follow-up test recommended date" = "Visit date" + 1 year
+  */
+define "Schedule an annual follow-up test":
+  "HIV status negative or unknown" and
+    case
+    when "Partner has HIV and is not virally suppressed"
+      then true
+    when "HIV burden of setting is high HIV burden setting"
+      then true
+    when "Key population member"
+      then true
+    when "At elevated risk for HIV acquisition"
+      then true
+    else false
+    end
+
+/*
+ @output: "Follow-up test recommended"
+ @pseudocode: N/A
+ */
+define "Follow-up test recommended":
+  "HIV status negative or unknown" and
+  case
+  when "TB diagnosis result is diagnosed TB"
+    then true
+  when "Presumptive TB"
+    then true
+  else false
+  end
+
+/*
+ @output: "Schedule quarterly retesting for PrEP users"
+ @pseudocode: N/A
+ */
+define "Schedule quarterly retesting for PrEP users":
+  "HIV status negative or unknown" and "Currently on PrEP"
+
+/*
+ @output: "Schedule an HIV test, syphilis test, hepatitis B test as early as possible during this pregnancy"
+ @pseudocode: N/A
+ */
+define "Schedule an HIV test, syphilis test, hepatitis B test as early as possible during this pregnancy":
+  "Pregnant in high HIV burden setting"
+
+/*
+ @output: "Schedule a 'Follow-up test recommended date during a third trimester visit"
+ @pseudocode: N/A
+ */
+define "Schedule a 'Follow-up test recommended date' during a third trimester visit":
+  "Pregnant in high HIV burden setting"
+
+/*
+ @output: "Schedule a 'Follow-up test recommended date during a third trimester visit"
+ @pseudocode: N/A
+ */
+define "Schedule a 'Follow-up test recommended date' at first ANC contact date":
+  "Pregnant in low HIV burden setting" and 
+  case
+  when "Key population member"
+    then true
+  when "Partner has HIV and is not virally suppressed"
+    then true
+  when "At elevated risk for HIV acquisition"
+    then true
+  else false
+  end
+
+/*
+ @dynamicValue: Guidance
+ */
+define "Guidance":
+  Combine({
+    if "Schedule an annual follow-up test"
+      then 'Schedule an annual follow-up test.  
+
+  WHO guidance recommends annual retesting for people who have ongoing HIV-related risks in all settings. These include people with a known HIV-positive partner who is not virally suppressed on ART.'
+      else '',
+    if "Follow-up test recommended"
+      then 'Recommend a follow-up test.  
+
+  In certain conditions and situations, individuals who have been tested for HIV in the past can be advised to retest. These include: 
+  * Individuals presenting with a diagnosis or receiving treatment for STIs or viral hepatitis, 
+  * Individuals with a confirmed or presumptive TB diagnosis, 
+  * Outpatients presenting with clinical conditions or symptoms indicative of HIV, individuals with recent HIV risk exposure.'
+      else '',
+    if "Schedule quarterly retesting for PrEP users"
+      then 'Schedule quarterly retesting for PrEP users.'
+      else '',
+    if "Schedule an HIV test, syphilis test, hepatitis B test as early as possible during this pregnancy"
+      then 'Schedule an HIV test, syphilis test, hepatitis B test as early as possible during this pregnancy
+
+  All pregnant women should be tested for HIV as well as syphilis and hepatitis B virus at least once and as early as possible during pregnancy.'
+      else '',
+    if "Schedule a 'Follow-up test recommended date' at first ANC contact date"
+      then 'In low HIV burden settings, retesting all pregnant women is not warranted unless focused among women from key populations or at high ongoing risk, such as those from key populations or with partners with HIV who are not virally suppressed. Countries could consider one additional retest in the post-partum period, such as at 14 weeks, six months or nine months for women in high HIV burden or incidence districts or provinces, key populations or women with partners with HIV who are not virally suppressed.'
+      else ''
+  })
+
+/*
+ @dynamicValue: "Date to schedule"
+ */
+define "Schedule Follow-up Date":
+  case
+  when "Schedule an annual follow-up test"
+    then Today + 1 years
+  when "Schedule quarterly retesting for PrEP users"
+    then Today + 3 months
+  else null
+  end
+
+// Helper Logic
+define "Pregnant in high HIV burden setting":
+  "HIV status negative or unknown" and
+  "HIV burden of setting is high HIV burden setting" and
+  "Currently pregnant"
+
+define "Pregnant in low HIV burden setting":
+  "HIV status negative or unknown" and
+  "HIV burden of setting is low HIV burden setting" and
+  "Currently pregnant"
+
+define "Partner has HIV and is not virally suppressed":
+  "Partner HIV positive" and "Sex partner's HIV treatment status is partner not virally suppressed"
+
+</html:code></html:pre></html:td></html:tr>
+            </html:table>
+          </html:td>
+        </html:tr>
+        
+        
+        
+        
+        
+        <html:tr>
+          <html:td colspan="2">
+            <html:table>
+              <html:tr><html:th><html:b>Content: </html:b> application/elm+json</html:th></html:tr>
+              <html:tr><html:td><html:pre><html:code>Encoded data (165988 characters)</html:code></html:pre></html:td></html:tr>
+            </html:table>
+          </html:td>
+        </html:tr>
+        
+        
+    </html:table>
+</html:div>
+</html:div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable" />
+  </extension>
+  <url value="http://smart.who.int/hiv/Library/HIVB9DTLogic" />
+  <version value="0.4.4" />
+  <name value="HIVB9DTLogic" />
+  <title value="HIV.B9.DT Logic" />
+  <status value="draft" />
+  <experimental value="true" />
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/library-type" />
+      <code value="logic-library" />
+    </coding>
+  </type>
+  <date value="2026-10-14T11:09:56+00:00" />
+  <publisher value="WHO" />
+  <contact>
+    <name value="WHO" />
+    <telecom>
+      <system value="url" />
+      <value value="http://who.int" />
+    </telecom>
+  </contact>
+  <description value="HIV.B9.DT Logic" />
+  <relatedArtifact>
+    <type value="depends-on" />
+    <display value="Library Common" />
+    <resource value="http://smart.who.int/hiv/Library/HIVCommon|0.0.1" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <display value="Library Concepts" />
+    <resource value="http://smart.who.int/hiv/Library/HIVConcepts" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <display value="Library Config" />
+    <resource value="http://smart.who.int/hiv/Library/HIVConfig" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <display value="Library Elements" />
+    <resource value="http://smart.who.int/hiv/Library/HIVEncounterElements" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <display value="Library WCom" />
+    <resource value="http://smart.who.int/hiv/Library/WHOCommon" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <display value="Library WCx" />
+    <resource value="http://smart.who.int/hiv/Library/WHOConcepts" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <display value="Library WElm" />
+    <resource value="http://smart.who.int/hiv/Library/WHOEncounterElements" />
+  </relatedArtifact>
+  <parameter>
+    <name value="Today" />
+    <use value="in" />
+    <min value="0" />
+    <max value="1" />
+    <type value="date" />
+  </parameter>
+  <parameter>
+    <name value="Patient" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="Patient" />
+  </parameter>
+  <parameter>
+    <name value="HIV status negative or unknown" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Partner HIV positive" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Sex partner's HIV treatment status is partner not virally suppressed" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="HIV burden of setting is high HIV burden setting" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="HIV burden of setting is low HIV burden setting" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Key population member" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Currently pregnant" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="TB diagnosis result is diagnosed TB" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Presumptive TB" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Currently on PrEP" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="At elevated risk for HIV acquisition" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Partner has HIV and is not virally suppressed" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Schedule an annual follow-up test" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Follow-up test recommended" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Schedule quarterly retesting for PrEP users" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Pregnant in high HIV burden setting" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Schedule an HIV test, syphilis test, hepatitis B test as early as possible during this pregnancy" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Schedule a 'Follow-up test recommended date' during a third trimester visit" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Pregnant in low HIV burden setting" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Schedule a 'Follow-up test recommended date' at first ANC contact date" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="boolean" />
+  </parameter>
+  <parameter>
+    <name value="Guidance" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="string" />
+  </parameter>
+  <parameter>
+    <name value="Schedule Follow-up Date" />
+    <use value="out" />
+    <min value="0" />
+    <max value="1" />
+    <type value="date" />
+  </parameter>
+  <content>
+    <contentType value="text/cql" />
+    <url value="Library-HIVB9DTLogic.cql" /></content>
+  <content>
+    <contentType value="application/elm+json" />
+    <url value="Library-HIVB9DTLogic.elm.json" /></content>
+</Library>

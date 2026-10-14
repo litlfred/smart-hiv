@@ -1,0 +1,250 @@
+{
+  "resourceType": "Library",
+  "id": "HIVC7DTLogic",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-1b7a3262-4114-40dc-ad19-234ad3ab36c3.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/**\nLibrary: HIV.C7.DT Logic\n\n@DecisionID: HIV.C7.DT\n@BusinessRule: Check suitability for PrEP or PEP\n@Trigger: HIV.C7 Check suitability for PrEP or PEP\n@HitPolicy: Rule Order\n@Description: Check suitability for PrEP or PEP\n\nData Concepts:\n * HIV.B.DE49: Key population member | Client is a member of a key population that has an increased risk of HIV\n * HIV.B.DE115: HIV status | HIV status reported after applying the national HIV testing algorithm. No single HIV test can provide an HIV-positive diagnosis.\n * HIV.C.DE31: PEP history | The client's history in taking post-exposure prophylaxis (PEP) for HIV prevention\n * HIV.C.DE36: Signs of substantial risk of HIV infection | Signs the client is at a substantial risk of HIV infection\n * HIV.C.DE55: Sex partners HIV treatment status | Treatment adherence of client's sex partner for partners that are HIV-positive\n * HIV.C.DE106: Estimated creatinine clearance | Estimated creatinine clearance of the client returned from lab in mL/min\n * HIV.C.DE112: Contraindications to PrEP usage | Listing of contraindications to pre-exposure prophylaxis (PrEP)\n * HIV.C.DE117: Probable recent exposure to HIV | When the client is reported to have had probable recent exposure to HIV\n * HIV.Config.DE12: HIV burden of the setting | HIV burden of the setting (high or low) based on the national HIV prevalence or where the HIV prevalence and/or incidence in a geographical setting is higher than national prevalence and, therefore, needs priority in the HIV response\n * HIV.H.DE34: HIV status of partner or contact | HIV status of the partner or contact given by the index case\n\nConsolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease.\n*/\n\nlibrary HIVC7DTLogic\n \nusing FHIR version '4.0.1'\n\ninclude HIVCommon version '0.0.1' called HIC\ninclude HIVConcepts called Concepts\ninclude HIVConfig called Config\ninclude HIVEncounterElements called Elements\ninclude FHIRHelpers version '4.0.1'\n\ninclude WHOCommon called WCom\n\n/*\n @input &quot;HIV Status&quot;\n @pseudocode: &quot;HIV status&quot;='HIV-negative'\n */\ndefine &quot;HIV negative&quot;:\n  exists(\n    Elements.&quot;HIV Status Observation&quot; O\n        where O.value ~ Concepts.&quot;HIV-negative&quot;\n  )\n\n/*\n @input &quot;HIV Status&quot;\n @pseudocode: &quot;HIV status&quot;='HIV-negative'\n */\ndefine &quot;HIV negative or unknown&quot;:\n  exists(\n    Elements.&quot;HIV Status Observation&quot; O\n        where O.value ~ Concepts.&quot;HIV-negative&quot; or\n          O.value ~ Concepts.&quot;Unknown&quot;\n  )\n\n\n/*\n @input &quot;Estimated creatinine clearance&quot;\n @pseudocode: &quot;Estimated creatinine clearance&quot; ≥ 60 mL/min\n */\ndefine &quot;Estimated creatinine clearance ≥ 60 mL/min&quot;:\n  exists(\n    Elements.&quot;Estimated creatinine clearance&quot; O\n      where FHIRHelpers.ToInteger(O.value) &gt;= 60\n  )\n\n/*\n @input &quot;Estimated creatinine clearance&quot;\n @pseudocode: &quot;Estimated creatinine clearance&quot; ' at line 287 column 49</b></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "url": "http://smart.who.int/hiv/Library/HIVC7DTLogic",
+  "version": "0.4.4",
+  "name": "HIVC7DTLogic",
+  "title": "HIV.C7.DT Logic",
+  "status": "draft",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "date": "2026-10-14T11:09:56+00:00",
+  "publisher": "WHO",
+  "contact": [
+    {
+      "name": "WHO",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://who.int"
+        }
+      ]
+    }
+  ],
+  "description": "HIV.C7.DT Logic",
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "display": "Library HIC",
+      "resource": "http://smart.who.int/hiv/Library/HIVCommon|0.0.1"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library Concepts",
+      "resource": "http://smart.who.int/hiv/Library/HIVConcepts"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library Config",
+      "resource": "http://smart.who.int/hiv/Library/HIVConfig"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library Elements",
+      "resource": "http://smart.who.int/hiv/Library/HIVEncounterElements"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library WCom",
+      "resource": "http://smart.who.int/hiv/Library/WHOCommon"
+    }
+  ],
+  "parameter": [
+    {
+      "name": "HIV negative",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "HIV negative or unknown",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Estimated creatinine clearance ≥ 60 mL/min",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Estimated creatinine clearance < 60 mL/min",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "No symptoms of Acute HIV infection",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Symptoms of Acute HIV infection",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "No probable recent exposure to HIV",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Probable recent exposure to HIV",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "No contraindications to PrEP usage",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Contraindications to PrEP usage",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "TDF allergy or contraindication",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "HIV status of partner or contact is positive",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Sex partner is on HIV treatment and not virally suppressed",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Is Key population member",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "HIV burden of setting is high HIV burden setting",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "PrEP requested by client",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "A sexual partner in the past 6 months had one or more HIV risk factors",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "STI in the past 6 months",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "No condom use during sex with more than one partner in the past 6 months",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Repeat PEP user",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Suitable for PrEP",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Not suitable for PrEP",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Guidance",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "string"
+    }
+  ],
+  "content": [
+    {
+      "contentType": "text/cql",
+      "url": "Library-HIVC7DTLogic.cql"
+    },
+    {
+      "contentType": "application/elm+json",
+      "url": "Library-HIVC7DTLogic.elm.json"
+    }
+  ]
+}

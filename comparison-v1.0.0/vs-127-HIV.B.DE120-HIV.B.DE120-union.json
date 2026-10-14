@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-344",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-344",
+  "name" : "UnionHIVBDE120AndHIVBDE120",
+  "title" : "Union of Site where positive HIV test confirmed ValueSet And Site where positive HIV test confirmed ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00"
+}

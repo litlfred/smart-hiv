@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-374",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-374",
+  "name" : "UnionHIVBDE179AndHIVBDE179",
+  "title" : "Union of Intimate partner violence enquiry results ValueSet And Intimate partner violence enquiry results ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.B.DE180",
+        "display" : "Client received treatment and/or counselling as needed"
+      },
+      {
+        "code" : "HIV.B.DE181",
+        "display" : "Client was referred"
+      },
+      {
+        "code" : "HIV.B.DE182",
+        "display" : "No action necessary"
+      },
+      {
+        "code" : "HIV.B.DE183",
+        "display" : "Other IPV result"
+      }]
+    }]
+  }
+}

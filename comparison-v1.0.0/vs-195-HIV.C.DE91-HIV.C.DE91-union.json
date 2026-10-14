@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-548",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-548",
+  "name" : "UnionHIVCDE91AndHIVCDE91",
+  "title" : "Union of Preferred PEP backbone regimen ValueSet And Preferred PEP backbone regimen ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.C.DE92",
+        "display" : "TDF + 3TC"
+      },
+      {
+        "code" : "HIV.C.DE93",
+        "display" : "TDF + FTC"
+      },
+      {
+        "code" : "HIV.C.DE94",
+        "display" : "AZT + 3TC"
+      }]
+    }]
+  }
+}

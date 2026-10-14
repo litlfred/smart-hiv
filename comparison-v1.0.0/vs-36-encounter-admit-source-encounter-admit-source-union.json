@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-71",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-71",
+  "name" : "UnionAdmitSourceAndAdmitSource",
+  "title" : "Union of Admit source And Admit source",
+  "status" : "draft",
+  "date" : "2026-10-14T11:15:12+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-773",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-773",
+  "name" : "UnionHIVDDE664AndHIVDDE664",
+  "title" : "Union of HPV-DNA cervical cancer screening test result ValueSet And HPV-DNA cervical cancer screening test result ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE665",
+        "display" : "Negative"
+      },
+      {
+        "code" : "HIV.D.DE666",
+        "display" : "Positive"
+      },
+      {
+        "code" : "HIV.D.DE667",
+        "display" : "Invalid"
+      }]
+    }]
+  }
+}

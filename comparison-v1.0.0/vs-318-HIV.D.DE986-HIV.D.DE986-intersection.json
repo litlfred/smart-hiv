@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-918",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-918",
+  "name" : "IntersectionHIVDDE986AndHIVDDE986",
+  "title" : "Intersection of TB screening result ValueSet And TB screening result ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE987",
+        "display" : "Screen positive for TB"
+      },
+      {
+        "code" : "HIV.D.DE988",
+        "display" : "Screen negative for TB"
+      },
+      {
+        "code" : "HIV.D.DE989",
+        "display" : "Inconclusive"
+      }]
+    }]
+  }
+}

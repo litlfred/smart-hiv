@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-1083",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-1083",
+  "name" : "IntersectionHIVHDE17AndHIVHDE17",
+  "title" : "Intersection of Source of information ValueSet And Source of information ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.H.DE18",
+        "display" : "Client"
+      },
+      {
+        "code" : "HIV.H.DE19",
+        "display" : "Informed by treatment provider"
+      },
+      {
+        "code" : "HIV.H.DE20",
+        "display" : "Informed by family or partner"
+      },
+      {
+        "code" : "HIV.H.DE21",
+        "display" : "Other source of information"
+      }]
+    }]
+  }
+}

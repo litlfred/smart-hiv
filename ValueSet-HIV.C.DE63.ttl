@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.C.DE63> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIV.C.DE63"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset" ;
+       fhir:index 1 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset" ;
+       fhir:index 2 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HIV.C.DE63</b></p><a name=\"HIV.C.DE63\"> </a><a name=\"hcHIV.C.DE63\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-HIVConcepts.html\"><code>http://smart.who.int/hiv/CodeSystem/HIVConcepts</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.4.4</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46C.46DE64\">HIV.C.DE64</a></td><td>Serum creatinine test</td><td>Test serum creatinine to identify pre-existing renal disease (estimated creatinine clearance less than 60 ml/min)</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46C.46DE65\">HIV.C.DE65</a></td><td>Hepatitis B test</td><td>Hepatitis B test recommended for client</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46C.46DE66\">HIV.C.DE66</a></td><td>Hepatitis C test</td><td>Hepatitis C test recommended for client</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46C.46DE67\">HIV.C.DE67</a></td><td>Syphilis test</td><td>Syphilis test recommended for client</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46C.46DE68\">HIV.C.DE68</a></td><td>Other screening for STIs</td><td>Other STI screening recommended for client</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46C.46DE69\">HIV.C.DE69</a></td><td>Pregnancy testing</td><td>Pregnancy testing for client</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46C.46DE70\">HIV.C.DE70</a></td><td>Review vaccination history</td><td>Review vaccination history recommended for client</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://smart.who.int/hiv/ValueSet/HIV.C.DE63"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.4"] ;
+  fhir:ValueSet.name [ fhir:value "HIVCDE63"] ;
+  fhir:ValueSet.title [ fhir:value "Screenings and diagnostics for PrEP users ValueSet"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "WHO"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value set of listing of tests for clients on or starting pre-exposure prophylaxis (PrEP) that may be recommended or should be considered"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.C.DE64" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serum creatinine test" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.C.DE65" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatitis B test" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.C.DE66" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatitis C test" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.C.DE67" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syphilis test" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.C.DE68" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other screening for STIs" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.C.DE69" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pregnancy testing" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.C.DE70" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Review vaccination history" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.C.DE63.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

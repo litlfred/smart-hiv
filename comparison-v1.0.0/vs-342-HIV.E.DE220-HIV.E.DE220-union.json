@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-989",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-989",
+  "name" : "UnionHIVEDE220AndHIVEDE220",
+  "title" : "Union of Test result of syphilis assay 1 repeated ValueSet And Test result of syphilis assay 1 repeated ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.E.DE221",
+        "display" : "Reactive"
+      },
+      {
+        "code" : "HIV.E.DE222",
+        "display" : "Non-reactive"
+      },
+      {
+        "code" : "HIV.E.DE223",
+        "display" : "Invalid"
+      }]
+    }]
+  }
+}

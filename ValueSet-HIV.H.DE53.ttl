@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.H.DE53> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIV.H.DE53"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset" ;
+       fhir:index 1 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset" ;
+       fhir:index 2 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HIV.H.DE53</b></p><a name=\"HIV.H.DE53\"> </a><a name=\"hcHIV.H.DE53\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-HIVConcepts.html\"><code>http://smart.who.int/hiv/CodeSystem/HIVConcepts</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.4.4</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE54\">HIV.H.DE54</a></td><td>Forgot</td><td>Client reported not being adherent because they forgot</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE55\">HIV.H.DE55</a></td><td>Toxicity/side effects</td><td>Client reported not being adherent because of toxicity/side effects</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE56\">HIV.H.DE56</a></td><td>Busy</td><td>Client reported not being adherent because they were busy</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE57\">HIV.H.DE57</a></td><td>Change of routine</td><td>Client reported not being adherent because of a change of routine</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE58\">HIV.H.DE58</a></td><td>Travel cost</td><td>Client reported not being adherent because of travel cost</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE59\">HIV.H.DE59</a></td><td>Distance to clinic</td><td>Client reported not being adherent because of distance to clinic</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE60\">HIV.H.DE60</a></td><td>Client lost/ran out of pills</td><td>Client reported not being adherent because of client lost/ran out of pills</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE61\">HIV.H.DE61</a></td><td>Stock-out</td><td>Client reported not being adherent because of a stock-out</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE62\">HIV.H.DE62</a></td><td>Too ill</td><td>Client reported not being adherent because of being too ill</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE63\">HIV.H.DE63</a></td><td>Pill burden</td><td>Client reported not being adherent because of the pill burden</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE64\">HIV.H.DE64</a></td><td>Felt well</td><td>Client reported not being adherent because they felt well</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE65\">HIV.H.DE65</a></td><td>Depression</td><td>Client reported not being adherent because of depression</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE66\">HIV.H.DE66</a></td><td>Alcohol use</td><td>Client reported not being adherent because of alcohol use</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE67\">HIV.H.DE67</a></td><td>Substance use</td><td>Client reported not being adherent because of substance use (i.e., drugs)</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE68\">HIV.H.DE68</a></td><td>Stigma/disclosure concerns</td><td>Client reported not being adherent because of stigma/disclosure concerns</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE69\">HIV.H.DE69</a></td><td>Lack of food</td><td>Client reported not being adherent because of a lack of food</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE70\">HIV.H.DE70</a></td><td>Poor palatability</td><td>Client reported not being adherent because of poor palatability</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46H.46DE71\">HIV.H.DE71</a></td><td>Other</td><td>Client reported not being adherent because of other reason</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE53"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.4"] ;
+  fhir:ValueSet.name [ fhir:value "HIVHDE53"] ;
+  fhir:ValueSet.title [ fhir:value "Reason(s) for adherence problem ValueSet"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "WHO"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value set of reason why client is not adherent"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE54" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Forgot" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE55" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Toxicity/side effects" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE56" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Busy" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE57" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Change of routine" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE58" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Travel cost" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE59" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Distance to clinic" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE60" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Client lost/ran out of pills" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE61" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stock-out" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE62" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Too ill" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE63" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pill burden" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE64" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Felt well" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE65" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depression" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE66" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alcohol use" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE67" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Substance use" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE68" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stigma/disclosure concerns" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE69" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lack of food" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE70" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Poor palatability" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.H.DE71" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.H.DE53.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/ExampleScenario/HIV.A.REGISTRATION> a fhir:ExampleScenario ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIV.A.REGISTRATION"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ExampleScenario HIV.A.REGISTRATION</b></p><a name=\"HIV.A.REGISTRATION\"> </a><a name=\"hcHIV.A.REGISTRATION\"> </a><p><b>url</b>: <a href=\"ExampleScenario-HIV.A.REGISTRATION.html\">HIV.A.REGISTRATION SCENARIO</a></p><p><b>version</b>: 0.4.4</p><p><b>name</b>: HIV.A.REGISTRATION SCENARIO</p><p><b>status</b>: Active</p><p><b>date</b>: 2026-10-14 11:09:56+0000</p><p><b>publisher</b>: WHO</p><p><b>contact</b>: WHO: <a href=\"http://who.int\">http://who.int</a></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: patient</p><p><b>type</b>: Person</p><p><b>name</b>: Patient</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: healthcareprovider</p><p><b>type</b>: Person</p><p><b>name</b>: Health Care Provider</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: emr</p><p><b>type</b>: System</p><p><b>name</b>: EMR</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: patientResource</p><p><b>resourceType</b>: Patient</p><p><b>name</b>: Patient Resource</p><p><b>description</b>: </p><div><p>The Patient involved in the scenario.</p>\n</div></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: searchBundleResource</p><p><b>resourceType</b>: SearchParameter</p><p><b>name</b>: SearchParameter Bundle Resource</p><p><b>description</b>: </p><div><p>List patient search bundle</p>\n</div></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: encounterResource</p><p><b>resourceType</b>: Encounter</p><p><b>name</b>: Encounter Resource</p><p><b>description</b>: </p><div><p>The Encounter where the patient meets with the health worker.</p>\n</div></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: HIV.A. Registration</p><p><b>description</b>: </p><div><p>The patient visits the clinician for an initial consultation.</p>\n</div><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Visit Health facility</p><p><b>description</b>: </p><div><p>Description of Step 1</p>\n</div><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 1</p><p><b>type</b>: create</p><p><b>name</b>: Create an visit appointment</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>encounterResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Gather client details</p><p><b>initiator</b>: patient</p><p><b>receiver</b>: healthcareprovider</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Validate Client details</p><p><b>description</b>: </p><div><p>Description of Step 2</p>\n</div><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>type</b>: search</p><p><b>name</b>: Search for client record</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: emr</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>searchBundleResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td><td><b>InitiatorActive</b></td></tr><tr><td style=\"display: none\">*</td><td>4</td><td>Create new client Record</td><td>healthcareprovider</td><td>emr</td><td>true</td></tr></table></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td style=\"display: none\">*</td><td>5</td><td>Review sociodemographic data with client</td><td>healthcareprovider</td><td>emr</td></tr></table></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Number</b></td><td><b>Type</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td style=\"display: none\">*</td><td>6</td><td>update</td><td>update Client details</td><td>healthcareprovider</td><td>emr</td></tr></table></blockquote></blockquote><h3>Alternatives</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Title</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Alternative 1 for Step 1</td><td><div><p>First alternative to Step 1</p>\n</div></td></tr></table></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 7</p><p><b>type</b>: create</p><p><b>name</b>: Check In Client</p><p><b>initiator</b>: emr</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote></blockquote></div>"
+  ] ;
+  fhir:ExampleScenario.url [ fhir:value "http://smart.who.int/hiv/ExampleScenario/HIV.A.REGISTRATION"] ;
+  fhir:ExampleScenario.version [ fhir:value "0.4.4"] ;
+  fhir:ExampleScenario.name [ fhir:value "HIV.A.REGISTRATION SCENARIO"] ;
+  fhir:ExampleScenario.status [ fhir:value "active"] ;
+  fhir:ExampleScenario.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:ExampleScenario.publisher [ fhir:value "WHO"] ;
+  fhir:ExampleScenario.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ExampleScenario.actor [
+     fhir:index 0 ;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "patient" ] ;
+     fhir:ExampleScenario.actor.type [ fhir:value "person" ] ;
+     fhir:ExampleScenario.actor.name [ fhir:value "Patient" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "healthcareprovider" ] ;
+     fhir:ExampleScenario.actor.type [ fhir:value "person" ] ;
+     fhir:ExampleScenario.actor.name [ fhir:value "Health Care Provider" ]
+  ], [
+     fhir:index 2 ;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "emr" ] ;
+     fhir:ExampleScenario.actor.type [ fhir:value "entity" ] ;
+     fhir:ExampleScenario.actor.name [ fhir:value "EMR" ]
+  ] ;
+  fhir:ExampleScenario.instance [
+     fhir:index 0 ;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "patientResource" ] ;
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Patient" ] ;
+     fhir:ExampleScenario.instance.name [ fhir:value "Patient Resource" ] ;
+     fhir:ExampleScenario.instance.description [ fhir:value "The Patient involved in the scenario." ]
+  ], [
+     fhir:index 1 ;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "searchBundleResource" ] ;
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "SearchParameter" ] ;
+     fhir:ExampleScenario.instance.name [ fhir:value "SearchParameter Bundle Resource" ] ;
+     fhir:ExampleScenario.instance.description [ fhir:value "List patient search bundle" ]
+  ], [
+     fhir:index 2 ;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "encounterResource" ] ;
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Encounter" ] ;
+     fhir:ExampleScenario.instance.name [ fhir:value "Encounter Resource" ] ;
+     fhir:ExampleScenario.instance.description [ fhir:value "The Encounter where the patient meets with the health worker." ]
+  ] ;
+  fhir:ExampleScenario.process [
+     fhir:index 0 ;
+     fhir:ExampleScenario.process.title [ fhir:value "HIV.A. Registration" ] ;
+     fhir:ExampleScenario.process.description [ fhir:value "The patient visits the clinician for an initial consultation." ] ;
+     fhir:ExampleScenario.process.step [
+       fhir:index 0 ;
+       fhir:ExampleScenario.process.step.process [
+         fhir:index 0 ;
+         fhir:ExampleScenario.process.title [ fhir:value "Visit Health facility" ] ;
+         fhir:ExampleScenario.process.description [ fhir:value "Description of Step 1" ] ;
+         fhir:ExampleScenario.process.step [
+           fhir:index 0 ;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "1" ] ;
+             fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create an visit appointment" ] ;
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "encounterResource" ]
+             ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "2" ] ;
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Gather client details" ] ;
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "patient" ] ;
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "healthcareprovider" ] ;
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+             ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ExampleScenario.process.step.process [
+         fhir:index 0 ;
+         fhir:ExampleScenario.process.title [ fhir:value "Validate Client details" ] ;
+         fhir:ExampleScenario.process.description [ fhir:value "Description of Step 2" ] ;
+         fhir:ExampleScenario.process.step [
+           fhir:index 0 ;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "3" ] ;
+             fhir:ExampleScenario.process.step.operation.type [ fhir:value "search" ] ;
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Search for client record" ] ;
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "emr" ] ;
+             fhir:ExampleScenario.process.step.operation.request [
+               fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "searchBundleResource" ]
+             ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create new client Record" ] ;
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "emr" ] ;
+             fhir:ExampleScenario.process.step.operation.initiatorActive [ fhir:value "true"^^xsd:boolean ]
+           ]
+         ], [
+           fhir:index 2 ;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "5" ] ;
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Review sociodemographic data with client" ] ;
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "emr" ]
+           ]
+         ], [
+           fhir:index 3 ;
+           fhir:ExampleScenario.process.step.operation [
+             fhir:ExampleScenario.process.step.operation.number [ fhir:value "6" ] ;
+             fhir:ExampleScenario.process.step.operation.type [ fhir:value "update" ] ;
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "update Client details" ] ;
+             fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+             fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "emr" ]
+           ]
+         ]
+       ] ;
+       fhir:ExampleScenario.process.step.alternative [
+         fhir:index 0 ;
+         fhir:ExampleScenario.process.step.alternative.title [ fhir:value "Alternative 1 for Step 1" ] ;
+         fhir:ExampleScenario.process.step.alternative.description [ fhir:value "First alternative to Step 1" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "7" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Check In Client" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "emr" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/ExampleScenario/HIV.A.REGISTRATION.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

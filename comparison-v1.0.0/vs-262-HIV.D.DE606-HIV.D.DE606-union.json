@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-749",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-749",
+  "name" : "UnionHIVDDE606AndHIVDDE606",
+  "title" : "Union of Vaccination location ValueSet And Vaccination location ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE607",
+        "display" : "Dose number"
+      },
+      {
+        "code" : "HIV.D.DE608",
+        "display" : "Dose quantity"
+      },
+      {
+        "code" : "HIV.D.DE609",
+        "display" : "Total doses in series"
+      }]
+    }]
+  }
+}

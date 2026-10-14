@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-900",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-900",
+  "name" : "IntersectionHIVDDE934AndHIVDDE934",
+  "title" : "Intersection of WHO HIV clinical stage condition or symptom ValueSet And WHO HIV clinical stage condition or symptom ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE935",
+        "display" : "Pulmonary TB"
+      },
+      {
+        "code" : "HIV.D.DE936",
+        "display" : "Lymph node TB"
+      },
+      {
+        "code" : "HIV.D.DE937",
+        "display" : "Extrapulmonary TB"
+      }]
+    }]
+  }
+}

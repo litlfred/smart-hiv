@@ -1,0 +1,175 @@
+{
+  "resourceType": "Library",
+  "id": "HIVD4DTLogic",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-a5be76d8-4eb2-4eea-9989-f9a7e9351343.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/**\nLibrary: HIV.D4.DT Logic\n\n@DecisionID: HIV.D4.DT\n@BusinessRule: \n@Trigger: \n@HitPolicy: Rule Order\n@Description:\n\nData Concepts:\n\n\nConsolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease.\n*/\nlibrary HIVD4DTLogic\n\nusing FHIR version '4.0.1'\n\ninclude HIVCommon version '0.0.1' called HIC\ninclude HIVConcepts called Concepts\ninclude HIVEncounterElements called Elements\ninclude FHIRHelpers version '4.0.1'\n\ninclude WHOCommon called WCom\n\ncontext Patient\n\n /*\n  @input: TB screening algorithm\n  @pseudocode: &quot;TB screening algorithm&quot;='W4SS single screening algorithm'\n  */\ndefine &quot;W4SS single screening algorithm&quot;:\n  exists(\n    Elements.&quot;TB screening algorithm Observation&quot; O\n      where O.value ~ Concepts.&quot;W4SS single screening algorithm&quot;\n  )\n\n /*\n  @input: TB screening algorithm\n  @pseudocode: &quot;TB screening algorithm&quot;='Sequential positive screening algorithm with W4SS and CRP'\n  */\ndefine &quot;Sequential positive screening algorithm with W4SS and CRP&quot;:\n  exists(\n    Elements.&quot;TB screening algorithm Observation&quot; O\n      where O.value ~ Concepts.&quot;Sequential positive screening algorithm with W4SS and CRP&quot;\n  )\n\n /*\n  @input: TB screening algorithm\n  @pseudocode: &quot;TB screening algorithm&quot;='Screening with any TB symptom'\n  */\ndefine &quot;Screening with any TB symptom&quot;:\n  exists(\n    Elements.&quot;TB screening algorithm Observation&quot; O\n      where O.value ~ Concepts.&quot;Screening with any TB symptom&quot;\n  )\n\n/*\n @input: Estimated age\n @pseudocode: &quot;Estimated age&quot; &gt;= 10 years\n */\ndefine &quot;Age 10 or older&quot;:\n  Elements.&quot;Current Patient Age In Years&quot; &gt;= 10\n\n/*\n @input: Estimated age\n @pseudocode: &quot;Estimated age&quot; ' at line 261 column 32</b></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "url": "http://smart.who.int/hiv/Library/HIVD4DTLogic",
+  "version": "0.4.4",
+  "name": "HIVD4DTLogic",
+  "title": "HIV.D4.DT Logic",
+  "status": "draft",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "date": "2026-10-14T11:09:56+00:00",
+  "publisher": "WHO",
+  "contact": [
+    {
+      "name": "WHO",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://who.int"
+        }
+      ]
+    }
+  ],
+  "description": "HIV.D4.DT Logic",
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "display": "Library HIC",
+      "resource": "http://smart.who.int/hiv/Library/HIVCommon|0.0.1"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library Concepts",
+      "resource": "http://smart.who.int/hiv/Library/HIVConcepts"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library Elements",
+      "resource": "http://smart.who.int/hiv/Library/HIVEncounterElements"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library WCom",
+      "resource": "http://smart.who.int/hiv/Library/WHOCommon"
+    }
+  ],
+  "parameter": [
+    {
+      "name": "Patient",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Patient"
+    },
+    {
+      "name": "W4SS single screening algorithm",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Sequential positive screening algorithm with W4SS and CRP",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Screening with any TB symptom",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Age 10 or older",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Age under 15",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Has symptoms of TB",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Does not have symptoms of TB",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "No C-reactive protein test done",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "C-reactive protein at or under 5mg/L",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "C-reactive protein over 5mg/L",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "History of contact with a person with TB",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Guidance",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "string"
+    }
+  ],
+  "content": [
+    {
+      "contentType": "text/cql",
+      "url": "Library-HIVD4DTLogic.cql"
+    },
+    {
+      "contentType": "application/elm+json",
+      "url": "Library-HIVD4DTLogic.elm.json"
+    }
+  ]
+}

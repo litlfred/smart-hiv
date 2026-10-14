@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.D.DE719> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIV.D.DE719"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset" ;
+       fhir:index 1 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset" ;
+       fhir:index 2 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HIV.D.DE719</b></p><a name=\"HIV.D.DE719\"> </a><a name=\"hcHIV.D.DE719\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-HIVConcepts.html\"><code>http://smart.who.int/hiv/CodeSystem/HIVConcepts</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.4.4</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE720\">HIV.D.DE720</a></td><td>Cryotherapy</td><td>Treatment for cervical precancer lesions is cryotherapy</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE721\">HIV.D.DE721</a></td><td>Thermal ablation</td><td>Treatment for cervical precancer lesions is Thermal ablation</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE722\">HIV.D.DE722</a></td><td>Laser ablation</td><td>Treatment for cervical precancer lesions is Laser ablation</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE723\">HIV.D.DE723</a></td><td>CKC</td><td>Treatment for cervical precancer lesions is Cold knife conization (CKC)</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE724\">HIV.D.DE724</a></td><td>Laser cone biopsy</td><td>Treatment for cervical precancer lesions is Laser cone biopsy</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE725\">HIV.D.DE725</a></td><td>LLETZ/LEEP</td><td>Treatment for cervical precancer lesions is large loop excision of the transformation zone (LLETZ)/loop electrosurgical excision procedure (LEEP)</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE726\">HIV.D.DE726</a></td><td>Other</td><td>Treatment for cervical precancer lesions is not listed</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://smart.who.int/hiv/ValueSet/HIV.D.DE719"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.4"] ;
+  fhir:ValueSet.name [ fhir:value "HIVDDE719"] ;
+  fhir:ValueSet.title [ fhir:value "Treatment method for cervical precancer lesions ValueSet"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "WHO"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value set of treatment method for cervical precancer lesions"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE720" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cryotherapy" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE721" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thermal ablation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE722" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laser ablation" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE723" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CKC" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE724" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laser cone biopsy" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE725" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "LLETZ/LEEP" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE726" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.D.DE719.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

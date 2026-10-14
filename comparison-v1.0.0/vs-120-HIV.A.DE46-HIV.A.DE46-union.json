@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-323",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-323",
+  "name" : "UnionHIVADE46AndHIVADE46",
+  "title" : "Union of Communication preference(s) ValueSet And Communication preference(s) ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.A.DE47",
+        "display" : "Text message/SMS"
+      },
+      {
+        "code" : "HIV.A.DE48",
+        "display" : "Voice call"
+      }]
+    }]
+  }
+}

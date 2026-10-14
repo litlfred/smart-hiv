@@ -1,0 +1,220 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/Basic/HIV.B.HIVtestingservices> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIV.B.HIVtestingservices"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Requirements HIV.B.HIVtestingservices</b></p><a name=\"HIV.B.HIVtestingservices\"> </a><a name=\"hcHIV.B.HIVtestingservices\"> </a><table class=\"grid\"><tr><td><b><a name=\"HIV.FXNREQ.022\"> </a></b>HIV.FXNREQ.022</td><td/><td><div><p>As a Health worker\nI want to identify the date of the last attended contact\nSo that I can ensure the client is receiving services according to recommended schedule</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.023\"> </a></b>HIV.FXNREQ.023</td><td/><td><div><p>As a Health worker\nI want the system to highlight abnormal values\nSo that I can identify critical health issues or errors (if a data-entry issue)</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.024\"> </a></b>HIV.FXNREQ.024</td><td/><td><div><p>As a Health worker\nI want to see which clinical staging conditions or symptoms the client has already experienced\nSo that the information may be used to help classify the client’s HIV disease severity.</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.025\"> </a></b>HIV.FXNREQ.025</td><td/><td><div><p>As a Health worker\nI want the system to provide real-time range checks and integrity checks on data\nSo that I can ensure entry of accurate information and reduce errors</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.026\"> </a></b>HIV.FXNREQ.026</td><td/><td><div><p>As a Health worker or data entry clerk\nI want to record the HIV status of partners or family members of clients, with proper consent\nSo that I can provide specialized care (for example, in serodiscordant couples)</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.027\"> </a></b>HIV.FXNREQ.027</td><td/><td><div><p>As a Health worker\nI want to review past medical history previously entered\nSo that I can provide appropriate services according to the latest clinical protocols</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.028\"> </a></b>HIV.FXNREQ.028</td><td/><td><div><p>As a Health worker or data entry clerk\nI want to have different question and language prompts when clients are from different populations\nSo that I can better support populations such as adolescents, paediatric clients and caregivers and their unique needs.</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.029\"> </a></b>HIV.FXNREQ.029</td><td/><td><div><p>As a Health worker\nI want a list of tests that I (the health worker) can order\nSo that I can provide appropriate services according to the latest clinical protocols</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.030\"> </a></b>HIV.FXNREQ.030</td><td/><td><div><p>As a Health worker\nI want to print a requisition for lab tests, which includes required information for performing the test\nSo that I can provide the client with list of test required</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.031\"> </a></b>HIV.FXNREQ.031</td><td/><td><div><p>As a Health worker\nI want the system to suggest appropriate treatments/investigations based on data entered\nSo that I can provide appropriate services according to the latest clinical protocols</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.032\"> </a></b>HIV.FXNREQ.032</td><td/><td><div><p>As a Health worker\nI want to see where I can refer clients for specialized counselling that I’m not qualified to provide\nSo that I can direct clients to where they can get the confidential and sensitive support they need</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.033\"> </a></b>HIV.FXNREQ.033</td><td/><td><div><p>As a Health worker\nI want to see a schedule of available days\nSo that I can notify the client when to return for subsequent contact</p>\n</div></td></tr><tr><td><b><a name=\"HIV.FXNREQ.034\"> </a></b>HIV.FXNREQ.034</td><td/><td><div><p>As a Health worker\nI want to have the system automatically calculate the date when the client should return for care based on, for example, risk, prevalence or clinical stability\nSo that I do not have to calculate this myself</p>\n</div></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://smart.who.int/hiv/Requirements/HIV.B.HIVtestingservices" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version" ] ;
+     fhir:Extension.valueString [ fhir:value "0.4.4" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "active" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "WHO" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+       ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction" ]
+  ], [
+     fhir:index 7 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.022" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want to identify the date of the last attended contact\nSo that I can ensure the client is receiving services according to recommended schedule" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.023" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want the system to highlight abnormal values\nSo that I can identify critical health issues or errors (if a data-entry issue)" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 9 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.024" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want to see which clinical staging conditions or symptoms the client has already experienced\nSo that the information may be used to help classify the client’s HIV disease severity." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 10 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.025" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want the system to provide real-time range checks and integrity checks on data\nSo that I can ensure entry of accurate information and reduce errors" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 11 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.026" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker or data entry clerk\nI want to record the HIV status of partners or family members of clients, with proper consent\nSo that I can provide specialized care (for example, in serodiscordant couples)" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 12 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.027" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want to review past medical history previously entered\nSo that I can provide appropriate services according to the latest clinical protocols" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 13 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.028" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker or data entry clerk\nI want to have different question and language prompts when clients are from different populations\nSo that I can better support populations such as adolescents, paediatric clients and caregivers and their unique needs." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 14 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.029" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want a list of tests that I (the health worker) can order\nSo that I can provide appropriate services according to the latest clinical protocols" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 15 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.030" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want to print a requisition for lab tests, which includes required information for performing the test\nSo that I can provide the client with list of test required" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 16 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.031" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want the system to suggest appropriate treatments/investigations based on data entered\nSo that I can provide appropriate services according to the latest clinical protocols" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 17 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.032" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want to see where I can refer clients for specialized counselling that I’m not qualified to provide\nSo that I can direct clients to where they can get the confidential and sensitive support they need" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 18 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.033" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want to see a schedule of available days\nSo that I can notify the client when to return for subsequent contact" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 19 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "HIV.FXNREQ.034" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "As a Health worker\nI want to have the system automatically calculate the date when the client should return for care based on, for example, risk, prevalence or clinical stability\nSo that I do not have to calculate this myself" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "Requirements" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/Basic/HIV.B.HIVtestingservices.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

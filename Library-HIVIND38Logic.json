@@ -1,0 +1,161 @@
+{
+  "resourceType": "Library",
+  "id": "HIVIND38Logic",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-5f2ec8b1-88b6-42eb-8a34-86c258bb9575.html): Unable to read attribute 'months' value on &lt;2&gt; at line 232 column 31</b></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "url": "http://smart.who.int/hiv/Library/HIVIND38Logic",
+  "version": "0.4.4",
+  "name": "HIVIND38Logic",
+  "title": "HIV.IND.38 Logic",
+  "status": "draft",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "date": "2026-10-14T11:09:56+00:00",
+  "publisher": "WHO",
+  "contact": [
+    {
+      "name": "WHO",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://who.int"
+        }
+      ]
+    }
+  ],
+  "description": "% of HIV-exposed infants who receive a virological test for HIV within two months (and 12 months) of birth",
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "display": "Library HIC",
+      "resource": "http://smart.who.int/hiv/Library/HIVCommon|0.0.1"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library WCom",
+      "resource": "http://smart.who.int/hiv/Library/WHOCommon"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library HE",
+      "resource": "http://smart.who.int/hiv/Library/HIVElements"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library HIE",
+      "resource": "http://smart.who.int/hiv/Library/HIVIndicatorElements"
+    }
+  ],
+  "parameter": [
+    {
+      "name": "Measurement Period",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Period"
+    },
+    {
+      "name": "Patient",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Patient"
+    },
+    {
+      "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Numerator",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Denominator",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Age Stratifier",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "string"
+    },
+    {
+      "name": "Geographic Region Stratifier",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "string"
+    },
+    {
+      "name": "EID test number 1 test result",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Coding"
+    },
+    {
+      "name": "Stratification",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "string"
+    }
+  ],
+  "dataRequirement": [
+    {
+      "type": "Patient",
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/Patient"
+      ]
+    },
+    {
+      "type": "Patient",
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/Patient"
+      ]
+    }
+  ],
+  "content": [
+    {
+      "contentType": "text/cql",
+      "url": "Library-HIVIND38Logic.cql"
+    },
+    {
+      "contentType": "application/elm+json",
+      "url": "Library-HIVIND38Logic.elm.json"
+    }
+  ]
+}

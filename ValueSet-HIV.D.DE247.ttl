@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.D.DE247> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIV.D.DE247"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset" ;
+       fhir:index 1 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset" ;
+       fhir:index 2 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HIV.D.DE247</b></p><a name=\"HIV.D.DE247\"> </a><a name=\"hcHIV.D.DE247\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-HIVConcepts.html\"><code>http://smart.who.int/hiv/CodeSystem/HIVConcepts</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.4.4</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE248\">HIV.D.DE248</a></td><td>Provide co-trimoxazole preventive therapy (CPT)</td><td>Provide co-trimoxazole prophylaxis for clients new to ART or identified as taking it</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE249\">HIV.D.DE249</a></td><td>Intensified TB case finding and linkage to TB treatment</td><td>Offer or refer for intensified TB case finding and linkage to TB treatment</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE250\">HIV.D.DE250</a></td><td>Provide isoniazid preventive therapy</td><td>Provide isoniazid preventive therapy</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE251\">HIV.D.DE251</a></td><td>Screen for cryptococcal infection and fungal prophylaxis</td><td>Screen for cryptococcal infection and fungal prophylaxis</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE252\">HIV.D.DE252</a></td><td>Screen for hepatitis B</td><td>Screen for hepatitis B virus</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE253\">HIV.D.DE253</a></td><td>Screen for hepatitis C</td><td>Screen for hepatitis C virus</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE254\">HIV.D.DE254</a></td><td>Prevent malaria</td><td>Prevent malaria including with insecticide-treated bed-nets and prophylaxis</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE255\">HIV.D.DE255</a></td><td>Screen for STIs</td><td>Screen for STIs</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE256\">HIV.D.DE256</a></td><td>Prevent and screen for cervical cancer</td><td>Prevent and screen for cervical cancer</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE257\">HIV.D.DE257</a></td><td>Anal cancer screening (for men who have sex with men)</td><td>Offer anal cancer screening (for men who have sex with men)</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE258\">HIV.D.DE258</a></td><td>Assessment and provision of vaccinations</td><td>Assessment and provision of vaccinations, such as for people from key populations, pregnant women and infants; and, where appropriate, tetanus vaccination for adolescent boys and men receiving VMMC</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://smart.who.int/hiv/ValueSet/HIV.D.DE247"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.4"] ;
+  fhir:ValueSet.name [ fhir:value "HIVDDE247"] ;
+  fhir:ValueSet.title [ fhir:value "Preventing and treating coinfections ValueSet"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "WHO"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value set of coinfection prevention and treatment activities performed during the care visit"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE248" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Provide co-trimoxazole preventive therapy (CPT)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE249" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intensified TB case finding and linkage to TB treatment" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE250" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Provide isoniazid preventive therapy" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE251" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Screen for cryptococcal infection and fungal prophylaxis" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE252" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Screen for hepatitis B" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE253" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Screen for hepatitis C" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE254" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prevent malaria" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE255" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Screen for STIs" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE256" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prevent and screen for cervical cancer" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE257" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anal cancer screening (for men who have sex with men)" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE258" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Assessment and provision of vaccinations" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.D.DE247.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

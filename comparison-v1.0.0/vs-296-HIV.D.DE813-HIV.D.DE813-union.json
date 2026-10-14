@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-851",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-851",
+  "name" : "UnionHIVDDE813AndHIVDDE813",
+  "title" : "Union of Type of specimen ValueSet And Type of specimen ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE814",
+        "display" : "Blood"
+      },
+      {
+        "code" : "HIV.D.DE815",
+        "display" : "Urine"
+      },
+      {
+        "code" : "HIV.D.DE816",
+        "display" : "Cervical or vaginal swab"
+      },
+      {
+        "code" : "HIV.D.DE817",
+        "display" : "Urethral or penile swab"
+      },
+      {
+        "code" : "HIV.D.DE818",
+        "display" : "Rectal swab"
+      },
+      {
+        "code" : "HIV.D.DE819",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

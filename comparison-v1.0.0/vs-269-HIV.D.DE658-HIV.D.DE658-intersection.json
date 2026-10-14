@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-771",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-771",
+  "name" : "IntersectionHIVDDE658AndHIVDDE658",
+  "title" : "Intersection of Cervical cancer primary screening test type ValueSet And Cervical cancer primary screening test type ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE659",
+        "display" : "HPV-DNA"
+      },
+      {
+        "code" : "HIV.D.DE660",
+        "display" : "VIA"
+      },
+      {
+        "code" : "HIV.D.DE661",
+        "display" : "Cervical cytology"
+      },
+      {
+        "code" : "HIV.D.DE662",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

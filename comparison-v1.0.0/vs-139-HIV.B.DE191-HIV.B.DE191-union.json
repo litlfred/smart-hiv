@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-380",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-380",
+  "name" : "UnionHIVBDE191AndHIVBDE191",
+  "title" : "Union of Type of follow-up appointment ValueSet And Type of follow-up appointment ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.B.DE192",
+        "display" : "Retesting for HIV"
+      },
+      {
+        "code" : "HIV.B.DE193",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

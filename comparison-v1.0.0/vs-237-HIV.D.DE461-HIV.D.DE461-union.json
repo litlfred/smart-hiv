@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-674",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-674",
+  "name" : "UnionHIVDDE461AndHIVDDE461",
+  "title" : "Union of Medications dispensed ValueSet And Medications dispensed ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE462",
+        "display" : "Number of days of medications dispensed"
+      },
+      {
+        "code" : "HIV.D.DE463",
+        "display" : "Dosage"
+      },
+      {
+        "code" : "HIV.D.DE464",
+        "display" : "Frequency"
+      }]
+    }]
+  }
+}

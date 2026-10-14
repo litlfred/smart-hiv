@@ -1,0 +1,1392 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/StructureDefinition/HIVHFollowup> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIVHFollowup"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition" ;
+       fhir:index 1 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition HIVHFollowup</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablestructuredefinition.html\">CRMI Shareable StructureDefinition</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablestructuredefinition.html\">CRMI Publishable StructureDefinition</a></p></div><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup\" title=\"This tab describes the data that are collected during the follow-up and contacting clients workflow (HIV.H)\">HIVHFollowup</a><a name=\"HIVHFollowup\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.50\">0</span><span style=\"opacity: 0.50\">..</span><span style=\"opacity: 0.50\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">HIV.H Follow-up<br/><span style=\"font-weight:bold\">Instances of this type can be the target of a Reference</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.reasonForFollowUp\" title=\"The reason why the client is being followed up\">reasonForFollowUp</a><a name=\"HIVHFollowup.reasonForFollowUp\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason for follow-up<br class=\"binding\"/><span style=\"font-weight:bold\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIV.H.DE1.html\" title=\"http://smart.who.int/hiv/ValueSet/HIV.H.DE1\" class=\"binding\">Reason for follow-up ValueSet</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><br/></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.otherFollowUpReasonSpecify\" title=\"Client was followed up for another reason (specify)\">otherFollowUpReasonSpecify</a><a name=\"HIVHFollowup.otherFollowUpReasonSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other follow-up reason (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.clientContactAttempted\" title=\"An attempt to locate the client was made\">clientContactAttempted</a><a name=\"HIVHFollowup.clientContactAttempted\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Client contact attempted</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.dateOfContactAttempt\" title=\"Date of attempt to contact client\">dateOfContactAttempt</a><a name=\"HIVHFollowup.dateOfContactAttempt\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of contact attempt</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.contactAttemptedBy\" title=\"Who attempted to reach out to the client\">contactAttemptedBy</a><a name=\"HIVHFollowup.contactAttemptedBy\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Contact attempted by</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.contactMethod\" title=\"Method used to try to reach out to the client\">contactMethod</a><a name=\"HIVHFollowup.contactMethod\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Contact method<br class=\"binding\"/><span style=\"font-weight:bold\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIV.H.DE13.html\" title=\"http://smart.who.int/hiv/ValueSet/HIV.H.DE13\" class=\"binding\">Contact method ValueSet</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.sourceOfInformation\" title=\"Source of information about the client\">sourceOfInformation</a><a name=\"HIVHFollowup.sourceOfInformation\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Source of information<br class=\"binding\"/><span style=\"font-weight:bold\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIV.H.DE17.html\" title=\"http://smart.who.int/hiv/ValueSet/HIV.H.DE17\" class=\"binding\">Source of information ValueSet</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.otherSourceOfInformationSpecify\" title=\"Information about the client's status was provided by someone else (specify)\">otherSourceOfInformationSpecify</a><a name=\"HIVHFollowup.otherSourceOfInformationSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other source of information (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.outcomeFromOutreachAttempt\" title=\"Detailed outcome from the attempt to locate the client\">outcomeFromOutreachAttempt</a><a name=\"HIVHFollowup.outcomeFromOutreachAttempt\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Outcome from outreach attempt<br class=\"binding\"/><span style=\"font-weight:bold\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIV.H.DE23.html\" title=\"http://smart.who.int/hiv/ValueSet/HIV.H.DE23\" class=\"binding\">Outcome from outreach attempt ValueSet</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.movedFromCatchmentArea\" title=\"The client moved from the catchment area (may be reported from the community level)\">movedFromCatchmentArea</a><a name=\"HIVHFollowup.movedFromCatchmentArea\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Moved from catchment area</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.dateClientMovedFromCatchmentArea\" title=\"The date on which the client moved from the catchment area, if known\">dateClientMovedFromCatchmentArea</a><a name=\"HIVHFollowup.dateClientMovedFromCatchmentArea\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date client moved from catchment area</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.newCatchmentArea\" title=\"New catchment area where the client resides\">newCatchmentArea</a><a name=\"HIVHFollowup.newCatchmentArea\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">New catchment area</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.partnerOrContactOfIndexCase\" title=\"The client was identified by an index case as a partner or contact\">partnerOrContactOfIndexCase</a><a name=\"HIVHFollowup.partnerOrContactOfIndexCase\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner or contact of index case</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.hivStatusOfPartnerOrContact\" title=\"HIV status of the partner or contact given by the index case\">hivStatusOfPartnerOrContact</a><a name=\"HIVHFollowup.hivStatusOfPartnerOrContact\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">HIV status of partner or contact<br class=\"binding\"/><span style=\"font-weight:bold\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIV.H.DE34.html\" title=\"http://smart.who.int/hiv/ValueSet/HIV.H.DE34\" class=\"binding\">HIV status of partner or contact ValueSet</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.dateOfDeath\" title=\"If deceased, the date that the client died\">dateOfDeath</a><a name=\"HIVHFollowup.dateOfDeath\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of death</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.causeOfDeath\" title=\"Cause of death, if known\">causeOfDeath</a><a name=\"HIVHFollowup.causeOfDeath\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Cause of death</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.placeOfDeath\" title=\"Where the client died, if known\">placeOfDeath</a><a name=\"HIVHFollowup.placeOfDeath\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Place of death</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.hivTreatmentOutcome\" title=\"The outcome for the client which is used for reporting retention/attrition.\">hivTreatmentOutcome</a><a name=\"HIVHFollowup.hivTreatmentOutcome\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">HIV treatment outcome<br class=\"binding\"/><span style=\"font-weight:bold\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIV.H.DE41.html\" title=\"http://smart.who.int/hiv/ValueSet/HIV.H.DE41\" class=\"binding\">HIV treatment outcome ValueSet</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.datePatientLostToFollowUp\" title=\"Date patient was lost to follow-up (LTFU)\">datePatientLostToFollowUp</a><a name=\"HIVHFollowup.datePatientLostToFollowUp\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date patient lost to follow-up</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.onArt\" title=\"Client is currently taking ART \">onArt</a><a name=\"HIVHFollowup.onArt\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">On ART</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.dateHivTreatmentOutcomeChanged\" title=\"The date on which the client's outcome (lost to follow-up, transferred out, death (documented), or refused (stopped) treatment) changed\">dateHivTreatmentOutcomeChanged</a><a name=\"HIVHFollowup.dateHivTreatmentOutcomeChanged\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date HIV treatment outcome changed</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.transferConfirmed\" title=\"Select if transfer to another facility is confirmed\">transferConfirmed</a><a name=\"HIVHFollowup.transferConfirmed\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Transfer confirmed</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.transferToFacility\" title=\"Name of health facility client was transferred to\">transferToFacility</a><a name=\"HIVHFollowup.transferToFacility\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Transfer to facility<br class=\"binding\"/><span style=\"font-weight:bold\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIV.H.DE50.html\" title=\"http://smart.who.int/hiv/ValueSet/HIV.H.DE50\" class=\"binding\">Transfer to facility ValueSet</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.dateOfTransferOut\" title=\"The date the client transferred out of the facility to be provided with care at another facility\">dateOfTransferOut</a><a name=\"HIVHFollowup.dateOfTransferOut\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of transfer out</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.adherenceAssessment\" title=\"Whether client is adherent or not to ART regimen per national guidelines (immunological or virological monitoring)\">adherenceAssessment</a><a name=\"HIVHFollowup.adherenceAssessment\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Adherence assessment</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.reasonsForAdherenceProblem\" title=\"Reason why client is not adherent\">reasonsForAdherenceProblem</a><a name=\"HIVHFollowup.reasonsForAdherenceProblem\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason(s) for adherence problem<br class=\"binding\"/><span style=\"font-weight:bold\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIV.H.DE53.html\" title=\"http://smart.who.int/hiv/ValueSet/HIV.H.DE53\" class=\"binding\">Reason(s) for adherence problem ValueSet</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><br/></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.otherReasonsForAdherenceProblem\" title=\"Client reported not being adherent because of other reason (specify)\">otherReasonsForAdherenceProblem</a><a name=\"HIVHFollowup.otherReasonsForAdherenceProblem\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other (specify)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.dateArtStopped\" title=\"Date on which client stopped ART\">dateArtStopped</a><a name=\"HIVHFollowup.dateArtStopped\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date ART stopped</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.reasonArtStopped\" title=\"Reason why client intentionally stopped ART\">reasonArtStopped</a><a name=\"HIVHFollowup.reasonArtStopped\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason ART stopped<br class=\"binding\"/><span style=\"font-weight:bold\" class=\"binding\">Binding: </span><a href=\"ValueSet-HIV.H.DE74.html\" title=\"http://smart.who.int/hiv/ValueSet/HIV.H.DE74\" class=\"binding\">Reason ART stopped ValueSet</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><br/></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">HIVHFollowup.</span><a href=\"StructureDefinition-HIVHFollowup-definitions.html#HIVHFollowup.otherReasonForStoppingArtSpecify\" title=\"Client stopped ART for other reason (specify)\">otherReasonForStoppingArtSpecify</a><a name=\"HIVHFollowup.otherReasonForStoppingArtSpecify\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other reason for stopping ART (specify)</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/logical-target" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "http://smart.who.int/hiv/StructureDefinition/HIVHFollowup"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.4.4"] ;
+  fhir:StructureDefinition.name [ fhir:value "HIVHFollowup"] ;
+  fhir:StructureDefinition.title [ fhir:value "HIV.H Follow-up"] ;
+  fhir:StructureDefinition.status [ fhir:value "active"] ;
+  fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "WHO"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "This tab describes the data that are collected during the follow-up and contacting clients workflow (HIV.H)"] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "http://smart.who.int/hiv/StructureDefinition/HIVHFollowup"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://hl7.org/fhir/StructureDefinition/Base" ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "4.0.1" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup" ] ;
+       fhir:ElementDefinition.short [ fhir:value "HIV.H Follow-up" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "This tab describes the data that are collected during the follow-up and contacting clients workflow (HIV.H)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.reasonForFollowUp" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.reasonForFollowUp" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE1" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Reason for follow-up" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The reason why the client is being followed up" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.reasonForFollowUp" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE1" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE1>
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.otherFollowUpReasonSpecify" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.otherFollowUpReasonSpecify" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE9" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other follow-up reason (specify)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Client was followed up for another reason (specify)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.otherFollowUpReasonSpecify" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.clientContactAttempted" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.clientContactAttempted" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE10" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Client contact attempted" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An attempt to locate the client was made" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.clientContactAttempted" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateOfContactAttempt" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateOfContactAttempt" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE11" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date of contact attempt" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date of attempt to contact client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.dateOfContactAttempt" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.contactAttemptedBy" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.contactAttemptedBy" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE12" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Contact attempted by" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Who attempted to reach out to the client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.contactAttemptedBy" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.contactMethod" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.contactMethod" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE13" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Contact method" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Method used to try to reach out to the client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.contactMethod" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE13" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE13>
+         ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.sourceOfInformation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.sourceOfInformation" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE17" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Source of information" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Source of information about the client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.sourceOfInformation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE17" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE17>
+         ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.otherSourceOfInformationSpecify" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.otherSourceOfInformationSpecify" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE22" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other source of information (specify)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Information about the client's status was provided by someone else (specify)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.otherSourceOfInformationSpecify" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.outcomeFromOutreachAttempt" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.outcomeFromOutreachAttempt" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE23" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Outcome from outreach attempt" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Detailed outcome from the attempt to locate the client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.outcomeFromOutreachAttempt" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE23" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE23>
+         ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.movedFromCatchmentArea" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.movedFromCatchmentArea" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE30" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Moved from catchment area" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The client moved from the catchment area (may be reported from the community level)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.movedFromCatchmentArea" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateClientMovedFromCatchmentArea" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateClientMovedFromCatchmentArea" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE31" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date client moved from catchment area" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The date on which the client moved from the catchment area, if known" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.dateClientMovedFromCatchmentArea" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.newCatchmentArea" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.newCatchmentArea" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE32" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "New catchment area" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "New catchment area where the client resides" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.newCatchmentArea" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.partnerOrContactOfIndexCase" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.partnerOrContactOfIndexCase" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE33" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Partner or contact of index case" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The client was identified by an index case as a partner or contact" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.partnerOrContactOfIndexCase" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.hivStatusOfPartnerOrContact" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.hivStatusOfPartnerOrContact" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE34" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "HIV status of partner or contact" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "HIV status of the partner or contact given by the index case" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.hivStatusOfPartnerOrContact" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE34" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE34>
+         ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateOfDeath" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateOfDeath" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE38" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date of death" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "If deceased, the date that the client died" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.dateOfDeath" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.causeOfDeath" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.causeOfDeath" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE39" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Cause of death" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Cause of death, if known" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.causeOfDeath" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.placeOfDeath" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.placeOfDeath" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE40" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Place of death" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Where the client died, if known" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.placeOfDeath" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.hivTreatmentOutcome" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.hivTreatmentOutcome" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE41" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "HIV treatment outcome" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The outcome for the client which is used for reporting retention/attrition." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.hivTreatmentOutcome" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE41" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE41>
+         ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.datePatientLostToFollowUp" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.datePatientLostToFollowUp" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE46" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date patient lost to follow-up" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date patient was lost to follow-up (LTFU)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.datePatientLostToFollowUp" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.onArt" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.onArt" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE47" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "On ART" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Client is currently taking ART" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.onArt" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateHivTreatmentOutcomeChanged" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateHivTreatmentOutcomeChanged" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE48" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date HIV treatment outcome changed" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The date on which the client's outcome (lost to follow-up, transferred out, death (documented), or refused (stopped) treatment) changed" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.dateHivTreatmentOutcomeChanged" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.transferConfirmed" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.transferConfirmed" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE49" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Transfer confirmed" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Select if transfer to another facility is confirmed" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.transferConfirmed" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.transferToFacility" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.transferToFacility" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE50" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Transfer to facility" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Name of health facility client was transferred to" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.transferToFacility" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE50" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE50>
+         ]
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateOfTransferOut" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateOfTransferOut" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE51" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date of transfer out" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The date the client transferred out of the facility to be provided with care at another facility" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.dateOfTransferOut" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.adherenceAssessment" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.adherenceAssessment" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE52" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Adherence assessment" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Whether client is adherent or not to ART regimen per national guidelines (immunological or virological monitoring)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.adherenceAssessment" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.reasonsForAdherenceProblem" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.reasonsForAdherenceProblem" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE53" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Reason(s) for adherence problem" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Reason why client is not adherent" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.reasonsForAdherenceProblem" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE53" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE53>
+         ]
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.otherReasonsForAdherenceProblem" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.otherReasonsForAdherenceProblem" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE72" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other (specify)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Client reported not being adherent because of other reason (specify)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.otherReasonsForAdherenceProblem" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateArtStopped" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateArtStopped" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE73" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date ART stopped" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date on which client stopped ART" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.dateArtStopped" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.reasonArtStopped" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.reasonArtStopped" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE74" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Reason ART stopped" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Reason why client intentionally stopped ART" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.reasonArtStopped" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE74" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE74>
+         ]
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.otherReasonForStoppingArtSpecify" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.otherReasonForStoppingArtSpecify" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE81" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other reason for stopping ART (specify)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Client stopped ART for other reason (specify)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "HIVHFollowup.otherReasonForStoppingArtSpecify" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup" ] ;
+       fhir:ElementDefinition.short [ fhir:value "HIV.H Follow-up" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "This tab describes the data that are collected during the follow-up and contacting clients workflow (HIV.H)" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.reasonForFollowUp" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.reasonForFollowUp" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE1" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Reason for follow-up" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The reason why the client is being followed up" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE1" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE1>
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.otherFollowUpReasonSpecify" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.otherFollowUpReasonSpecify" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE9" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other follow-up reason (specify)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Client was followed up for another reason (specify)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.clientContactAttempted" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.clientContactAttempted" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE10" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Client contact attempted" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An attempt to locate the client was made" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateOfContactAttempt" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateOfContactAttempt" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE11" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date of contact attempt" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date of attempt to contact client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.contactAttemptedBy" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.contactAttemptedBy" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE12" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Contact attempted by" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Who attempted to reach out to the client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.contactMethod" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.contactMethod" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE13" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Contact method" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Method used to try to reach out to the client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE13" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE13>
+         ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.sourceOfInformation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.sourceOfInformation" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE17" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Source of information" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Source of information about the client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE17" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE17>
+         ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.otherSourceOfInformationSpecify" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.otherSourceOfInformationSpecify" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE22" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other source of information (specify)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Information about the client's status was provided by someone else (specify)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.outcomeFromOutreachAttempt" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.outcomeFromOutreachAttempt" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE23" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Outcome from outreach attempt" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Detailed outcome from the attempt to locate the client" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE23" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE23>
+         ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.movedFromCatchmentArea" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.movedFromCatchmentArea" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE30" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Moved from catchment area" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The client moved from the catchment area (may be reported from the community level)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateClientMovedFromCatchmentArea" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateClientMovedFromCatchmentArea" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE31" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date client moved from catchment area" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The date on which the client moved from the catchment area, if known" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.newCatchmentArea" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.newCatchmentArea" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE32" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "New catchment area" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "New catchment area where the client resides" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.partnerOrContactOfIndexCase" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.partnerOrContactOfIndexCase" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE33" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Partner or contact of index case" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The client was identified by an index case as a partner or contact" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.hivStatusOfPartnerOrContact" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.hivStatusOfPartnerOrContact" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE34" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "HIV status of partner or contact" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "HIV status of the partner or contact given by the index case" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE34" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE34>
+         ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateOfDeath" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateOfDeath" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE38" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date of death" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "If deceased, the date that the client died" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.causeOfDeath" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.causeOfDeath" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE39" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Cause of death" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Cause of death, if known" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.placeOfDeath" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.placeOfDeath" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE40" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Place of death" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Where the client died, if known" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.hivTreatmentOutcome" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.hivTreatmentOutcome" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE41" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "HIV treatment outcome" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The outcome for the client which is used for reporting retention/attrition." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE41" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE41>
+         ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.datePatientLostToFollowUp" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.datePatientLostToFollowUp" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE46" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date patient lost to follow-up" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date patient was lost to follow-up (LTFU)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.onArt" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.onArt" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE47" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "On ART" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Client is currently taking ART " ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateHivTreatmentOutcomeChanged" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateHivTreatmentOutcomeChanged" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE48" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date HIV treatment outcome changed" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The date on which the client's outcome (lost to follow-up, transferred out, death (documented), or refused (stopped) treatment) changed" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.transferConfirmed" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.transferConfirmed" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE49" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Transfer confirmed" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Select if transfer to another facility is confirmed" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.transferToFacility" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.transferToFacility" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE50" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Transfer to facility" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Name of health facility client was transferred to" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE50" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE50>
+         ]
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateOfTransferOut" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateOfTransferOut" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE51" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date of transfer out" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The date the client transferred out of the facility to be provided with care at another facility" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.adherenceAssessment" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.adherenceAssessment" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE52" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Adherence assessment" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Whether client is adherent or not to ART regimen per national guidelines (immunological or virological monitoring)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.reasonsForAdherenceProblem" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.reasonsForAdherenceProblem" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE53" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Reason(s) for adherence problem" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Reason why client is not adherent" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE53" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE53>
+         ]
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.otherReasonsForAdherenceProblem" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.otherReasonsForAdherenceProblem" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE72" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other (specify)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Client reported not being adherent because of other reason (specify)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.dateArtStopped" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.dateArtStopped" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE73" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date ART stopped" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date on which client stopped ART" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.reasonArtStopped" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.reasonArtStopped" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE74" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Reason ART stopped" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Reason why client intentionally stopped ART" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://smart.who.int/hiv/ValueSet/HIV.H.DE74" ;
+           fhir:link <http://smart.who.int/hiv/ValueSet/HIV.H.DE74>
+         ]
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.id [ fhir:value "HIVHFollowup.otherReasonForStoppingArtSpecify" ] ;
+       fhir:ElementDefinition.path [ fhir:value "HIVHFollowup.otherReasonForStoppingArtSpecify" ] ;
+       fhir:ElementDefinition.code [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE81" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other reason for stopping ART (specify)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Client stopped ART for other reason (specify)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/StructureDefinition/HIVHFollowup.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

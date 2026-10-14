@@ -1,0 +1,154 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.D.DE569> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIV.D.DE569"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset" ;
+       fhir:index 1 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset" ;
+       fhir:index 2 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HIV.D.DE569</b></p><a name=\"HIV.D.DE569\"> </a><a name=\"hcHIV.D.DE569\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\">CRMI Shareable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\">CRMI Publishable ValueSet</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\">CRMI Computable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"CodeSystem-HIVConcepts.html\"><code>http://smart.who.int/hiv/CodeSystem/HIVConcepts</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.4.4</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE570\">HIV.D.DE570</a></td><td>Copper-bearing intrauterine device (Cu-IUD)</td><td>A copper-bearing intrauterine device is being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE571\">HIV.D.DE571</a></td><td>Levonorgestrel intrauterine device (LNG-IUD)</td><td>A levonorgestrel intrauterine device (hormone-releasing intrauterine contraceptive device) is being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE572\">HIV.D.DE572</a></td><td>Etonogestrel (ETG) one-rod implant</td><td>An etonogestrel one-rod implant is being used</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE573\">HIV.D.DE573</a></td><td>Levonorgestrel (LNG) two-rod implant</td><td>A levonorgestrel two-rod implant is being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE574\">HIV.D.DE574</a></td><td>DMPA-IM</td><td>Injectable depot medroxyprogesterone acetate (DMPA), administered intramuscularly, is being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE575\">HIV.D.DE575</a></td><td>DMPA-SC</td><td>Injectable depot medroxyprogesterone acetate (DMPA), administered subcutaneously is being used</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE576\">HIV.D.DE576</a></td><td>NET-EN norethisterone enanthate</td><td>Injectable norethisterone enanthate (NET-EN) is being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE577\">HIV.D.DE577</a></td><td>Progestogen-only pills (POP)</td><td>Progestogen-only pills (POP) are being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE578\">HIV.D.DE578</a></td><td>Combined oral contraceptives (COCs)</td><td>Combined oral contraceptives (COCs) pills are being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE579\">HIV.D.DE579</a></td><td>Combined contraceptive patch</td><td>Transdermal combined contraceptive patch is being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE580\">HIV.D.DE580</a></td><td>Combined contraceptive vaginal ring (CVR)</td><td>Combined contraceptive vaginal ring (CVR) is being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE581\">HIV.D.DE581</a></td><td>Progesterone-releasing vaginal ring (PVR)</td><td>Progesterone-releasing vaginal ring (PVR) is being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE582\">HIV.D.DE582</a></td><td>Lactational amenorrhea method (LAM)</td><td>Lactational amenorrhea method (LAM) is being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE583\">HIV.D.DE583</a></td><td>Emergency contraceptive pills (ECPs)</td><td>Client uses emergency contraceptive pills (ECPs)</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE584\">HIV.D.DE584</a></td><td>Fertility awareness-based methods (FAB)</td><td>Client uses fertility awareness-based methods (FAB)</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE585\">HIV.D.DE585</a></td><td>Male condoms</td><td>Male condoms are being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE586\">HIV.D.DE586</a></td><td>Female condoms</td><td>Female condoms are being used as a family planning method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE587\">HIV.D.DE587</a></td><td>Withdrawal</td><td>Client uses withdrawal method</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE588\">HIV.D.DE588</a></td><td>Female relying on male method</td><td>The female client is relying on her male partner for contraceptive methods (e.g. male condoms, male sterilization, withdrawal)</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE589\">HIV.D.DE589</a></td><td>Male relying on female method</td><td>The male client is relying on his female partner for contraceptive methods</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE590\">HIV.D.DE590</a></td><td>Male sterilization</td><td>Male surgical sterilization (a vasectomy) is the family planning method used</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE591\">HIV.D.DE591</a></td><td>Female sterilization</td><td>Female surgical sterilization procedure is the family planning method used</td></tr><tr><td><a href=\"CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46D.46DE592\">HIV.D.DE592</a></td><td>No method</td><td>Client is not using any family planning methods</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://smart.who.int/hiv/ValueSet/HIV.D.DE569"] ;
+  fhir:ValueSet.version [ fhir:value "0.4.4"] ;
+  fhir:ValueSet.name [ fhir:value "HIVDDE569"] ;
+  fhir:ValueSet.title [ fhir:value "Family planning method used ValueSet"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "WHO"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value set of method the client reports currently using at intake"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE570" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Copper-bearing intrauterine device (Cu-IUD)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE571" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Levonorgestrel intrauterine device (LNG-IUD)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE572" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Etonogestrel (ETG) one-rod implant" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE573" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Levonorgestrel (LNG) two-rod implant" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE574" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DMPA-IM" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE575" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DMPA-SC" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE576" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "NET-EN norethisterone enanthate" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE577" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Progestogen-only pills (POP)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE578" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Combined oral contraceptives (COCs)" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE579" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Combined contraceptive patch" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE580" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Combined contraceptive vaginal ring (CVR)" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE581" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Progesterone-releasing vaginal ring (PVR)" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE582" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactational amenorrhea method (LAM)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE583" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Emergency contraceptive pills (ECPs)" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE584" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fertility awareness-based methods (FAB)" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE585" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Male condoms" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE586" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Female condoms" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE587" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Withdrawal" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE588" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Female relying on male method" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE589" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Male relying on female method" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE590" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Male sterilization" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE591" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Female sterilization" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HIV.D.DE592" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No method" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/ValueSet/HIV.D.DE569.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

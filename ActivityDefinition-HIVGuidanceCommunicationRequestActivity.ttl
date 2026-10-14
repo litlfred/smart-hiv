@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/ActivityDefinition/HIVGuidanceCommunicationRequestActivity> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIVGuidanceCommunicationRequestActivity"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationactivity" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationactivity>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">HIVGuidanceCommunicationRequestActivity</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">HIVGuidanceCommunicationRequestActivity</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.4.4</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Status: </b></th>\n            <td style=\"padding-left: 4px;\">draft</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Experimental: </b></th>\n            <td style=\"padding-left: 4px;\">true</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date (date last changed): </b></th>\n            <td style=\"padding-left: 4px;\">2024-07-25</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher (steward): </b></th>\n            <td style=\"padding-left: 4px;\">WHO</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Description: </b></th>\n            <td style=\"padding-left: 4px;\"><div><p>CommunicationRequest to provide HIV Guidance to practitioner</p>\n</div></td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        \n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Kind: </b></th>\n            <td style=\"padding-left: 4px;\">CommunicationRequest</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Profile: </b></th>\n            <td style=\"padding-left: 4px;\">http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Intent: </b></th>\n            <td style=\"padding-left: 4px;\">proposal</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>doNotPerform: </b></th>\n            <td style=\"padding-left: 4px;\">false</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Dynamic Values: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <ul>\n                    \n                    <li>status: <i>('draft' from \"http://hl7.org/fhir/request-status\")</i><br/></li>\n                    \n                    <li>priority: <i>('routine' from \"http://hl7.org/fhir/request-priority\")</i><br/></li>\n                    \n                </ul>\n            </td>\n        </tr>\n        \n    </table>\n</div>\n</div>"
+  ] ;
+  fhir:ActivityDefinition.url [ fhir:value "http://smart.who.int/hiv/ActivityDefinition/HIVGuidanceCommunicationRequestActivity"] ;
+  fhir:ActivityDefinition.version [ fhir:value "0.4.4"] ;
+  fhir:ActivityDefinition.name [ fhir:value "HIVGuidanceCommunicationRequestActivity"] ;
+  fhir:ActivityDefinition.title [ fhir:value "HIVGuidanceCommunicationRequestActivity"] ;
+  fhir:ActivityDefinition.status [ fhir:value "draft"] ;
+  fhir:ActivityDefinition.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ActivityDefinition.date [ fhir:value "2024-07-25"^^xsd:date] ;
+  fhir:ActivityDefinition.publisher [ fhir:value "WHO"] ;
+  fhir:ActivityDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ActivityDefinition.description [ fhir:value "CommunicationRequest to provide HIV Guidance to practitioner"] ;
+  fhir:ActivityDefinition.kind [ fhir:value "CommunicationRequest"] ;
+  fhir:ActivityDefinition.profile [
+     fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" ;
+     fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest>
+  ] ;
+  fhir:ActivityDefinition.intent [ fhir:value "proposal"] ;
+  fhir:ActivityDefinition.doNotPerform [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ActivityDefinition.dynamicValue [
+     fhir:index 0 ;
+     fhir:ActivityDefinition.dynamicValue.path [ fhir:value "status" ] ;
+     fhir:ActivityDefinition.dynamicValue.expression [
+       fhir:Expression.description [ fhir:value "Status = 'draft'" ] ;
+       fhir:Expression.language [ fhir:value "text/cql" ] ;
+       fhir:Expression.expression [ fhir:value "'draft' from \"http://hl7.org/fhir/request-status\"" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ActivityDefinition.dynamicValue.path [ fhir:value "priority" ] ;
+     fhir:ActivityDefinition.dynamicValue.expression [
+       fhir:Expression.description [ fhir:value "Priority = 'routine'" ] ;
+       fhir:Expression.language [ fhir:value "text/cql" ] ;
+       fhir:Expression.expression [ fhir:value "'routine' from \"http://hl7.org/fhir/request-priority\"" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/ActivityDefinition/HIVGuidanceCommunicationRequestActivity.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

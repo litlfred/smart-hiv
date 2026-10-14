@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-1106",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-1106",
+  "name" : "UnionHIVPRVDE11AndHIVPRVDE11",
+  "title" : "Union of HIV status of contact ValueSet And HIV status of contact ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.PRV.DE12",
+        "display" : "HIV-positive"
+      },
+      {
+        "code" : "HIV.PRV.DE13",
+        "display" : "HIV-negative"
+      },
+      {
+        "code" : "HIV.PRV.DE14",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

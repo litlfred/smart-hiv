@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/ActivityDefinition/HIVB9DTScheduleFollowUp> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIVB9DTScheduleFollowUp"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">HIV.B9.DT Schedule Follow-up Test</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">HIVB9DTScheduleFollowUp</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.4.4</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Status: </b></th>\n            <td style=\"padding-left: 4px;\">draft</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Experimental: </b></th>\n            <td style=\"padding-left: 4px;\">true</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date (date last changed): </b></th>\n            <td style=\"padding-left: 4px;\">2024-07-25</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher (steward): </b></th>\n            <td style=\"padding-left: 4px;\">WHO</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Description: </b></th>\n            <td style=\"padding-left: 4px;\"><div><p>Schedule Follow-up Test</p>\n</div></td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Libraries: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td><a href=\"Library-HIVB9DTLogic.html\">HIV.B9.DT Logic</a></td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n        \n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Kind: </b></th>\n            <td style=\"padding-left: 4px;\">ServiceRequest</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Profile: </b></th>\n            <td style=\"padding-left: 4px;\">http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Intent: </b></th>\n            <td style=\"padding-left: 4px;\">proposal</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>doNotPerform: </b></th>\n            <td style=\"padding-left: 4px;\">false</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Dynamic Values: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <ul>\n                    \n                    <li>status: <i>('draft' from \"http://hl7.org/fhir/request-status\")</i><br/></li>\n                    \n                    <li>priority: <i>('routine' from \"http://hl7.org/fhir/request-priority\")</i><br/></li>\n                    \n                </ul>\n            </td>\n        </tr>\n        \n    </table>\n</div>\n</div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Library ;
+     fhir:index 0 ;
+     fhir:Resource.id [ fhir:value "effective-data-requirements" ] ;
+     fhir:Library.name [ fhir:value "EffectiveDataRequirements" ] ;
+     fhir:Library.status [ fhir:value "active" ] ;
+     fhir:Library.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/library-type" ] ;
+         fhir:Coding.code [ fhir:value "module-definition" ]
+       ]
+     ] ;
+     fhir:Library.relatedArtifact [
+       fhir:index 0 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "FHIR model information" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1" ;
+         fhir:link <http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1>
+       ]
+     ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability" ] ;
+     fhir:Extension.valueCode [ fhir:value "computable" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements" ] ;
+     fhir:Extension.valueCanonical [ fhir:value "#effective-data-requirements" ]
+  ] ;
+  fhir:ActivityDefinition.url [ fhir:value "http://smart.who.int/hiv/ActivityDefinition/HIVB9DTScheduleFollowUp"] ;
+  fhir:ActivityDefinition.version [ fhir:value "0.4.4"] ;
+  fhir:ActivityDefinition.name [ fhir:value "HIVB9DTScheduleFollowUp"] ;
+  fhir:ActivityDefinition.title [ fhir:value "HIV.B9.DT Schedule Follow-up Test"] ;
+  fhir:ActivityDefinition.status [ fhir:value "draft"] ;
+  fhir:ActivityDefinition.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ActivityDefinition.date [ fhir:value "2024-07-25"^^xsd:date] ;
+  fhir:ActivityDefinition.publisher [ fhir:value "WHO"] ;
+  fhir:ActivityDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ActivityDefinition.description [ fhir:value "Schedule Follow-up Test"] ;
+  fhir:ActivityDefinition.library [
+     fhir:value "http://smart.who.int/hiv/Library/HIVB9DTLogic" ;
+     fhir:index 0 ;
+     fhir:link <http://smart.who.int/hiv/Library/HIVB9DTLogic>
+  ] ;
+  fhir:ActivityDefinition.kind [ fhir:value "ServiceRequest"] ;
+  fhir:ActivityDefinition.profile [
+     fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest" ;
+     fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest>
+  ] ;
+  fhir:ActivityDefinition.intent [ fhir:value "proposal"] ;
+  fhir:ActivityDefinition.doNotPerform [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ActivityDefinition.dynamicValue [
+     fhir:index 0 ;
+     fhir:ActivityDefinition.dynamicValue.path [ fhir:value "status" ] ;
+     fhir:ActivityDefinition.dynamicValue.expression [
+       fhir:Expression.description [ fhir:value "Status = 'draft'" ] ;
+       fhir:Expression.language [ fhir:value "text/cql" ] ;
+       fhir:Expression.expression [ fhir:value "'draft' from \"http://hl7.org/fhir/request-status\"" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ActivityDefinition.dynamicValue.path [ fhir:value "priority" ] ;
+     fhir:ActivityDefinition.dynamicValue.expression [
+       fhir:Expression.description [ fhir:value "Priority = 'routine'" ] ;
+       fhir:Expression.language [ fhir:value "text/cql" ] ;
+       fhir:Expression.expression [ fhir:value "'routine' from \"http://hl7.org/fhir/request-priority\"" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/ActivityDefinition/HIVB9DTScheduleFollowUp.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

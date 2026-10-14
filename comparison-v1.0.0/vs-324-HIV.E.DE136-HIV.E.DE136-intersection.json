@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-936",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-936",
+  "name" : "IntersectionHIVEDE136AndHIVEDE136",
+  "title" : "Intersection of Type of iron supplement dosage provided ValueSet And Type of iron supplement dosage provided ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.E.DE137",
+        "display" : "Daily"
+      },
+      {
+        "code" : "HIV.E.DE138",
+        "display" : "Weekly"
+      }]
+    }]
+  }
+}

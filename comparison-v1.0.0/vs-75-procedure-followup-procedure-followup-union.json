@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-188",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-188",
+  "name" : "UnionProcedureFollowUpCodes(SNOMEDCT)AndProcedureFollowUpCodes(SNOMEDCT)",
+  "title" : "Union of Procedure Follow up Codes (SNOMED CT) And Procedure Follow up Codes (SNOMED CT)",
+  "status" : "draft",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "18949003"
+      },
+      {
+        "code" : "30549001"
+      },
+      {
+        "code" : "241031001"
+      },
+      {
+        "code" : "35963001"
+      },
+      {
+        "code" : "225164002"
+      },
+      {
+        "code" : "447346005"
+      },
+      {
+        "code" : "229506003"
+      },
+      {
+        "code" : "274441001"
+      },
+      {
+        "code" : "394725008"
+      },
+      {
+        "code" : "359825008"
+      }]
+    }]
+  }
+}

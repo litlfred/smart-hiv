@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-531",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-531",
+  "name" : "IntersectionHIVCDE41AndHIVCDE41",
+  "title" : "Intersection of Pregnancy intention in serodiscordant partnerships ValueSet And Pregnancy intention in serodiscordant partnerships ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.C.DE42",
+        "display" : "Yes, I want to become pregnant"
+      },
+      {
+        "code" : "HIV.C.DE43",
+        "display" : "I'm OK either way"
+      },
+      {
+        "code" : "HIV.C.DE44",
+        "display" : "No, I don't want to become pregnant"
+      },
+      {
+        "code" : "HIV.C.DE45",
+        "display" : "Unsure"
+      }]
+    }]
+  }
+}

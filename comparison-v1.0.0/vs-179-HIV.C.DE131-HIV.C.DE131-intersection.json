@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-501",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-501",
+  "name" : "IntersectionHIVCDE131AndHIVCDE131",
+  "title" : "Intersection of Prevention services offered and referrals ValueSet And Prevention services offered and referrals ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.C.DE132",
+        "display" : "Male and female condoms and condom-compatible lubricants offered"
+      },
+      {
+        "code" : "HIV.C.DE133",
+        "display" : "Voluntary medical male circumcision (VMMC) referral"
+      },
+      {
+        "code" : "HIV.C.DE134",
+        "display" : "Harm reduction for people who inject drugs"
+      },
+      {
+        "code" : "HIV.C.DE135",
+        "display" : "Behavioural interventions to support risk reduction"
+      }]
+    }]
+  }
+}

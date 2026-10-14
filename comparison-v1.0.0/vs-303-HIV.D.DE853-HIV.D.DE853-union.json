@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-872",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-872",
+  "name" : "UnionHIVDDE853AndHIVDDE853",
+  "title" : "Union of Herpes simplex virus (HSV) test type ValueSet And Herpes simplex virus (HSV) test type ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE854",
+        "display" : "NAAT"
+      },
+      {
+        "code" : "HIV.D.DE855",
+        "display" : "Antibody test"
+      },
+      {
+        "code" : "HIV.D.DE856",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

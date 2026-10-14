@@ -1,0 +1,324 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/ExampleScenario/HIV.B.HIVtesting> a fhir:ExampleScenario ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIV.B.HIVtesting"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ExampleScenario HIV.B.HIVtesting</b></p><a name=\"HIV.B.HIVtesting\"> </a><a name=\"hcHIV.B.HIVtesting\"> </a><p><b>url</b>: <a href=\"ExampleScenario-HIV.B.HIVtesting.html\">HIV.B. HIV testing services</a></p><p><b>version</b>: 0.4.4</p><p><b>name</b>: HIV.B. HIV testing services</p><p><b>status</b>: Active</p><p><b>date</b>: 2026-10-14 11:09:56+0000</p><p><b>publisher</b>: WHO</p><p><b>contact</b>: WHO: <a href=\"http://who.int\">http://who.int</a></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: patient</p><p><b>type</b>: Person</p><p><b>name</b>: Patient</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: healthcareprovider</p><p><b>type</b>: Person</p><p><b>name</b>: Health Care Provider</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: laboratory</p><p><b>type</b>: System</p><p><b>name</b>: Laboratory</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: patientResource</p><p><b>resourceType</b>: Patient</p><p><b>name</b>: Patient Resource</p><p><b>description</b>: </p><div><p>The Patient involved in the scenario.</p>\n</div></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: encounterResource</p><p><b>resourceType</b>: Encounter</p><p><b>name</b>: Encounter Resource</p><p><b>description</b>: </p><div><p>The Encounter where the patient meets with the clinician.</p>\n</div></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: observationResource</p><p><b>resourceType</b>: Observation</p><p><b>name</b>: HIV Test Result</p><p><b>description</b>: </p><div><p>The Observation resource capturing the HIV test result.</p>\n</div></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: diagnosisResource</p><p><b>resourceType</b>: Condition</p><p><b>name</b>: HIV Diagnosis</p><p><b>description</b>: </p><div><p>The Condition resource representing the HIV diagnosis.</p>\n</div></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: medicationRequestResource</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: ART Medication Request</p><p><b>description</b>: </p><div><p>The MedicationRequest for Antiretroviral Therapy (ART).</p>\n</div></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: appointmentResource</p><p><b>resourceType</b>: Appointment</p><p><b>name</b>: Follow-up Appointment</p><p><b>description</b>: </p><div><p>The Appointment resource for follow-up care.</p>\n</div></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: HIV.B. HIV testing services visit</p><p><b>description</b>: </p><div><p>The patient visits the clinician for an initial consultation.</p>\n</div><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 1</p><p><b>type</b>: create</p><p><b>name</b>: Determine reason for visit</p><p><b>initiator</b>: patient</p><p><b>receiver</b>: healthcareprovider</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>encounterResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Check for signs of serious illness</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Capture or update client history</p><p><b>initiator</b>: patient</p><p><b>receiver</b>: healthcareprovider</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>:  Take vital signs</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Provide pretest information</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Test for HIV using testing algorithm</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: laboratory</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Provide posttest counselling</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Determine recommended services</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: healthcareprovider</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Counsel on benefits of ART and disclosure</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Discuss voluntary disclosure and partner services options</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Make an informed decision on care</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: healthcareprovider</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Arrange for active ART referral</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Arrange follow-up</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Provide voluntary partner and family services</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Schedule retest</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Offer prevention options</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Offer other support services</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Offer sexual and reproductive health services</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>type</b>: create</p><p><b>name</b>: Offer other clinical services</p><p><b>initiator</b>: healthcareprovider</p><p><b>receiver</b>: patient</p><h3>Requests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ResourceId</b></td></tr><tr><td style=\"display: none\">*</td><td>patientResource</td></tr></table></blockquote></blockquote></blockquote></div>"
+  ] ;
+  fhir:ExampleScenario.url [ fhir:value "http://smart.who.int/hiv/ExampleScenario/HIV.B.HIVtesting"] ;
+  fhir:ExampleScenario.version [ fhir:value "0.4.4"] ;
+  fhir:ExampleScenario.name [ fhir:value "HIV.B. HIV testing services"] ;
+  fhir:ExampleScenario.status [ fhir:value "active"] ;
+  fhir:ExampleScenario.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:ExampleScenario.publisher [ fhir:value "WHO"] ;
+  fhir:ExampleScenario.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ExampleScenario.actor [
+     fhir:index 0 ;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "patient" ] ;
+     fhir:ExampleScenario.actor.type [ fhir:value "person" ] ;
+     fhir:ExampleScenario.actor.name [ fhir:value "Patient" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "healthcareprovider" ] ;
+     fhir:ExampleScenario.actor.type [ fhir:value "person" ] ;
+     fhir:ExampleScenario.actor.name [ fhir:value "Health Care Provider" ]
+  ], [
+     fhir:index 2 ;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "laboratory" ] ;
+     fhir:ExampleScenario.actor.type [ fhir:value "entity" ] ;
+     fhir:ExampleScenario.actor.name [ fhir:value "Laboratory" ]
+  ] ;
+  fhir:ExampleScenario.instance [
+     fhir:index 0 ;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "patientResource" ] ;
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Patient" ] ;
+     fhir:ExampleScenario.instance.name [ fhir:value "Patient Resource" ] ;
+     fhir:ExampleScenario.instance.description [ fhir:value "The Patient involved in the scenario." ]
+  ], [
+     fhir:index 1 ;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "encounterResource" ] ;
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Encounter" ] ;
+     fhir:ExampleScenario.instance.name [ fhir:value "Encounter Resource" ] ;
+     fhir:ExampleScenario.instance.description [ fhir:value "The Encounter where the patient meets with the clinician." ]
+  ], [
+     fhir:index 2 ;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "observationResource" ] ;
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Observation" ] ;
+     fhir:ExampleScenario.instance.name [ fhir:value "HIV Test Result" ] ;
+     fhir:ExampleScenario.instance.description [ fhir:value "The Observation resource capturing the HIV test result." ]
+  ], [
+     fhir:index 3 ;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "diagnosisResource" ] ;
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Condition" ] ;
+     fhir:ExampleScenario.instance.name [ fhir:value "HIV Diagnosis" ] ;
+     fhir:ExampleScenario.instance.description [ fhir:value "The Condition resource representing the HIV diagnosis." ]
+  ], [
+     fhir:index 4 ;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "medicationRequestResource" ] ;
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "MedicationRequest" ] ;
+     fhir:ExampleScenario.instance.name [ fhir:value "ART Medication Request" ] ;
+     fhir:ExampleScenario.instance.description [ fhir:value "The MedicationRequest for Antiretroviral Therapy (ART)." ]
+  ], [
+     fhir:index 5 ;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "appointmentResource" ] ;
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Appointment" ] ;
+     fhir:ExampleScenario.instance.name [ fhir:value "Follow-up Appointment" ] ;
+     fhir:ExampleScenario.instance.description [ fhir:value "The Appointment resource for follow-up care." ]
+  ] ;
+  fhir:ExampleScenario.process [
+     fhir:index 0 ;
+     fhir:ExampleScenario.process.title [ fhir:value "HIV.B. HIV testing services visit" ] ;
+     fhir:ExampleScenario.process.description [ fhir:value "The patient visits the clinician for an initial consultation." ] ;
+     fhir:ExampleScenario.process.step [
+       fhir:index 0 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "1" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Determine reason for visit" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "encounterResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Check for signs of serious illness" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Capture or update client history" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value " Take vital signs" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Provide pretest information" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Test for HIV using testing algorithm" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "laboratory" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Provide posttest counselling" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Determine recommended services" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Counsel on benefits of ART and disclosure" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Discuss voluntary disclosure and partner services options" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Make an informed decision on care" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Arrange for active ART referral" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Arrange follow-up" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Provide voluntary partner and family services" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Schedule retest" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Offer prevention options" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Offer other support services" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Offer sexual and reproductive health services" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ] ;
+         fhir:ExampleScenario.process.step.operation.type [ fhir:value "create" ] ;
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Offer other clinical services" ] ;
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "healthcareprovider" ] ;
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "patient" ] ;
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "patientResource" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/ExampleScenario/HIV.B.HIVtesting.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

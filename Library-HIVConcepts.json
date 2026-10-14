@@ -1,0 +1,1432 @@
+{
+  "resourceType": "Library",
+  "id": "HIVConcepts",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-b4e2dec9-4801-4511-9066-a9ed012fc672.html): unexpected non-end of element null::8  at line 1442 column 32</b></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "url": "http://smart.who.int/hiv/Library/HIVConcepts",
+  "version": "0.4.4",
+  "name": "HIVConcepts",
+  "title": "HIVConcepts",
+  "status": "draft",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "date": "2026-10-14T11:09:56+00:00",
+  "publisher": "WHO",
+  "contact": [
+    {
+      "name": "WHO",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://who.int"
+        }
+      ]
+    }
+  ],
+  "description": "Description not yet available for HIVConcepts.",
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "display": "Code System HIVConcepts",
+      "resource": "http://smart.who.int/hiv/CodeSystem/HIVConcepts"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Referred by Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.A.DE5"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Country of birth Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.A.DE13"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Gender Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.A.DE18"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Sex Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.A.DE25"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Marital Status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.A.DE30"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Administrative Area Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.A.DE43"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Communication preferences Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.A.DE46"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for visit - HIV.B.DE1 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE1"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Referred through partner services Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE5"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of contact or partner for partner services Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE8"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Testing entry point Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE15"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Entry point for community-level testing Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE18"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Entry point for facility-level testing - HIV.B.DE22 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE22"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Partner HIV status reported Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE33"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Partner is from a key population Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE37"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV self-test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE44"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Key population member type - HIV.B.DE50 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE50"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV exposure type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE61"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV diagnosing facility Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE66"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV serotype Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE68"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of contact elicited Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE74"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV test type - HIV.B.DE81 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE81"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Assay number in testing strategy - HIV.B.DE88 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE88"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of HIV assay 1 - HIV.B.DE94 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE94"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of HIV assay 2 - HIV.B.DE98 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE98"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of HIV assay 3 - HIV.B.DE102 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE102"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of HIV assay 1 repeated - HIV.B.DE106 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE106"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV test result - HIV.B.DE111 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE111"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE115"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Site where positive HIV test confirmed Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE120"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Probable route of transmission Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE121"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Partner HIV test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE132"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Partner HIV status confirmed Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE136"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Counselling provided Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE142"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Prevention services offered and referrals - HIV.B.DE149 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE149"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Sexual and reproductive health integrated services - HIV.B.DE158 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE158"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Offer other clinical services - HIV.B.DE165 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE165"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Other support services - HIV.B.DE172 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE172"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Intimate partner violence enquiry results Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE179"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of follow-up appointment - HIV.B.DE191 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE191"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Adverse event severity Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE201"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Timing of adverse event Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE204"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of adverse VMMC event Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE207"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Syndrome/STI diagnosed - HIV.B.DE226 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE226"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set STI tested for - HIV.B.DE237 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE237"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Syphilis test result - HIV.B.DE250 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE250"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Gonorrhoea test result - HIV.B.DE256 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE256"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of specimen - HIV.B.DE261 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE261"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Syphilis test type - HIV.B.DE269 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE269"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Neisseria gonorrhoeae test type - HIV.B.DE276 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE276"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Chlamydia trachomatis test type - HIV.B.DE284 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE284"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Trichomonas vaginalis test type - HIV.B.DE293 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE293"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Herpes simplex virus HSV test type - HIV.B.DE301 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE301"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Mycoplasma genitalium test type - HIV.B.DE306 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE306"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set STI test result - HIV.B.DE312 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE312"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Confirmatory syphilis test type - HIV.B.DE317 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE317"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Confirmatory STI test result - HIV.B.DE325 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.B.DE325"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for PrEP visit Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE1"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set PrEP dosing type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE11"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Current PrEP regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE17"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Experience with PrEP Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE24"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set PEP history Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE31"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Signs of substantial risk of HIV infection - HIV.C.DE36 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE36"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Pregnancy intention in serodiscordant partnerships Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE41"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Acute HIV infection symptoms - HIV.C.DE46 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE46"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Sex partners HIV treatment status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE55"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Screenings and diagnostics for PrEP users Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE63"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Medications prescribed - HIV.C.DE75 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE75"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set PrEP product prescribed Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE80"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Preferred PEP backbone regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE91"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Alternative PEP backbone regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE95"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Preferred third PEP drug Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE99"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Alternative third PEP drug Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE101"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Sex factor for estimating creatinine clearance Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE107"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Contraindications to PrEP usage Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE112"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set PrEP regimen prescribed Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE122"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of follow-up appointment - HIV.C.DE125 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE125"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Prevention services offered and referrals - HIV.C.DE131 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE131"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Condom type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE138"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV self-test distributed for use by Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE143"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Sexual and reproductive health integrated services - HIV.C.DE149 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE149"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Offer other clinical services - HIV.C.DE157 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE157"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Other support services - HIV.C.DE164 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.C.DE164"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for visit - HIV.D.DE1 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE1"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Signs of serious illness Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE17"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set ART start type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE43"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Facility transferred from Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE52"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Facility where client first enrolled in HIV care Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE55"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Antiretroviral ARV drugs received prior to enrolment Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE56"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Location ARV drugs received prior to enrolment Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE63"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set ARV drug regimen received prior to enrolment Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE64"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Existing chronic health conditions Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE65"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Original first-line ART regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE74"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Current ART regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE75"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Preferred first-line ART regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE77"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Alternative first-line ART regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE78"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set First-line ART regimen under special circumstances Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE79"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Preferred second-line ART regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE80"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Alternative second-line ART regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE81"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Optimal regimen for transition Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE82"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Current ART regimen first-, second-, or third-line Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE83"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set ART regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE90"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set ART regimen composition Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE128"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set ART regimen drug class Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE146"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Prevention services offered and referrals - HIV.D.DE152 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE152"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Sexual and reproductive health integrated services - HIV.D.DE156 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE156"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HBsAg test result - HIV.D.DE162 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE162"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HBV treatment regimen prescribed Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE168"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HCV test result - HIV.D.DE170 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE170"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HCV treatment regimen prescribed Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE177"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HCV viral load test result - HIV.D.DE179 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE179"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HCV medicine type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE182"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV clinical stage - HIV.D.DE186 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE186"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reasons for adherence problem - HIV.D.DE197 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE197"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason ART stopped - HIV.D.DE217 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE217"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Treatment failure Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE225"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set General care activities recommended Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE229"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Preventing and treating coinfections Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE247"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Risk factors, comorbidities and coinfections signs and symptoms Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE259"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set WHO HIV clinical stage condition or symptom - HIV.D.DE289 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE289"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Clinical stage at start of ART Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE358"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reasons for delayed ART initiation Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE370"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Time to start ART Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE383"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for HIV viral load test Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE391"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Monitoring examinations Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE399"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for ARV drug regimen substitution Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE418"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for regimen switch Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE430"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set ART regimen prescribed Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE444"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Coinfection status at ART start Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE446"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Pregnant and breastfeeding status at ART start Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE449"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Medications prescribed - HIV.D.DE457 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE457"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Medications dispensed Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE461"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of treatment-limiting toxicity Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE466"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reasons for substitution within first-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE482"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set New antiretroviral regimen after substitution within first-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE483"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set New regimen after switch to second-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE485"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for switch to second-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE486"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reasons for substitution within second-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE488"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set New regimens after substitution within second-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE489"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set New regimen after switch to third-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE491"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for switch to third-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE492"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reasons for substitution within third-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE494"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set New regimens after substitution within third-line regimen Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE495"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV status of family member Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE514"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Other support services - HIV.D.DE519 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE519"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of follow-up appointment - HIV.D.DE525 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE525"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason blood pressure reading not done Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE532"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Current medications Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE537"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Allergies Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE560"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Family planning method used Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE569"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Medication status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE593"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Vaccine brand Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE603"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Vaccine type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE604"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Vaccination location Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE606"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Disease targeted Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE610"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason immunization was not provided Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE636"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason malaria prophylaxis not provided Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE646"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cervical cancer primary screening test type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE658"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HPV-DNA cervical cancer screening test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE664"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set VIA cervical cancer screening test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE668"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cervical cytology screening test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE673"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cervical cancer triage test type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE681"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HPV16/18 test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE688"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cervical cancer colposcopy result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE691"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cervical cancer histopathology result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE697"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cervical cancer screening outcome Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE706"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cervical cancer diagnosis Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE709"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cervical cancer stage at diagnosis Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE712"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Treatment method for cervical precancer lesions Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE719"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Invasive cervical cancer treatment method Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE731"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Entry point for facility-level testing - HIV.D.DE746 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE746"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Offer other clinical services - HIV.D.DE753 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE753"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set DSD ART models Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE764"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Syndrome/STI diagnosed - HIV.D.DE778 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE778"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set STI tested for - HIV.D.DE789 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE789"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Syphilis test result - HIV.D.DE802 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE802"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Gonorrhoea test result - HIV.D.DE808 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE808"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of specimen - HIV.D.DE813 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE813"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Syphilis test type - HIV.D.DE821 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE821"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Neisseria gonorrhoeae test type - HIV.D.DE828 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE828"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Chlamydia trachomatis test type - HIV.D.DE836 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE836"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Trichomonas vaginalis test type - HIV.D.DE845 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE845"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Herpes simplex virus HSV test type - HIV.D.DE853 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE853"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Mycoplasma genitalium test type - HIV.D.DE858 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE858"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set STI test result - HIV.D.DE864 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE864"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Confirmatory syphilis test type - HIV.D.DE869 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE869"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Confirmatory STI test result - HIV.D.DE877 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE877"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Staging of liver disease Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE893"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set WHO functional status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE897"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Medication/drug Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE903"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set WHO HIV clinical stage condition or symptom - HIV.D.DE934 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE934"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TB diagnosis result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE939"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Method of TB diagnosis Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE942"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TB treatment history Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE947"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TB screening algorithm Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE956"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Symptoms of TB Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE973"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TB screening result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE986"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TB diagnostic test category Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE992"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TB treatment outcome Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE1002"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TB treatment regimen composition Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE1010"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TB status at ART start Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE1019"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TPT regimen type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE1028"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set TB preventive treatment TPT status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.D.DE1034"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Source of gestational age Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE6"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Past pregnancy complications Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE17"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Timing of ART initiation Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE41"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Pregnancy outcome Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE47"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Delivery mode Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE52"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Preterm birth status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE62"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Place of delivery Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE67"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cause of death of mother Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE75"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Gender of infant Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE91"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Maternal HIV test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE104"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Infant or child exposure to HIV Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE108"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Key population member type - HIV.E.DE114 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE114"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Infant feeding practice Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE127"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of iron supplement dosage provided Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE136"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Maternal HIV status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE141"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Maternal HIV status at first ANC visit - HIV.E.DE145 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE145"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Maternal syphilis test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE149"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Signs of substantial risk of HIV infection - HIV.E.DE155 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE155"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV test type - HIV.E.DE168 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE168"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Maternal and child health service visit Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE173"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set EID sample number Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE180"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set EID test number Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE183"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set EID test number 1 test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE186"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set EID test number 2 test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE190"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Assay number in testing strategy - HIV.E.DE194 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE194"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of HIV assay 1 - HIV.E.DE200 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE200"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of HIV assay 2 - HIV.E.DE204 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE204"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of HIV assay 3 - HIV.E.DE208 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE208"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of HIV assay 1 repeated - HIV.E.DE212 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE212"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of syphilis assay 1 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE216"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of syphilis assay 1 repeated Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE220"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Infant HIV status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE225"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Final diagnosis of HIV-exposed infant - HIV.E.DE230 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE230"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV-exposed infant reason for unknown final status Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE234"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Cause of death of infant Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE240"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Blood group and Rh factor Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE246"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Asymptomatic bacteriuria ASB test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE255"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Urine protein test result Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE259"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Type of hypertensive disorder Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.E.DE264"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV viral load specimen type Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE13"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HBsAg test result - HIV.G.DE18 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE18"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason Hepatitis B test not conducted Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE22"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Hepatitis B diagnosis Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE29"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason Hepatitis C test not done Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE35"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HCV test result - HIV.G.DE43 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE43"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HCV viral load test result - HIV.G.DE48 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE48"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Hepatitis C diagnosis Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE51"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Syphilis test type - HIV.G.DE55 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE55"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason syphilis test not done Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE62"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Syphilis test result - HIV.G.DE70 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE70"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Syphilis diagnosis Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.G.DE74"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for follow-up Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.H.DE1"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Contact method Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.H.DE13"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Source of information Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.H.DE17"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Outcome from outreach attempt Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.H.DE23"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV status of partner or contact Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.H.DE34"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV treatment outcome Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.H.DE41"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Transfer to facility Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.H.DE50"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reasons for adherence problem - HIV.H.DE53 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.H.DE53"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason ART stopped - HIV.H.DE74 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.H.DE74"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Reason for referral Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.I.DE2"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV prevention intervention Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.PRV.DE2"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV status of contact Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.PRV.DE11"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV test result - HIV.SRV.DE2 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE2"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV clinical stage - HIV.SRV.DE5 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE5"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Maternal HIV status at first ANC visit - HIV.SRV.DE19 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE19"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Test result of HIV assay 1 - HIV.SRV.DE21 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE21"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Final diagnosis of HIV-exposed infant - HIV.SRV.DE22 Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.SRV.DE22"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set HIV burden of the setting Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.Config.DE12"
+    },
+    {
+      "type": "depends-on",
+      "display": "Value Set Other priority populations Choices",
+      "resource": "http://smart.who.int/hiv/ValueSet/HIV.Config.DE19"
+    }
+  ],
+  "content": [
+    {
+      "contentType": "text/cql",
+      "url": "Library-HIVConcepts.cql"
+    },
+    {
+      "contentType": "application/elm+json",
+      "url": "Library-HIVConcepts.elm.json"
+    }
+  ]
+}

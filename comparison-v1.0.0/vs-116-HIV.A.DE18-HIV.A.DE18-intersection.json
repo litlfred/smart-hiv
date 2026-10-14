@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-312",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-312",
+  "name" : "IntersectionHIVADE18AndHIVADE18",
+  "title" : "Intersection of Gender ValueSet And Gender ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.A.DE19",
+        "display" : "Female"
+      },
+      {
+        "code" : "HIV.A.DE20",
+        "display" : "Male"
+      },
+      {
+        "code" : "HIV.A.DE21",
+        "display" : "Transgender male"
+      },
+      {
+        "code" : "HIV.A.DE22",
+        "display" : "Transgender female"
+      },
+      {
+        "code" : "HIV.A.DE23",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,238 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/PlanDefinition/HIV-A-Registration-PlanDefinition> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIV-A-Registration-PlanDefinition"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">HIV-A-Registration-PlanDefinition</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Url: </b></th>\n            <td style=\"padding-left: 4px;\"><a href=\"PlanDefinition-HIV-A-Registration-PlanDefinition.html\">PlanDefinition - HIV.A. Registration</a></td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.4.4</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">PlanDefinition - HIV.A. Registration</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Experimental: </b></th>\n            <td style=\"padding-left: 4px;\">true</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Type: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>system: </b> <span><a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-plan-definition-type.html\">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>code: </b> <span>workflow-definition</span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>display: </b> <span>Workflow Definition</span>\n                        </p>\n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date: </b></th>\n            <td style=\"padding-left: 4px;\">2026-10-14 11:09:56+0000</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher: </b></th>\n            <td style=\"padding-left: 4px;\">WHO</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Description: </b></th>\n            <td style=\"padding-left: 4px;\"><div><p>To ensure client is found in the record system and personal details are updated or, if not located, entered into the system to be put into a queue awaiting counselling.</p>\n</div></td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Actions: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Registration business process:</b> To ensure client is found in the record system and personal details are updated or, if not located, entered into the system to be put into a queue awaiting counselling\n                            \n                            <br/>\n                            \n                            \n                            \n                            <b>Then:</b>\n                            <table class=\"grid-dict\">\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Arrive at facility:</b>\n                                        Client arrives at the health facility.\n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Gather client’s details:</b>\n                                        Ask the client whether he or she has previously been issued a unique identifier\n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Search for client record:</b>\n                                        This search process can be done through a variety of means depending on what mechanisms are available in the record system. For example, clients can be searched for by name, unique identifier, or QR code.\n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Match found?:</b>\n                                        If multiple records are found and no unique ID, use option to merge records\n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        <b>Then:</b> <i>Additional sub-actions not displayed</i>\n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Check in client:</b>\n                                        Add client to the relevant queue for services\n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                            </table>\n                            \n                        </td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n    </table>\n</div>\n</div>"
+  ] ;
+  fhir:PlanDefinition.url [ fhir:value "http://smart.who.int/hiv/PlanDefinition/HIV-A-Registration-PlanDefinition"] ;
+  fhir:PlanDefinition.version [ fhir:value "0.4.4"] ;
+  fhir:PlanDefinition.name [ fhir:value "PlanDefinition_HIV.A. Registration"] ;
+  fhir:PlanDefinition.title [ fhir:value "PlanDefinition - HIV.A. Registration"] ;
+  fhir:PlanDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/plan-definition-type" ] ;
+       fhir:Coding.code [ fhir:value "workflow-definition" ] ;
+       fhir:Coding.display [ fhir:value "Workflow Definition" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.status [ fhir:value "active"] ;
+  fhir:PlanDefinition.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:PlanDefinition.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:PlanDefinition.publisher [ fhir:value "WHO"] ;
+  fhir:PlanDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.description [ fhir:value "To ensure client is found in the record system and personal details are updated or, if not located, entered into the system to be put into a queue awaiting counselling."] ;
+  fhir:PlanDefinition.action [
+     fhir:index 0 ;
+     fhir:PlanDefinition.action.title [ fhir:value "Registration business process" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "To ensure client is found in the record system and personal details are updated or, if not located, entered into the system to be put into a queue awaiting counselling" ] ;
+     fhir:PlanDefinition.action.participant [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.participant.type [ fhir:value "patient" ] ;
+       fhir:PlanDefinition.action.participant.role [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.code [ fhir:value "client" ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:PlanDefinition.action.participant.type [ fhir:value "practitioner" ] ;
+       fhir:PlanDefinition.action.participant.role [
+         fhir:CodeableConcept.text [ fhir:value "Trained Lay Provider" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.action [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "HIV.A.1" ] ;
+       fhir:PlanDefinition.action.title [ fhir:value "Arrive at facility" ] ;
+       fhir:PlanDefinition.action.description [ fhir:value "Client arrives at the health facility." ] ;
+       fhir:PlanDefinition.action.relatedAction [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "HIV.A.2" ] ;
+         fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before-start" ]
+       ] ;
+       fhir:PlanDefinition.action.participant [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.participant.type [ fhir:value "patient" ] ;
+         fhir:PlanDefinition.action.participant.role [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.code [ fhir:value "client" ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "HIV.A.2" ] ;
+       fhir:PlanDefinition.action.title [ fhir:value "Gather client’s details" ] ;
+       fhir:PlanDefinition.action.description [ fhir:value "Ask the client whether he or she has previously been issued a unique identifier" ] ;
+       fhir:PlanDefinition.action.relatedAction [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "HIV.A.3" ] ;
+         fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before-start" ]
+       ] ;
+       fhir:PlanDefinition.action.participant [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.participant.type [ fhir:value "patient" ] ;
+         fhir:PlanDefinition.action.participant.role [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.code [ fhir:value "client" ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "HIV.A.3" ] ;
+       fhir:PlanDefinition.action.title [ fhir:value "Search for client record" ] ;
+       fhir:PlanDefinition.action.description [ fhir:value "This search process can be done through a variety of means depending on what mechanisms are available in the record system. For example, clients can be searched for by name, unique identifier, or QR code." ] ;
+       fhir:PlanDefinition.action.relatedAction [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "HIV.A.4" ] ;
+         fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before-start" ]
+       ] ;
+       fhir:PlanDefinition.action.participant [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.participant.type [ fhir:value "practitioner" ] ;
+         fhir:PlanDefinition.action.participant.role [
+           fhir:CodeableConcept.text [ fhir:value "Trained Lay Provider" ]
+         ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "HIV.A.4" ] ;
+       fhir:PlanDefinition.action.title [ fhir:value "Match found?" ] ;
+       fhir:PlanDefinition.action.description [ fhir:value "If multiple records are found and no unique ID, use option to merge records" ] ;
+       fhir:PlanDefinition.action.relatedAction [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "HIV.A.7" ] ;
+         fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before-start" ]
+       ] ;
+       fhir:PlanDefinition.action.participant [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.participant.type [ fhir:value "practitioner" ] ;
+         fhir:PlanDefinition.action.participant.role [
+           fhir:CodeableConcept.text [ fhir:value "Trained Lay Provider" ]
+         ]
+       ] ;
+       fhir:PlanDefinition.action.groupingBehavior [ fhir:value "logical-group" ] ;
+       fhir:PlanDefinition.action.selectionBehavior [ fhir:value "exactly-one" ] ;
+       fhir:PlanDefinition.action.action [
+         fhir:index 0 ;
+         fhir:Element.id [ fhir:value "HIV.A.5" ] ;
+         fhir:PlanDefinition.action.title [ fhir:value "Create new client record" ] ;
+         fhir:PlanDefinition.action.description [ fhir:value "If a previous unique identifier has been issued, use the same number to create the client record." ] ;
+         fhir:PlanDefinition.action.relatedAction [
+           fhir:index 0 ;
+           fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "HIV.A.4" ] ;
+           fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before-end" ]
+         ] ;
+         fhir:PlanDefinition.action.participant [
+           fhir:index 0 ;
+           fhir:PlanDefinition.action.participant.type [ fhir:value "practitioner" ] ;
+           fhir:PlanDefinition.action.participant.role [
+             fhir:CodeableConcept.text [ fhir:value "Trained Lay Provider" ]
+           ]
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.id [ fhir:value "HIV.A.6" ] ;
+         fhir:PlanDefinition.action.title [ fhir:value "Validate client details" ] ;
+         fhir:PlanDefinition.action.description [ fhir:value "Review and update client record or ask for information and complete new client record:" ] ;
+         fhir:PlanDefinition.action.relatedAction [
+           fhir:index 0 ;
+           fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "HIV.A.4" ] ;
+           fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before-end" ]
+         ] ;
+         fhir:PlanDefinition.action.action [
+           fhir:index 0 ;
+           fhir:Element.id [ fhir:value "HIV.A.6.1" ] ;
+           fhir:PlanDefinition.action.title [ fhir:value "Review sociodemographic data with client" ] ;
+           fhir:PlanDefinition.action.description [ fhir:value "Review client’s non-clinical information, such as name, address, contact information, etc." ] ;
+           fhir:PlanDefinition.action.relatedAction [
+             fhir:index 0 ;
+             fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "HIV.A.6.2" ] ;
+             fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before-start" ]
+           ] ;
+           fhir:PlanDefinition.action.participant [
+             fhir:index 0 ;
+             fhir:PlanDefinition.action.participant.type [ fhir:value "practitioner" ] ;
+             fhir:PlanDefinition.action.participant.role [
+               fhir:CodeableConcept.text [ fhir:value "Trained Lay Provider" ]
+             ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Element.id [ fhir:value "HIV.A.6.2" ] ;
+           fhir:PlanDefinition.action.title [ fhir:value "Update needed?" ] ;
+           fhir:PlanDefinition.action.description [ fhir:value "Has the client moved? Has the client changed contact information? Has any other sociodemographic information changed?" ] ;
+           fhir:PlanDefinition.action.relatedAction [
+             fhir:index 0 ;
+             fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "HIV.A.6.3" ] ;
+             fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before-start" ]
+           ] ;
+           fhir:PlanDefinition.action.participant [
+             fhir:index 0 ;
+             fhir:PlanDefinition.action.participant.type [ fhir:value "practitioner" ] ;
+             fhir:PlanDefinition.action.participant.role [
+               fhir:CodeableConcept.text [ fhir:value "Trained Lay Provider" ]
+             ]
+           ]
+         ], [
+           fhir:index 2 ;
+           fhir:Element.id [ fhir:value "HIV.A.6.3" ] ;
+           fhir:PlanDefinition.action.title [ fhir:value "Update client details" ] ;
+           fhir:PlanDefinition.action.description [ fhir:value "Ask client to provide updated information if address or other details have changed since last contact" ] ;
+           fhir:PlanDefinition.action.relatedAction [
+             fhir:index 0 ;
+             fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "HIV.A.7" ] ;
+             fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "before-start" ]
+           ] ;
+           fhir:PlanDefinition.action.participant [
+             fhir:index 0 ;
+             fhir:PlanDefinition.action.participant.type [ fhir:value "practitioner" ] ;
+             fhir:PlanDefinition.action.participant.role [
+               fhir:CodeableConcept.text [ fhir:value "Trained Lay Provider" ]
+             ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "HIV.A.7" ] ;
+       fhir:PlanDefinition.action.title [ fhir:value "Check in client" ] ;
+       fhir:PlanDefinition.action.description [ fhir:value "Add client to the relevant queue for services" ] ;
+       fhir:PlanDefinition.action.participant [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.participant.type [ fhir:value "practitioner" ] ;
+         fhir:PlanDefinition.action.participant.role [
+           fhir:CodeableConcept.text [ fhir:value "Trained Lay Provider" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/PlanDefinition/HIV-A-Registration-PlanDefinition.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

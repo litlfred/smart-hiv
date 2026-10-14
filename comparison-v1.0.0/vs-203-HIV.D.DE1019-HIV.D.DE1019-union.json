@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-572",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-572",
+  "name" : "UnionHIVDDE1019AndHIVDDE1019",
+  "title" : "Union of TB status at ART start ValueSet And TB status at ART start ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE1020",
+        "display" : "Symptomatic for TB"
+      },
+      {
+        "code" : "HIV.D.DE1021",
+        "display" : "Diagnosed TB"
+      },
+      {
+        "code" : "HIV.D.DE1022"
+      }]
+    }]
+  }
+}

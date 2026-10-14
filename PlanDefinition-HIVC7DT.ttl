@@ -1,0 +1,1620 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/hiv/PlanDefinition/HIVC7DT> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "HIVC7DT"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableplandefinition" ;
+       fhir:index 1 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableplandefinition>
+     ], [
+       fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition" ;
+       fhir:index 2 ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">HIVC7DT</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Url: </b></th>\n            <td style=\"padding-left: 4px;\"><a href=\"PlanDefinition-HIVC7DT.html\">HIV.C7.DT Check for signs of serious illness</a></td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.4.4</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">HIV.C7.DT Check for signs of serious illness</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Status: </b></th>\n            <td style=\"padding-left: 4px;\">draft</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Experimental: </b></th>\n            <td style=\"padding-left: 4px;\">true</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Type: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>system: </b> <span><a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-plan-definition-type.html\">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>code: </b> <span>eca-rule</span>\n                        </p>\n                        \n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date: </b></th>\n            <td style=\"padding-left: 4px;\">2026-10-14 11:09:56+0000</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher: </b></th>\n            <td style=\"padding-left: 4px;\">WHO</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Description: </b></th>\n            <td style=\"padding-left: 4px;\"><div><p>Check for signs of serious illness</p>\n</div></td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Related Artifacts: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                \n                <p><b>References</b></p>\n                <ul>\n                    \n                    <li><div><p>Consolidated Guidelines on HIV Testing Services (2019)</p>\n</div><br/><a href=\"\"/></li>\n                    \n                </ul>\n                \n                \n                \n                \n                \n                \n            </td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Libraries: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td><a href=\"Library-HIVC7DTLogic.html\">HIV.C7.DT Logic</a></td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Actions: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td>\n                            \n                            Check suitability for PrEP or PEP\n                            \n                            <br/>\n                            \n                            \n                            \n                            <b>Then:</b>\n                            <table class=\"grid-dict\">\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        Counsel client on PrEP. Based on answers given, client is suitable for PrEP.\n                                        \n                                        <br/>\n                                        \n                                        \n                                        <b>If:</b>\n                                        \n                                        <i>Applicability:</i>\n                                        \n                                        <i>(Suitable for PrEP)</i>\n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-HIVGuidanceCommunicationRequestActivity.html\">HIVGuidanceCommunicationRequestActivity</a><br/>\n                                        \n                                        <i>Dynamic Values:</i><br/>\n                                        \n                                        payload[+].contentString: <i>(Guidance)</i>\n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        Client is ineligible for PrEP based on answers given.\n                                        \n                                        <br/>\n                                        \n                                        \n                                        <b>If:</b>\n                                        \n                                        <i>Applicability:</i>\n                                        \n                                        <i>(Not suitable for PrEP)</i>\n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-HIVGuidanceCommunicationRequestActivity.html\">HIVGuidanceCommunicationRequestActivity</a><br/>\n                                        \n                                        <i>Dynamic Values:</i><br/>\n                                        \n                                        payload[+].contentString: <i>(Guidance)</i>\n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                            </table>\n                            \n                        </td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n    </table>\n</div>\n</div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Library ;
+     fhir:index 0 ;
+     fhir:Resource.id [ fhir:value "effective-data-requirements" ] ;
+     fhir:DomainResource.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.B.DE115" ] ;
+         fhir:Coding.display [ fhir:value "HIV status" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.B.DE35" ] ;
+         fhir:Coding.display [ fhir:value "HIV-negative" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE106" ] ;
+         fhir:Coding.display [ fhir:value "Estimated creatinine clearance" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE112" ] ;
+         fhir:Coding.display [ fhir:value "Contraindications to PrEP usage" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE116" ] ;
+         fhir:Coding.display [ fhir:value "Acute HIV infection symptoms" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE117" ] ;
+         fhir:Coding.display [ fhir:value "Probable recent exposure to HIV" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE36" ] ;
+         fhir:Coding.display [ fhir:value "Signs of substantial risk of HIV infection" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE40" ] ;
+         fhir:Coding.display [ fhir:value "PrEP requested by client" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.H.DE34" ] ;
+         fhir:Coding.display [ fhir:value "HIV status of partner or contact" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.B.DE34" ] ;
+         fhir:Coding.display [ fhir:value "HIV-positive" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE55" ] ;
+         fhir:Coding.display [ fhir:value "Sex partners HIV treatment status" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE59" ] ;
+         fhir:Coding.display [ fhir:value "Partner is not virally suppressed" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.B.DE49" ] ;
+         fhir:Coding.display [ fhir:value "Key population member*" ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+         fhir:Coding.code [ fhir:value "social-history" ] ;
+         fhir:Coding.display [ fhir:value "Social History" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE39" ] ;
+         fhir:Coding.display [ fhir:value "A sexual partner in the past 6 months had one or more HIV risk factors" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE38" ] ;
+         fhir:Coding.display [ fhir:value "STI in the past 6 months" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE31" ] ;
+         fhir:Coding.display [ fhir:value "PEP history" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE33" ] ;
+         fhir:Coding.display [ fhir:value "Repeat user" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE37" ] ;
+         fhir:Coding.display [ fhir:value "No condom use during sex with more than one partner in the past 6 months" ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.Config.DE13" ] ;
+         fhir:Coding.display [ fhir:value "High HIV burden setting" ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.B.DE36" ] ;
+         fhir:Coding.display [ fhir:value "Unknown" ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+         fhir:Coding.code [ fhir:value "HIV.C.DE113" ] ;
+         fhir:Coding.display [ fhir:value "Tenofovir disoproxil fumarate TDF allergy or contraindication" ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "HIV Status Observation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of HIV-inconclusive */\n\n/*\n@dataElement: HIV.B.DE115 - HIV status\n@activity: HIV.B7 Test for HIV using testing algorithm\n@description: HIV status reported after applying the national HIV testing algorithm. No single HIV test can provide an HIV-positive diagnosis.\n*/\ndefine \"HIV Status Observation\":\n  [Observation: Concepts.\"HIV status\"] O\n    where O.status in { 'final', 'amended', 'corrected' }" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "0"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVEncounterElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "HIV Status Observation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of HIV test result B.DE111 */\n\n/*\n@dataElement: HIV.B.DE115 - HIV status\n@activity: HIV.B7 Test for HIV using testing algorithm\n@description: HIV status reported after applying the national HIV testing algorithm. No single HIV test can provide an HIV-positive diagnosis.\n*/\ndefine \"HIV Status Observation\":\n  Elements.\"HIV Status Observation\" O\n    where O.encounter.references(EncounterId)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "1"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "HIV negative" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input \"HIV Status\"\n @pseudocode: \"HIV status\"='HIV-negative'\n */\ndefine \"HIV negative\":\n  exists(\n    Elements.\"HIV Status Observation\" O\n        where O.value ~ Concepts.\"HIV-negative\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "2"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Estimated creatinine clearance" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of RAL C.DE105 */\n\n/*\n@dataElement: HIV.C.DE106 - Estimated creatinine clearance\n@activity: HIV.C23 Prescribe or administer PrEP or PEP\n@description: Estimated creatinine clearance of the client returned from lab in mL/min\n*/\n// TODO: Replace placeholder with relevant CQL logic\ndefine \"Estimated creatinine clearance\":\n  [Observation: Concepts.\"Estimated creatinine clearance\"] O\n    where O.status in { 'final', 'amended', 'corrected' }" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "3"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVEncounterElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Estimated creatinine clearance" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Suitable for PrEP */\n\n/*\n@dataElement: HIV.C.DE106 - Estimated creatinine clearance\n@activity: HIV.C23 Prescribe or administer PrEP or PEP\n@description: Estimated creatinine clearance of the client returned from lab in mL/min\n*/\ndefine \"Estimated creatinine clearance\":\n  Elements.\"Estimated creatinine clearance\" O\n    where O.encounter.references(EncounterId)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "4"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Estimated creatinine clearance ≥ 60 mL/min" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input \"Estimated creatinine clearance\"\n @pseudocode: \"Estimated creatinine clearance\" ≥ 60 mL/min\n */\ndefine \"Estimated creatinine clearance ≥ 60 mL/min\":\n  exists(\n    Elements.\"Estimated creatinine clearance\" O\n      where FHIRHelpers.ToInteger(O.value) >= 60\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "5"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Contraindications to PrEP usage Observation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "define \"Contraindications to PrEP usage Observation\":\n  [Observation: Concepts.\"Contraindications to PrEP usage\"] O\n    where O.status in { 'final', 'amended', 'corrected' }" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "6"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVEncounterElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Contraindications to PrEP usage" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Estimated creatinine clearance */\n\n/*\n@dataElement: HIV.C.DE112 - Contraindications to PrEP usage\n@activity: HIV.C23 Prescribe or administer PrEP or PEP\n@description: Listing of contraindications to pre-exposure prophylaxis (PrEP)\n*/\ndefine \"Contraindications to PrEP usage\":\n  Elements.\"Contraindications to PrEP usage Observation\" O\n    where O.encounter.references(EncounterId)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "7"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "No symptoms of Acute HIV infection" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input \"Acute HIV infection symptoms\"\n @pseudocode: \"Acute HIV infection symptoms\"=False\n */\ndefine \"No symptoms of Acute HIV infection\":\n  not(exists(\n    Elements.\"Contraindications to PrEP usage\" O\n      where O.value ~ Concepts.\"Acute HIV infection symptoms - HIV.C.DE116\"\n  ))" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "8"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "No probable recent exposure to HIV" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Probable recent exposure to HIV\"\n @pseudocode: \"Probable recent exposure to HIV\"=False\n */\ndefine \"No probable recent exposure to HIV\":\n  not(exists(\n    Elements.\"Contraindications to PrEP usage\" O\n      where O.value ~ Concepts.\"Probable recent exposure to HIV\"\n  ))" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "9"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "No contraindications to PrEP usage" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Contraindications to PrEP usage\"\n @pseudocode: \"Contraindications to PrEP usage\" is NULL\n */\ndefine \"No contraindications to PrEP usage\":\n  not(exists(\n    Elements.\"Contraindications to PrEP usage\" O\n  ))" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "10"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Signs of substantial risk of HIV infection C.DE36" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Date client completes PEP course */\n\n/*\n@dataElement: HIV.C.DE36 - Signs of substantial risk of HIV infection\n@activity: HIV.C3 Capture or update client history\n@description: Signs the client is at a substantial risk of HIV infection\n*/\ndefine \"Signs of substantial risk of HIV infection C.DE36\":\n  [Observation: Concepts.\"Signs of substantial risk of HIV infection - HIV.C.DE36\"] O\n    where O.status in { 'final', 'amended', 'corrected' }" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "11"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVEncounterElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Signs of substantial risk of HIV infection C.DE36" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of PEP history */\n\n/*\n@dataElement: HIV.C.DE36 - Signs of substantial risk of HIV infection\n@activity: HIV.C3 Capture or update client history\n@description: Signs the client is at a substantial risk of HIV infection\n*/\ndefine \"Signs of substantial risk of HIV infection C.DE36\":\n  Elements.\"Signs of substantial risk of HIV infection C.DE36\" O\n    where O.encounter.references(EncounterId)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "12"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "PrEP requested by client" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Signs of substantial risk of HIV infection\"\n @pseudocode: \"Signs of substantial risk of HIV infection\"='PrEP requested by client'\n */\ndefine \"PrEP requested by client\":\n  exists(\n    Elements.\"Signs of substantial risk of HIV infection C.DE36\" O\n      where O.value ~ Concepts.\"PrEP requested by client - HIV.C.DE40\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "13"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "HIV status of partner or contact" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Inconclusive G.DE73 */\n\n/*\n@dataElement: HIV.H.DE34 - HIV status of partner or contact\n@activity: HIV.B6 Capture or update client history\n@description: HIV status of the partner or contact given by the index case\n*/\ndefine \"HIV status of partner or contact\":\n  [Observation: Concepts.\"HIV status of partner or contact\"] O\n    where O.status in { 'final', 'amended', 'corrected' }" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "14"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVEncounterElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "HIV status of partner or contact" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Inconclusive G.DE73 */\n\n/*\n@dataElement: HIV.H.DE34 - HIV status of partner or contact\n@activity: HIV.B6 Capture or update client history\n@description: HIV status of the partner or contact given by the index case\n*/\ndefine \"HIV status of partner or contact\":\n  Elements.\"HIV status of partner or contact\" O\n    where O.encounter.references(EncounterId)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "15"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "HIV status of partner or contact is positive" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"HIV status of partner or contact\"\n @pseudocode: \"HIV status of partner or contact\"='HIV-positive'\n */\ndefine \"HIV status of partner or contact is positive\":\n  exists(\n    Elements.\"HIV status of partner or contact\" O\n      where O.value ~ Concepts.\"HIV-positive\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "16"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Sex partners HIV treatment status" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Rash */\n\n/*\n@dataElement: HIV.C.DE55 - Sex partners HIV treatment status\n@activity: HIV.C3 Capture or update client history\n@description: Treatment adherence of client's sex partner for partners that are HIV-positive\n*/\n// TODO: Replace placeholder with relevant CQL logic\ndefine \"Sex partners HIV treatment status\":\n  [Observation: Concepts.\"Sex partners HIV treatment status\"] O\n    where O.status in { 'final', 'amended', 'corrected' }" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "17"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVEncounterElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Sex partners HIV treatment status" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Rash */\n\n/*\n@dataElement: HIV.C.DE55 - Sex partners HIV treatment status\n@activity: HIV.C3 Capture or update client history\n@description: Treatment adherence of client's sex partner for partners that are HIV-positive\n*/\ndefine \"Sex partners HIV treatment status\":\n  Elements.\"Sex partners HIV treatment status\" O\n    where O.encounter.references(EncounterId)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "18"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Sex partner is on HIV treatment and not virally suppressed" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Sex partner's HIV treatment status\"\n @pseudocode: \"Sex partner's HIV treatment status\"='Partner is not virally suppressed'\n */\ndefine \"Sex partner is on HIV treatment and not virally suppressed\":\n  exists(\n    Elements.\"Sex partners HIV treatment status\" O\n      where O.value ~ Concepts.\"Partner is not virally suppressed\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "19"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Key population member type Observation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Key population member B.DE49 */\n\n/*\n@dataElement: HIV.B.DE50 - Key population member type\n@activity: HIV.B6 Capture or update client history\n@description: The type of key population that the client is included in\n*/\ndefine \"Key population member type Observation\":\n  [Observation: Concepts.\"Key population member - HIV.B.DE49\"] O\n    where O.status in { 'final', 'amended', 'corrected' }\n    and exists(O.category OC where OC ~ ConceptsCustom.\"social-history\")" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "20"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVEncounterElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Key population member type Observation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Key population member B.DE49 */\n\n/*\n@dataElement: HIV.B.DE50 - Key population member type\n@activity: HIV.B6 Capture or update client history\n@description: The type of key population that the client is included in\n*/\ndefine \"Key population member type Observation\":\n  Elements.\"Key population member type Observation\" O\n    where O.encounter.references(EncounterId)\n      or O.effective.toInterval() starts on or before Today" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "21"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Is Key population member" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Key population member\"\n @pseudocode: \"Key population member\"=True\n */\ndefine \"Is Key population member\":\n  exists(\n    Elements.\"Key population member type Observation\" O\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "22"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "A sexual partner in the past 6 months had one or more HIV risk factors" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Signs of substantial risk of HIV infection\"\n @pseudocode: \"Signs of substantial risk of HIV infection\"='A sexual partner in the past 6 months had one or more HIV risk factors'\n */\ndefine \"A sexual partner in the past 6 months had one or more HIV risk factors\":\n  exists(\n    Elements.\"Signs of substantial risk of HIV infection C.DE36\" O\n      where O.value ~ Concepts.\"A sexual partner in the past 6 months had one or more HIV risk factors - HIV.C.DE39\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "23"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 46 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "STI in the past 6 months" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Signs of substantial risk of HIV infection\"\n @pseudocode: \"Signs of substantial risk of HIV infection\"='STI in the past 6 months'\n */\ndefine \"STI in the past 6 months\":\n  exists(\n    Elements.\"Signs of substantial risk of HIV infection C.DE36\" O\n      where O.value ~ Concepts.\"STI in the past 6 months - HIV.C.DE38\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "24"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 47 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "PEP history" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of Restarting following a period of not taking PrEP */\n\n/*\n@dataElement: HIV.C.DE31 - PEP history\n@activity: HIV.C3 Capture or update client history\n@description: The client's history in taking post-exposure prophylaxis (PEP) for HIV prevention\n*/\n// TODO: Replace placeholder with relevant CQL logic\ndefine \"PEP history\":\n  [Observation: Concepts.\"PEP history\"] O\n    where O.status in { 'final', 'amended', 'corrected' }" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "25"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 48 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVEncounterElements" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "PEP history" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* End of CAB-LA C.DE23 */\n\n/*\n@dataElement: HIV.C.DE31 - PEP history\n@activity: HIV.C3 Capture or update client history\n@description: The client's history in taking post-exposure prophylaxis (PEP) for HIV prevention\n*/\ndefine \"PEP history\":\n  Elements.\"PEP history\" O\n    where O.encounter.references(EncounterId)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "26"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 49 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Repeat PEP user" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"PEP history\"\n @pseudocode: \"PEP history\"='Repeat user'\n */\ndefine \"Repeat PEP user\":\n  exists(\n    Elements.\"PEP history\" O\n      where O.value ~ Concepts.\"Repeat user\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "27"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 50 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "No condom use during sex with more than one partner in the past 6 months" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Signs of substantial risk of HIV infection\"\n @pseudocode: \"Signs of substantial risk of HIV infection\"='No condom use during sex with more than one partner in the past 6 months'\n */\ndefine \"No condom use during sex with more than one partner in the past 6 months\":\n  exists(\n    Elements.\"Signs of substantial risk of HIV infection C.DE36\" O\n      where O.value ~ Concepts.\"No condom use during sex with more than one partner in the past 6 months - HIV.C.DE37\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "28"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 51 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVConfig" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "HIV burden of setting" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/* \n * HIV burden of setting\n */\ndefine \"HIV burden of setting\":\n  Concepts.\"High HIV burden setting\"" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "29"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "HIV burden of setting is high HIV burden setting" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n  @input: \"Signs of substantial risk of HIV infection\"\n  @pseudocode: \"HIV burden of the setting\"='High HIV burden setting'\n  */\ndefine \"HIV burden of setting is high HIV burden setting\":\n  Config.\"HIV burden of setting\" ~ Concepts.\"High HIV burden setting\"" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "30"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 53 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "HIV negative or unknown" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input \"HIV Status\"\n @pseudocode: \"HIV status\"='HIV-negative'\n */\ndefine \"HIV negative or unknown\":\n  exists(\n    Elements.\"HIV Status Observation\" O\n        where O.value ~ Concepts.\"HIV-negative\" or\n          O.value ~ Concepts.\"Unknown\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "31"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 54 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Symptoms of Acute HIV infection" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input \"Acute HIV infection symptoms\"\n @pseudocode: \"Acute HIV infection symptoms\"=True\n */\ndefine \"Symptoms of Acute HIV infection\":\n  exists(\n    Elements.\"Contraindications to PrEP usage\" O\n      where O.value ~ Concepts.\"Acute HIV infection symptoms - HIV.C.DE116\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "32"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 55 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Probable recent exposure to HIV" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Probable recent exposure to HIV\"\n @pseudocode: \"Probable recent exposure to HIV\"=True\n */\ndefine \"Probable recent exposure to HIV\":\n  exists(\n    Elements.\"Contraindications to PrEP usage\" O\n      where O.value ~ Concepts.\"Probable recent exposure to HIV\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "33"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 56 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "TDF allergy or contraindication" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Contraindications to PrEP usage\"\n @pseudocode: \"Contraindications to PrEP usage\"='Tenofovir disoproxil fumarate (TDF)'\n */\ndefine \"TDF allergy or contraindication\":\n  exists(\n    Elements.\"Contraindications to PrEP usage\" O\n      where O.value ~ Concepts.\"Tenofovir disoproxil fumarate TDF allergy or contraindication\"\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "34"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 57 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Contraindications to PrEP usage" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input: \"Contraindications to PrEP usage\"\n @pseudocode: \"Contraindications to PrEP usage\" is NOT NULL\n */\ndefine \"Contraindications to PrEP usage\":\n  exists(\n    Elements.\"Contraindications to PrEP usage\" O\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "35"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 58 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Estimated creatinine clearance < 60 mL/min" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @input \"Estimated creatinine clearance\"\n @pseudocode: \"Estimated creatinine clearance\" < 60 mL/min\n */\ndefine \"Estimated creatinine clearance < 60 mL/min\":\n  exists(\n    Elements.\"Estimated creatinine clearance\" O\n      where FHIRHelpers.ToInteger(O.value) < 60\n  )" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "36"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 59 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Guidance" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @dynamicValue: Guidance\n */\ndefine \"Guidance\":\n  case\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"PrEP requested by client\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV status of partner or contact is positive\" and\n         \"Sex partner is on HIV treatment and not virally suppressed\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.\n\nPrEP can protect the HIV-negative partner in a serodiscordant relationship when the HIV-positive partner is either not on antiretroviral therapy (ART) or has not yet achieved viral suppression.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"PrEP requested by client\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"A sexual partner in the past 6 months had one or more HIV risk factors\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.\n\nPrEP services provide a unique opportunity to screen for hepatitis B and hepatitis C infection and thus address multiple public health issues. Hepatitis B is endemic in some parts of the world where there is also a high burden of HIV. Testing oral PrEP users for hepatitis B surface antigen (HBsAg) once, at PrEP initiation, is preferred and has several advantages in these settings. Rapid point-of-care tests are available for HBsAg, and WHO has prequalified several rapid diagnostic tests.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"STI in the past 6 months\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.\n\nRecently diagnosed STIs are often indicators of risk of sexual acquisition of HIV. The predictive value of STI indicators varies by region, the type of STI and a person\\'s demographic characteristics. A new diagnosis of syphilis or genital herpes is a strong predictor of HIV risk among men who have sex with men in most settings and among heterosexual men and women in areas of high HIV prevalence. PrEP services should be prioritized; local epidemiology will be essential to guide decisions about when to offer PrEP and to which populations.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"Repeat PEP user\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.\n\nPeople may be subject to ongoing high risk of exposure to HIV, leading to multiple prescriptions for PEP. In such situations, health-care providers should discuss with their clients the potential benefits of transitioning to HIV PrEP.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"No condom use during sex with more than one partner in the past 6 months\"\n      then 'Counsel client on PrEP.  Based on answers given, PrEP is suitable for client.\n\nInconsistent use of condoms (male or female), including an intention to use condoms during sex with some occasional omissions or accidents, increases HIV risk. Social desirability bias in reporting condom use may occur, so PrEP could be considered for people reporting any intercourse without a condom or concerns about their future use of condoms. For example, someone who reports a desire to stop using condoms may be already having sex without condoms.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"PrEP requested by client\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"A sexual partner in the past 6 months had one or more HIV risk factors\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"STI in the past 6 months\"\n      then 'Counsel client on PrEP. Based on answers given, PrEP is suitable for client.\n\nRecently diagnosed STIs are often indicators of risk of sexual acquisition of HIV. The predictive value of STI indicators varies by region, the type of STI and a person\\'s demographic characteristics. A new diagnosis of syphilis or genital herpes is a strong predictor of HIV risk among men who have sex with men in most settings and among heterosexual men and women in areas of high HIV prevalence. PrEP services should be prioritized; local epidemiology will be essential to guide decisions about when to offer PrEP and to which populations.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"Repeat PEP user\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.'\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"No condom use during sex with more than one partner in the past 6 months\"\n      then 'Counsel client on PrEP. Based on answers given, client is suitable for PrEP.'\n    when \"HIV negative or unknown\" and\n         \"Symptoms of Acute HIV infection\"\n      then 'Client is ineligible for PrEP based on answers given.'\n    when \"HIV negative or unknown\" and\n         \"Probable recent exposure to HIV\"\n      then 'Client is ineligible for PrEP based on answers given.  Counsel client on risk and prevention.  \n\nIf the person has had a recent high-risk HIV exposure (such as within the past 72 hours) they can be offered PEP and transition to PrEP after the completion of PEP and following additional HIV testing.\n\nThe following types of exposure may warrant HIV PEP.\n• Body fluids: blood, blood-stained saliva, breast-milk, genital secretions; cerebrospinal, amniotic, peritoneal, synovial, pericardial or pleural fluids. Although these fluids carry a high risk of HIV infection, this list is not exhaustive. All cases should be assessed clinically, and the health care workers should decide whether the actual exposure constitutes a significant risk.\n• Types of exposure: (1) mucous membrane from sexual exposure; splashes to the eye, nose, or oral cavity and (2) parenteral exposures.\nExposure that does not require HIV PEP includes:\n• when the exposed individual is already HIV positive;\n• when the source is established to be HIV negative; and\n• exposure to bodily fluids that do not pose a significant risk: tears, non-blood-stained saliva, urine and sweat.\n\nPeople may be subject to ongoing high risk of exposure to HIV, leading to multiple prescriptions for PEP. In such situations, health-care providers should discuss with their clients the potential benefits of transitioning to HIV PrEP.'\n    when \"HIV negative\" and\n         \"TDF allergy or contraindication\"\n      then 'Client is ineligible for PrEP based on answers given. Counsel client on risk and prevention.'\n    when \"HIV negative\" and\n         \"Contraindications to PrEP usage\"\n      then 'Client is ineligible for PrEP based on answers given. Counsel client on risk and prevention.'\n    when \"HIV negative\" and\n         \"Estimated creatinine clearance < 60 mL/min\"\n      then 'Client is ineligible for PrEP based on answers given.  Counsel client on risk and prevention.\n\nMeasurement of kidney function will depend on age and comorbidities.  See Table 2. of source: Suggested procedures for measuring kidney function for TDF-containing oral PrEP\n\nMeasuring kidney function is optional for those aged under 30 years without kidney-related comorbidities.\n\nIndividuals aged 30 years and older without comorbidities may be screened once, at or within one to three months of oral PrEP initiation. Depending on available resources, this can be considered optional for those aged 30–49 years, particularly those aged 30–39, given the low risk of kidney impairment.\n\nMore frequent screening (every 6–12 months) is suggested for individuals with comorbidities, those aged 50 years and older, and those with a previous kidney function test result suggesting at least a mild reduction in function (eGFR <90 mL/min per 1.73 m^2).\n\nWaiting for kidney function test results should not delay initiation or continuation of oral PrEP.'\n    else null\n  end" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "37"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 60 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Suitable for PrEP" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n @output \"Suitable for PrEP\"\n */\ndefine \"Suitable for PrEP\":\n  case\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"PrEP requested by client\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV status of partner or contact is positive\" and\n         \"Sex partner is on HIV treatment and not virally suppressed\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"PrEP requested by client\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"A sexual partner in the past 6 months had one or more HIV risk factors\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"STI in the past 6 months\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"Repeat PEP user\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"Is Key population member\" and\n         \"No condom use during sex with more than one partner in the past 6 months\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"PrEP requested by client\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"A sexual partner in the past 6 months had one or more HIV risk factors\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"STI in the past 6 months\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"Repeat PEP user\"\n      then true\n    when \"HIV negative\" and \n         \"Estimated creatinine clearance ≥ 60 mL/min\" and\n         \"No symptoms of Acute HIV infection\" and\n         \"No probable recent exposure to HIV\" and\n         \"No contraindications to PrEP usage\" and\n         \"HIV burden of setting is high HIV burden setting\" and\n         \"No condom use during sex with more than one partner in the past 6 months\"\n      then true\n    when \"HIV negative or unknown\" and\n         \"Symptoms of Acute HIV infection\"\n      then false\n    when \"HIV negative or unknown\" and\n         \"Probable recent exposure to HIV\"\n      then false\n    when \"HIV negative\" and\n         \"TDF allergy or contraindication\"\n      then false\n    when \"HIV negative\" and\n         \"Contraindications to PrEP usage\"\n      then false\n    when \"HIV negative\" and\n         \"Estimated creatinine clearance < 60 mL/min\"\n      then false\n    else null\n  end" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "38"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 61 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "HIVC7DTLogic" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "Not suitable for PrEP" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "define \"Not suitable for PrEP\":\n  not(IsNull(\"Suitable for PrEP\")) and not(\"Suitable for PrEP\")" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "39"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 62 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "FHIRHelpers" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "ToString" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "define function ToString(value ObservationStatus): value.value" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "40"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 63 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "WHOCommon" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "references" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "/*\n@description: Returns true if the given reference is to the given resourceId\n@comment: Returns true if the `resourceId` parameter exactly equals the tail of the given reference.\nNOTE: This function assumes resources from the same source server.\n*/\ndefine fluent function references(reference FHIR.Reference, resourceId String):\n  resourceId = Last(Split(reference.reference, '/'))" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "41"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 64 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "FHIRHelpers" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "ToString" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "define function ToString(value string): value.value" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "42"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 65 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "FHIRHelpers" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "ToConcept" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "define function ToConcept(concept FHIR.CodeableConcept):\n    if concept is null then\n        null\n    else\n        System.Concept {\n            codes: concept.coding C return ToCode(C),\n            display: concept.text.value\n        }" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "43"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 66 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "FHIRHelpers" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "ToCode" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "define function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "44"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ], [
+       fhir:index 67 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "libraryName" ] ;
+         fhir:Extension.valueString [ fhir:value "FHIRHelpers" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "name" ] ;
+         fhir:Extension.valueString [ fhir:value "ToInteger" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Extension.url [ fhir:value "statement" ] ;
+         fhir:Extension.valueString [ fhir:value "define function ToInteger(value integer): value.value" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Extension.url [ fhir:value "displaySequence" ] ;
+         fhir:Extension.valueInteger [ fhir:value "45"^^xsd:integer ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition" ]
+     ] ;
+     fhir:Library.name [ fhir:value "EffectiveDataRequirements" ] ;
+     fhir:Library.status [ fhir:value "active" ] ;
+     fhir:Library.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/library-type" ] ;
+         fhir:Coding.code [ fhir:value "module-definition" ]
+       ]
+     ] ;
+     fhir:Library.relatedArtifact [
+       fhir:index 0 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "FHIR model information" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1" ;
+         fhir:link <http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1>
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Library Elements" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://smart.who.int/hiv/Library/HIVEncounterElements" ;
+         fhir:link <http://smart.who.int/hiv/Library/HIVEncounterElements>
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Library Elements" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://smart.who.int/hiv/Library/HIVElements" ;
+         fhir:link <http://smart.who.int/hiv/Library/HIVElements>
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Library Concepts" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://smart.who.int/hiv/Library/HIVConcepts|0.0.2" ;
+         fhir:link <http://smart.who.int/hiv/Library/HIVConcepts|0.0.2>
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Library FHIRHelpers" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://fhir.org/guides/cqf/common/Library/FHIRHelpers|4.0.1" ;
+         fhir:link <http://fhir.org/guides/cqf/common/Library/FHIRHelpers|4.0.1>
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Library WC" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://smart.who.int/hiv/Library/WHOCommon" ;
+         fhir:link <http://smart.who.int/hiv/Library/WHOCommon>
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Library Concepts" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://smart.who.int/hiv/Library/HIVConcepts" ;
+         fhir:link <http://smart.who.int/hiv/Library/HIVConcepts>
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Library ConceptsCustom" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://smart.who.int/hiv/Library/HIVConceptsCustom|0.0.1" ;
+         fhir:link <http://smart.who.int/hiv/Library/HIVConceptsCustom|0.0.1>
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Library Config" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://smart.who.int/hiv/Library/HIVConfig" ;
+         fhir:link <http://smart.who.int/hiv/Library/HIVConfig>
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Code system HIVConcepts" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ;
+         fhir:link <http://smart.who.int/hiv/CodeSystem/HIVConcepts>
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:RelatedArtifact.type [ fhir:value "depends-on" ] ;
+       fhir:RelatedArtifact.display [ fhir:value "Code system ObservationCategoryCodes" ] ;
+       fhir:RelatedArtifact.resource [
+         fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/observation-category>
+       ]
+     ] ;
+     fhir:Library.parameter [
+       fhir:index 0 ;
+       fhir:ParameterDefinition.name [ fhir:value "EncounterId" ] ;
+       fhir:ParameterDefinition.use [ fhir:value "in" ] ;
+       fhir:ParameterDefinition.min [ fhir:value "0"^^xsd:integer ] ;
+       fhir:ParameterDefinition.max [ fhir:value "1" ] ;
+       fhir:ParameterDefinition.type [ fhir:value "string" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ParameterDefinition.name [ fhir:value "Today" ] ;
+       fhir:ParameterDefinition.use [ fhir:value "in" ] ;
+       fhir:ParameterDefinition.min [ fhir:value "0"^^xsd:integer ] ;
+       fhir:ParameterDefinition.max [ fhir:value "1" ] ;
+       fhir:ParameterDefinition.type [ fhir:value "date" ]
+     ], [
+       fhir:index 2 ;
+       fhir:ParameterDefinition.name [ fhir:value "Guidance" ] ;
+       fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+       fhir:ParameterDefinition.min [ fhir:value "0"^^xsd:integer ] ;
+       fhir:ParameterDefinition.max [ fhir:value "1" ] ;
+       fhir:ParameterDefinition.type [ fhir:value "string" ]
+     ], [
+       fhir:index 3 ;
+       fhir:ParameterDefinition.name [ fhir:value "Not suitable for PrEP" ] ;
+       fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+       fhir:ParameterDefinition.min [ fhir:value "0"^^xsd:integer ] ;
+       fhir:ParameterDefinition.max [ fhir:value "1" ] ;
+       fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+     ], [
+       fhir:index 4 ;
+       fhir:ParameterDefinition.name [ fhir:value "Suitable for PrEP" ] ;
+       fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+       fhir:ParameterDefinition.min [ fhir:value "0"^^xsd:integer ] ;
+       fhir:ParameterDefinition.max [ fhir:value "1" ] ;
+       fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+     ] ;
+     fhir:Library.dataRequirement [
+       fhir:index 0 ;
+       fhir:DataRequirement.type [ fhir:value "Observation" ] ;
+       fhir:DataRequirement.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Observation" ;
+         fhir:index 0 ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+       ] ;
+       fhir:DataRequirement.mustSupport [
+         fhir:value "code" ;
+         fhir:index 0
+       ], [
+         fhir:value "status" ;
+         fhir:index 1
+       ], [
+         fhir:value "encounter" ;
+         fhir:index 2
+       ], [
+         fhir:value "value" ;
+         fhir:index 3
+       ] ;
+       fhir:DataRequirement.codeFilter [
+         fhir:index 0 ;
+         fhir:DataRequirement.codeFilter.path [ fhir:value "code" ] ;
+         fhir:DataRequirement.codeFilter.code [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+           fhir:Coding.code [ fhir:value "HIV.H.DE34" ] ;
+           fhir:Coding.display [ fhir:value "HIV status of partner or contact" ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:DataRequirement.type [ fhir:value "Observation" ] ;
+       fhir:DataRequirement.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Observation" ;
+         fhir:index 0 ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+       ] ;
+       fhir:DataRequirement.mustSupport [
+         fhir:value "code" ;
+         fhir:index 0
+       ], [
+         fhir:value "status" ;
+         fhir:index 1
+       ], [
+         fhir:value "encounter" ;
+         fhir:index 2
+       ], [
+         fhir:value "value" ;
+         fhir:index 3
+       ] ;
+       fhir:DataRequirement.codeFilter [
+         fhir:index 0 ;
+         fhir:DataRequirement.codeFilter.path [ fhir:value "code" ] ;
+         fhir:DataRequirement.codeFilter.code [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+           fhir:Coding.code [ fhir:value "HIV.C.DE55" ] ;
+           fhir:Coding.display [ fhir:value "Sex partners HIV treatment status" ]
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:DataRequirement.type [ fhir:value "Observation" ] ;
+       fhir:DataRequirement.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Observation" ;
+         fhir:index 0 ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+       ] ;
+       fhir:DataRequirement.mustSupport [
+         fhir:value "code" ;
+         fhir:index 0
+       ], [
+         fhir:value "status" ;
+         fhir:index 1
+       ], [
+         fhir:value "category" ;
+         fhir:index 2
+       ], [
+         fhir:value "encounter" ;
+         fhir:index 3
+       ], [
+         fhir:value "effective" ;
+         fhir:index 4
+       ] ;
+       fhir:DataRequirement.codeFilter [
+         fhir:index 0 ;
+         fhir:DataRequirement.codeFilter.path [ fhir:value "code" ] ;
+         fhir:DataRequirement.codeFilter.code [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+           fhir:Coding.code [ fhir:value "HIV.B.DE49" ] ;
+           fhir:Coding.display [ fhir:value "Key population member*" ]
+         ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:DataRequirement.type [ fhir:value "Observation" ] ;
+       fhir:DataRequirement.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Observation" ;
+         fhir:index 0 ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+       ] ;
+       fhir:DataRequirement.mustSupport [
+         fhir:value "code" ;
+         fhir:index 0
+       ], [
+         fhir:value "status" ;
+         fhir:index 1
+       ], [
+         fhir:value "encounter" ;
+         fhir:index 2
+       ], [
+         fhir:value "value" ;
+         fhir:index 3
+       ] ;
+       fhir:DataRequirement.codeFilter [
+         fhir:index 0 ;
+         fhir:DataRequirement.codeFilter.path [ fhir:value "code" ] ;
+         fhir:DataRequirement.codeFilter.code [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+           fhir:Coding.code [ fhir:value "HIV.C.DE31" ] ;
+           fhir:Coding.display [ fhir:value "PEP history" ]
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:DataRequirement.type [ fhir:value "Observation" ] ;
+       fhir:DataRequirement.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Observation" ;
+         fhir:index 0 ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+       ] ;
+       fhir:DataRequirement.mustSupport [
+         fhir:value "code" ;
+         fhir:index 0
+       ], [
+         fhir:value "status" ;
+         fhir:index 1
+       ], [
+         fhir:value "encounter" ;
+         fhir:index 2
+       ], [
+         fhir:value "value" ;
+         fhir:index 3
+       ] ;
+       fhir:DataRequirement.codeFilter [
+         fhir:index 0 ;
+         fhir:DataRequirement.codeFilter.path [ fhir:value "code" ] ;
+         fhir:DataRequirement.codeFilter.code [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+           fhir:Coding.code [ fhir:value "HIV.C.DE36" ] ;
+           fhir:Coding.display [ fhir:value "Signs of substantial risk of HIV infection" ]
+         ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:DataRequirement.type [ fhir:value "Observation" ] ;
+       fhir:DataRequirement.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Observation" ;
+         fhir:index 0 ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+       ] ;
+       fhir:DataRequirement.mustSupport [
+         fhir:value "code" ;
+         fhir:index 0
+       ], [
+         fhir:value "status" ;
+         fhir:index 1
+       ], [
+         fhir:value "encounter" ;
+         fhir:index 2
+       ], [
+         fhir:value "value" ;
+         fhir:index 3
+       ] ;
+       fhir:DataRequirement.codeFilter [
+         fhir:index 0 ;
+         fhir:DataRequirement.codeFilter.path [ fhir:value "code" ] ;
+         fhir:DataRequirement.codeFilter.code [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+           fhir:Coding.code [ fhir:value "HIV.B.DE115" ] ;
+           fhir:Coding.display [ fhir:value "HIV status" ]
+         ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:DataRequirement.type [ fhir:value "Observation" ] ;
+       fhir:DataRequirement.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Observation" ;
+         fhir:index 0 ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+       ] ;
+       fhir:DataRequirement.mustSupport [
+         fhir:value "code" ;
+         fhir:index 0
+       ], [
+         fhir:value "status" ;
+         fhir:index 1
+       ], [
+         fhir:value "encounter" ;
+         fhir:index 2
+       ], [
+         fhir:value "value" ;
+         fhir:index 3
+       ] ;
+       fhir:DataRequirement.codeFilter [
+         fhir:index 0 ;
+         fhir:DataRequirement.codeFilter.path [ fhir:value "code" ] ;
+         fhir:DataRequirement.codeFilter.code [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+           fhir:Coding.code [ fhir:value "HIV.C.DE112" ] ;
+           fhir:Coding.display [ fhir:value "Contraindications to PrEP usage" ]
+         ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:DataRequirement.type [ fhir:value "Observation" ] ;
+       fhir:DataRequirement.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Observation" ;
+         fhir:index 0 ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+       ] ;
+       fhir:DataRequirement.mustSupport [
+         fhir:value "code" ;
+         fhir:index 0
+       ], [
+         fhir:value "status" ;
+         fhir:index 1
+       ], [
+         fhir:value "encounter" ;
+         fhir:index 2
+       ], [
+         fhir:value "value" ;
+         fhir:index 3
+       ] ;
+       fhir:DataRequirement.codeFilter [
+         fhir:index 0 ;
+         fhir:DataRequirement.codeFilter.path [ fhir:value "code" ] ;
+         fhir:DataRequirement.codeFilter.code [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://smart.who.int/hiv/CodeSystem/HIVConcepts" ] ;
+           fhir:Coding.code [ fhir:value "HIV.C.DE106" ] ;
+           fhir:Coding.display [ fhir:value "Estimated creatinine clearance" ]
+         ]
+       ]
+     ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability" ] ;
+     fhir:Extension.valueCode [ fhir:value "computable" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements" ] ;
+     fhir:Extension.valueCanonical [ fhir:value "#effective-data-requirements" ]
+  ] ;
+  fhir:PlanDefinition.url [ fhir:value "http://smart.who.int/hiv/PlanDefinition/HIVC7DT"] ;
+  fhir:PlanDefinition.version [ fhir:value "0.4.4"] ;
+  fhir:PlanDefinition.name [ fhir:value "HIVC7DT"] ;
+  fhir:PlanDefinition.title [ fhir:value "HIV.C7.DT Check for signs of serious illness"] ;
+  fhir:PlanDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/plan-definition-type" ] ;
+       fhir:Coding.code [ fhir:value "eca-rule" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.status [ fhir:value "draft"] ;
+  fhir:PlanDefinition.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:PlanDefinition.date [ fhir:value "2026-10-14T11:09:56+00:00"^^xsd:dateTime] ;
+  fhir:PlanDefinition.publisher [ fhir:value "WHO"] ;
+  fhir:PlanDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.description [ fhir:value "Check for signs of serious illness"] ;
+  fhir:PlanDefinition.relatedArtifact [
+     fhir:index 0 ;
+     fhir:RelatedArtifact.type [ fhir:value "citation" ] ;
+     fhir:RelatedArtifact.citation [ fhir:value "Consolidated Guidelines on HIV Testing Services (2019)" ]
+  ] ;
+  fhir:PlanDefinition.library [
+     fhir:value "http://smart.who.int/hiv/Library/HIVC7DTLogic" ;
+     fhir:index 0 ;
+     fhir:link <http://smart.who.int/hiv/Library/HIVC7DTLogic>
+  ] ;
+  fhir:PlanDefinition.action [
+     fhir:index 0 ;
+     fhir:PlanDefinition.action.textEquivalent [ fhir:value "Check suitability for PrEP or PEP" ] ;
+     fhir:PlanDefinition.action.action [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.textEquivalent [ fhir:value "Counsel client on PrEP. Based on answers given, client is suitable for PrEP." ] ;
+       fhir:PlanDefinition.action.condition [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+         fhir:PlanDefinition.action.condition.expression [
+           fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+           fhir:Expression.expression [ fhir:value "Suitable for PrEP" ]
+         ]
+       ] ;
+       fhir:PlanDefinition.action.definitionCanonical [
+         fhir:value "http://smart.who.int/hiv/ActivityDefinition/HIVGuidanceCommunicationRequestActivity" ;
+         fhir:link <http://smart.who.int/hiv/ActivityDefinition/HIVGuidanceCommunicationRequestActivity>
+       ] ;
+       fhir:PlanDefinition.action.dynamicValue [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.dynamicValue.path [ fhir:value "payload[+].contentString" ] ;
+         fhir:PlanDefinition.action.dynamicValue.expression [
+           fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+           fhir:Expression.expression [ fhir:value "Guidance" ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:PlanDefinition.action.textEquivalent [ fhir:value "Client is ineligible for PrEP based on answers given." ] ;
+       fhir:PlanDefinition.action.condition [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+         fhir:PlanDefinition.action.condition.expression [
+           fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+           fhir:Expression.expression [ fhir:value "Not suitable for PrEP" ]
+         ]
+       ] ;
+       fhir:PlanDefinition.action.definitionCanonical [
+         fhir:value "http://smart.who.int/hiv/ActivityDefinition/HIVGuidanceCommunicationRequestActivity" ;
+         fhir:link <http://smart.who.int/hiv/ActivityDefinition/HIVGuidanceCommunicationRequestActivity>
+       ] ;
+       fhir:PlanDefinition.action.dynamicValue [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.dynamicValue.path [ fhir:value "payload[+].contentString" ] ;
+         fhir:PlanDefinition.action.dynamicValue.expression [
+           fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+           fhir:Expression.expression [ fhir:value "Guidance" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/hiv/PlanDefinition/HIVC7DT.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

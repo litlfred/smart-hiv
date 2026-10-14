@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-998",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-998",
+  "name" : "UnionHIVEDE234AndHIVEDE234",
+  "title" : "Union of HIV-exposed infant reason for unknown final status ValueSet And HIV-exposed infant reason for unknown final status ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.E.DE235",
+        "display" : "Lost to follow-up"
+      },
+      {
+        "code" : "HIV.E.DE236",
+        "display" : "Transferred out"
+      },
+      {
+        "code" : "HIV.E.DE237",
+        "display" : "Death (documented)"
+      },
+      {
+        "code" : "HIV.E.DE238",
+        "display" : "Refused (stopped) treatment"
+      }]
+    }]
+  }
+}

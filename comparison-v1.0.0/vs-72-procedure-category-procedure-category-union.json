@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-179",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-179",
+  "name" : "UnionProcedureCategoryCodes(SNOMEDCT)AndProcedureCategoryCodes(SNOMEDCT)",
+  "title" : "Union of Procedure Category Codes (SNOMED CT) And Procedure Category Codes (SNOMED CT)",
+  "status" : "draft",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "24642003"
+      },
+      {
+        "code" : "409063005"
+      },
+      {
+        "code" : "409073007"
+      },
+      {
+        "code" : "387713003"
+      },
+      {
+        "code" : "103693007"
+      },
+      {
+        "code" : "46947000"
+      },
+      {
+        "code" : "410606002"
+      }]
+    }]
+  }
+}

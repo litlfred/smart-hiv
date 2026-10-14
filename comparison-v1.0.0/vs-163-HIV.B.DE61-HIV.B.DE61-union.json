@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-452",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-452",
+  "name" : "UnionHIVBDE61AndHIVBDE61",
+  "title" : "Union of HIV exposure type ValueSet And HIV exposure type ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.B.DE62",
+        "display" : "Occupational"
+      },
+      {
+        "code" : "HIV.B.DE63",
+        "display" : "Non-occupational violent"
+      },
+      {
+        "code" : "HIV.B.DE64",
+        "display" : "Non-occupational consensual sex"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-789",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-789",
+  "name" : "IntersectionHIVDDE691AndHIVDDE691",
+  "title" : "Intersection of Cervical cancer colposcopy result ValueSet And Cervical cancer colposcopy result ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE692",
+        "display" : "Normal colposcopic findings"
+      },
+      {
+        "code" : "HIV.D.DE693",
+        "display" : "Abnormal colposcopic findings"
+      },
+      {
+        "code" : "HIV.D.DE694",
+        "display" : "Suspicious for invasive cervical cancer"
+      },
+      {
+        "code" : "HIV.D.DE695",
+        "display" : "Miscellaneous findings"
+      },
+      {
+        "code" : "HIV.D.DE696",
+        "display" : "Inadequate"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-887",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-887",
+  "name" : "UnionHIVDDE893AndHIVDDE893",
+  "title" : "Union of Staging of liver disease ValueSet And Staging of liver disease ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE894",
+        "display" : "F0-4, fibrosis staging"
+      },
+      {
+        "code" : "HIV.D.DE895",
+        "display" : "F4 or cirrhosis, presence of cirrhosis"
+      }]
+    }]
+  }
+}

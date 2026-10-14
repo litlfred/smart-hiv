@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-330",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-330",
+  "name" : "IntersectionHIVBDE1AndHIVBDE1",
+  "title" : "Intersection of Reason for visit ValueSet And Reason for visit ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.B.DE2",
+        "display" : "First-time HIV test"
+      },
+      {
+        "code" : "HIV.B.DE3",
+        "display" : "Retesting for HIV"
+      },
+      {
+        "code" : "HIV.B.DE4",
+        "display" : "HIV testing services visit"
+      }]
+    }]
+  }
+}

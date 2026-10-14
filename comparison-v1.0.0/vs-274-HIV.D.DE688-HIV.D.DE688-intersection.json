@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9f6983c5-2a55-47c9-baa3-e6b8718caf7f-786",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9f6983c5-2a55-47c9-baa3-e6b8718caf7f-786",
+  "name" : "IntersectionHIVDDE688AndHIVDDE688",
+  "title" : "Intersection of HPV16/18 test result ValueSet And HPV16/18 test result ValueSet",
+  "status" : "active",
+  "date" : "2026-10-14T11:15:12+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "HIV.D.DE689",
+        "display" : "Positive"
+      },
+      {
+        "code" : "HIV.D.DE690",
+        "display" : "Negative"
+      }]
+    }]
+  }
+}
