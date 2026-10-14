@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Observation-ExampleHivTest.jsonld",
+  "@type": "fhir:Observation",
+  "dcterms:identifier": "Observation/ExampleHivTest",
+  "dcterms:title": "Example HIV Test Observation for Positive Result",
+  "dcterms:description": "This is an example of an HIV Test Observation resource based on the HivTest profile for a positive test result.",
+  "dcterms:type": "Example: Example Instances",
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/Observation-ExampleHivTest.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  },
+  "dcterms:conformsTo": [
+    {
+      "@id": "http://smart.who.int/hiv/StructureDefinition/HivHivTest"
+    }
+  ],
+  "dcterms:subject": [
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "HIV.B.DE81",
+      "schema:name": "HIV test type",
+      "schema:inDefinedTermSet": {
+        "@id": "http://smart.who.int/hiv/CodeSystem/HIVConcepts"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "StructureDefinition-HIVConfiguration.jsonld",
+  "@type": "fhir:StructureDefinition",
+  "dcterms:identifier": "StructureDefinition/HIVConfiguration",
+  "schema:name": "HIVConfiguration",
+  "dcterms:title": "HIV.Configuration",
+  "dcterms:description": "This tab describes data about a facility or region that are used in workflows and decision logic (i.e. WHO recommendations depend upon these data elements), but are not specific to an individual (e.g. a high HIV burden setting)",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Structures: Logical Models",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/StructureDefinition/HIVConfiguration"
+  },
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/StructureDefinition-HIVConfiguration.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

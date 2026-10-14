@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "ActorDefinition-TrainedNonPhysicianClinician.jsonld",
+  "@type": "fhir:ActorDefinition",
+  "dcterms:identifier": "ActorDefinition/TrainedNonPhysicianClinician",
+  "schema:name": "TrainedNonPhysicianClinician",
+  "dcterms:title": "Trained non-physician clinician",
+  "dcterms:description": "A professional health worker who is capable of many of the diagnostic and clinical functions of a physician but who is not trained as a physician. These types of health workers are an important cadre for HIV care and treatment in some countries. Normally, completion of tertiary-level training in theoretical and practical medical services. They work autonomously or with limited supervision of medical doctors and provide advisory, diagnostic, curative and preventive medical services more limited in scope and complexity than those carried out by medical doctors.",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Example: Example Instances",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/ActorDefinition/TrainedNonPhysicianClinician"
+  },
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/ActorDefinition-TrainedNonPhysicianClinician.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

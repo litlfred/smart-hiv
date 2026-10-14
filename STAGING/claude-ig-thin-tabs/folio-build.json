@@ -1,0 +1,13 @@
+{
+  "$schema": "folio-site-build/v1",
+  "instance": "smart-hiv",
+  "platform": {
+    "commit": "2d97ef4c4c6f6c1704140dd4313d7d00735ea742"
+  },
+  "source": {
+    "repo": "litlfred/smart-hiv",
+    "ref": "claude/ig-thin-tabs",
+    "commit": "58b846f8ce0347e2b164edf2e634f6a4e0c23f27"
+  },
+  "builtAt": "2026-10-14T19:22:44.642Z"
+}

@@ -1,0 +1,7 @@
+{
+  "packageId": "smart.who.int.hiv",
+  "version": "0.4.4",
+  "fhirVersion": "4.0.1",
+  "fhirUrl": "http://hl7.org/fhir/R4/",
+  "generated": "2026-10-14"
+}

@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Requirements-HIV.D.Careandtreatmentclinicalvisit.jsonld",
+  "@type": "fhir:Requirements",
+  "dcterms:identifier": "Requirements/HIV.D.Careandtreatmentclinicalvisit",
+  "dcterms:title": "Care and treatment clinical visit",
+  "dcterms:description": "Functional Requirements For Care and treatment clinical visit",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Example: Example Instances",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/Requirements/HIV.D.Careandtreatmentclinicalvisit"
+  },
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/Requirements-HIV.D.Careandtreatmentclinicalvisit.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

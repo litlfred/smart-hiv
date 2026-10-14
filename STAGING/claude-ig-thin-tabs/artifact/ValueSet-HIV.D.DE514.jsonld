@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "ValueSet-HIV.D.DE514.jsonld",
+  "@type": "fhir:ValueSet",
+  "dcterms:identifier": "ValueSet/HIV.D.DE514",
+  "schema:name": "HIVDDE514",
+  "dcterms:title": "HIV status of family member ValueSet",
+  "dcterms:description": "Value set of HIV status of each family member at time of patient's enrolment, including partner (for mothers)",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Terminology: Value Sets",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/ValueSet/HIV.D.DE514"
+  },
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/ValueSet-HIV.D.DE514.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

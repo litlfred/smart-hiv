@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "ActorDefinition-TrainedLayProvider.jsonld",
+  "@type": "fhir:ActorDefinition",
+  "dcterms:identifier": "ActorDefinition/TrainedLayProvider",
+  "schema:name": "TrainedLayProvider",
+  "dcterms:title": "Trained lay provider",
+  "dcterms:description": "A person who has been trained and supervised to independently perform functions related to health care delivery and to deliver specific services but who has received no formal professional or paraprofessional certificate or tertiary educational degree. Peers can be trained to function as lay providers.",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Example: Example Instances",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/ActorDefinition/TrainedLayProvider"
+  },
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/ActorDefinition-TrainedLayProvider.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

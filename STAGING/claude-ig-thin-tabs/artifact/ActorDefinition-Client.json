@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "ActorDefinition-Client.jsonld",
+  "@type": "fhir:ActorDefinition",
+  "dcterms:identifier": "ActorDefinition/Client",
+  "schema:name": "Client",
+  "dcterms:title": "Client",
+  "dcterms:description": "In the context of this document, a client is a person who is given medical care, which may include HIV prevention, care or treatment services. Clients may be HIV-positive or HIV-negative, or they may not know their HIV status. A client living with HIV may be enrolled to receive antiretroviral treatment (ART) and/or other HIV-related treatment and care.",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Example: Example Instances",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/ActorDefinition/Client"
+  },
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/ActorDefinition-Client.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

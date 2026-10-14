@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Library-HIVIND44Logic.jsonld",
+  "@type": "fhir:Library",
+  "dcterms:identifier": "Library/HIVIND44Logic",
+  "schema:name": "HIVIND44Logic",
+  "dcterms:title": "HIV.IND.44 Logic",
+  "dcterms:description": "Number and % of eligible people living with HIV on ART who initiated TB preventive treatment",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Knowledge Artifacts: Libraries",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/Library/HIVIND44Logic"
+  },
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/Library-HIVIND44Logic.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

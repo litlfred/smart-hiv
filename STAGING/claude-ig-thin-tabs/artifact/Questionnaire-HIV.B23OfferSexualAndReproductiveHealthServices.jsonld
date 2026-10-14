@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Questionnaire-HIV.B23OfferSexualAndReproductiveHealthServices.jsonld",
+  "@type": "fhir:Questionnaire",
+  "dcterms:identifier": "Questionnaire/HIV.B23OfferSexualAndReproductiveHealthServices",
+  "dcterms:title": "Offer sexual and reproductive health services",
+  "dcterms:description": "Questionnaire for offer sexual and reproductive health services",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Structures: Questionnaires",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/Questionnaire/HIV.B23OfferSexualAndReproductiveHealthServices"
+  },
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/Questionnaire-HIV.B23OfferSexualAndReproductiveHealthServices.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

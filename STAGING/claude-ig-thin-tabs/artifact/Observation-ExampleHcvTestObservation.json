@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Observation-ExampleHcvTestObservation.jsonld",
+  "@type": "fhir:Observation",
+  "dcterms:identifier": "Observation/ExampleHcvTestObservation",
+  "dcterms:title": "Example HCV Test Observation",
+  "dcterms:description": "An example of an HCV test observation based on the HivHcvTest profile.",
+  "dcterms:type": "Example: Example Instances",
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/Observation-ExampleHcvTestObservation.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  },
+  "dcterms:conformsTo": [
+    {
+      "@id": "http://smart.who.int/hiv/StructureDefinition/HivHcvTest"
+    }
+  ],
+  "dcterms:subject": [
+    {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "HIV.D.DE170",
+      "schema:name": "HCV test result",
+      "schema:inDefinedTermSet": {
+        "@id": "http://smart.who.int/hiv/CodeSystem/HIVConcepts"
+      }
+    }
+  ]
+}

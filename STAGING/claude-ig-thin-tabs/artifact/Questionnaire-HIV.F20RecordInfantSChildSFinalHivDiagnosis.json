@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Questionnaire-HIV.F20RecordInfantSChildSFinalHivDiagnosis.jsonld",
+  "@type": "fhir:Questionnaire",
+  "dcterms:identifier": "Questionnaire/HIV.F20RecordInfantSChildSFinalHivDiagnosis",
+  "dcterms:title": "Record infant's/child's final HIV diagnosis",
+  "dcterms:description": "Questionnaire for record infant's/child's final HIV diagnosis",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Structures: Questionnaires",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/Questionnaire/HIV.F20RecordInfantSChildSFinalHivDiagnosis"
+  },
+  "schema:creativeWorkStatus": "referenced",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "/smart-hiv/STAGING/claude-ig-thin-tabs/Questionnaire-HIV.F20RecordInfantSChildSFinalHivDiagnosis.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "upstream"
+    }
+  ],
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

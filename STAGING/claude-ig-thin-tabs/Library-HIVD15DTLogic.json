@@ -1,0 +1,168 @@
+{
+  "resourceType": "Library",
+  "id": "HIVD15DTLogic",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-5a860fb1-7284-446a-b209-13e14c8e3ec9.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/**\nLibrary: HIV.D15.DT Logic\n\n@DecisionID: HIV.D15.DT\n@BusinessRule: Determine WHO clinical staging of HIV disease in adults, adolescents and children\n@Trigger: HIV.D15 Determine clinical stage of HIV\n@HitPolicy: Rule Order\n@Description: Determine WHO clinical staging of HIV disease in adults, adolescents and children\n\nData Concepts:\n * HIV.D.DE289: WHO HIV clinical stage condition or symptom\n * HIV.D.DE934: WHO HIV clinical stage condition or symptom\n * HIV.A.DE17: Age | Calculated age (number of years) of the client based on date of birth\n\nConsolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease.\n*/\n\nlibrary HIVD15DTLogic\n\nusing FHIR version '4.0.1'\n\ninclude HIVCommon version '0.0.1' called HIC\ninclude HIVConcepts called Concepts\ninclude HIVEncounterElements called Elements\ninclude FHIRHelpers version '4.0.1'\n\ninclude WHOCommon called WCom\n\nparameter Today default Today()\n\ncontext Patient\n\n/*\n @input: &quot;WHO HIV clinical stage condition or symptom&quot;\n */\ndefine &quot;WHO HIV clinical stage condition or symptom&quot;:\n  if Elements.&quot;WHO HIV clinical stage condition or symptom D.DE289 Observation&quot; is not null then\n    Elements.&quot;WHO HIV clinical stage condition or symptom D.DE289 Observation&quot;\n  else if Elements.&quot;WHO HIV clinical stage condition or symptom D.DE934 Observation&quot; is not null then\n    Elements.&quot;WHO HIV clinical stage condition or symptom D.DE934 Observation&quot;\n  else\n    null\n\n/*\n @input: &quot;Age&quot;\n */\ndefine &quot;Age 15 or older&quot;:\n  AgeInYearsAt(Today) &gt;= 15\n\n/*\n @input: &quot;Age&quot;\n */\ndefine &quot;Age under 15&quot;:\n  AgeInYearsAt(Today) ' at line 246 column 24</b></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "url": "http://smart.who.int/hiv/Library/HIVD15DTLogic",
+  "version": "0.4.4",
+  "name": "HIVD15DTLogic",
+  "title": "HIV.D15.DT Logic",
+  "status": "draft",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "date": "2026-10-14T19:07:41+00:00",
+  "publisher": "WHO",
+  "contact": [
+    {
+      "name": "WHO",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://who.int"
+        }
+      ]
+    }
+  ],
+  "description": "HIV.D15.DT Logic",
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "display": "Library HIC",
+      "resource": "http://smart.who.int/hiv/Library/HIVCommon|0.0.1"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library Concepts",
+      "resource": "http://smart.who.int/hiv/Library/HIVConcepts"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library Elements",
+      "resource": "http://smart.who.int/hiv/Library/HIVEncounterElements"
+    },
+    {
+      "type": "depends-on",
+      "display": "Library WCom",
+      "resource": "http://smart.who.int/hiv/Library/WHOCommon"
+    }
+  ],
+  "parameter": [
+    {
+      "name": "Today",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "date"
+    },
+    {
+      "name": "Patient",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Patient"
+    },
+    {
+      "name": "WHO HIV clinical stage condition or symptom",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Observation"
+    },
+    {
+      "name": "Age 15 or older",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Age under 15",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Age over 6 weeks",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Age over 1 month",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "WHO HIV clinical stage 1",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "WHO HIV clinical stage 2",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "WHO HIV clinical stage 3",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "WHO HIV clinical stage 4",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Guidance",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "string"
+    }
+  ],
+  "content": [
+    {
+      "contentType": "text/cql",
+      "url": "Library-HIVD15DTLogic.cql"
+    },
+    {
+      "contentType": "application/elm+json",
+      "url": "Library-HIVD15DTLogic.elm.json"
+    }
+  ]
+}
