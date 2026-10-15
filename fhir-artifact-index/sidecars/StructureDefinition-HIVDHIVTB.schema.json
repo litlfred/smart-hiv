@@ -285,19 +285,19 @@
           "const": {
             "@version": 1.1,
             "fhir": "http://hl7.org/fhir/",
-            "HIV.D.DE986": "http://smart.who.int/base/ValueSet-HIV.D.DE986.jsonld",
-            "HIV.D.DE1002": "http://smart.who.int/base/ValueSet-HIV.D.DE1002.jsonld",
+            "HIV.D.DE1028": "http://smart.who.int/base/ValueSet-HIV.D.DE1028.jsonld",
+            "HIV.D.DE942": "http://smart.who.int/base/ValueSet-HIV.D.DE942.jsonld",
+            "HIV.D.DE1034": "http://smart.who.int/base/ValueSet-HIV.D.DE1034.jsonld",
             "HIV.D.DE956": "http://smart.who.int/base/ValueSet-HIV.D.DE956.jsonld",
             "HIV.D.DE1010": "http://smart.who.int/base/ValueSet-HIV.D.DE1010.jsonld",
-            "HIV.D.DE942": "http://smart.who.int/base/ValueSet-HIV.D.DE942.jsonld",
-            "HIV.D.DE939": "http://smart.who.int/base/ValueSet-HIV.D.DE939.jsonld",
-            "HIV.D.DE992": "http://smart.who.int/base/ValueSet-HIV.D.DE992.jsonld",
-            "HIV.D.DE1034": "http://smart.who.int/base/ValueSet-HIV.D.DE1034.jsonld",
+            "HIV.D.DE1019": "http://smart.who.int/base/ValueSet-HIV.D.DE1019.jsonld",
+            "HIV.D.DE1002": "http://smart.who.int/base/ValueSet-HIV.D.DE1002.jsonld",
+            "HIV.D.DE947": "http://smart.who.int/base/ValueSet-HIV.D.DE947.jsonld",
             "HIV.D.DE934": "http://smart.who.int/base/ValueSet-HIV.D.DE934.jsonld",
             "HIV.D.DE973": "http://smart.who.int/base/ValueSet-HIV.D.DE973.jsonld",
-            "HIV.D.DE1028": "http://smart.who.int/base/ValueSet-HIV.D.DE1028.jsonld",
-            "HIV.D.DE1019": "http://smart.who.int/base/ValueSet-HIV.D.DE1019.jsonld",
-            "HIV.D.DE947": "http://smart.who.int/base/ValueSet-HIV.D.DE947.jsonld"
+            "HIV.D.DE992": "http://smart.who.int/base/ValueSet-HIV.D.DE992.jsonld",
+            "HIV.D.DE986": "http://smart.who.int/base/ValueSet-HIV.D.DE986.jsonld",
+            "HIV.D.DE939": "http://smart.who.int/base/ValueSet-HIV.D.DE939.jsonld"
           }
         }
       }
