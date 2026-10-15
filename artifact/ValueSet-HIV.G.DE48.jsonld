@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "ValueSet-HIV.G.DE48.jsonld",
+  "@type": "fhir:ValueSet",
+  "dcterms:identifier": "ValueSet/HIV.G.DE48",
+  "schema:name": "HIVGDE48",
+  "dcterms:title": "HCV viral load test result ValueSet",
+  "dcterms:description": "Value set of hepatitis C viral load test result (qualitative)",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Terminology: Value Sets",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/ValueSet/HIV.G.DE48"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../ast-data/resources/ValueSet/HIV.G.DE48--836c4730.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "03d94684b3007557313fe7ebdf0e80d229709a42"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

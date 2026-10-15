@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-596",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-596",
-  "name" : "UnionHIVDDE168AndHIVDDE168",
-  "title" : "Union of HBV treatment regimen prescribed ValueSet And HBV treatment regimen prescribed ValueSet",
-  "status" : "active",
-  "date" : "2026-10-14T17:18:04+00:00"
-}

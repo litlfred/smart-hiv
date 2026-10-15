@@ -64,7 +64,7 @@
   ],
   "example": {
     "type": "logical_model",
-    "count": 13,
+    "count": 12,
     "schemas": [
       {
         "filename": "StructureDefinition-HIVBHTSvisit.schema.json",
@@ -97,14 +97,6 @@
         "description": "This tab describes the data that may be collected during care and treatment clinical visit for HIV/TB care (HIV.D)",
         "url": "./StructureDefinition-HIVDHIVTB.schema.json",
         "propertyCount": 41
-      },
-      {
-        "filename": "LogicalModels.schema.json",
-        "id": "#/LogicalModels.schema.json",
-        "title": "Logical Model Enumeration Schema",
-        "description": "JSON Schema defining the structure of the Logical Model enumeration endpoint response",
-        "url": "./LogicalModels.schema.json",
-        "propertyCount": 3
       },
       {
         "filename": "StructureDefinition-HIVCPrEPvisit.schema.json",

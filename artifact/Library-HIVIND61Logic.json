@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Library-HIVIND61Logic.jsonld",
+  "@type": "fhir:Library",
+  "dcterms:identifier": "Library/HIVIND61Logic",
+  "schema:name": "HIVIND61Logic",
+  "dcterms:title": "HIV.IND.61 Logic",
+  "dcterms:description": "% of pregnant women who were tested for syphilis on any ANC visit during the reporting period",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Other",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/Library/HIVIND61Logic"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../ast-data/resources/Library/HIVIND61Logic--cea8635a.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "03d94684b3007557313fe7ebdf0e80d229709a42"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

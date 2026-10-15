@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-702",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-702",
-  "name" : "IntersectionHIVDDE492AndHIVDDE492",
-  "title" : "Intersection of Reason for switch to third-line regimen ValueSet And Reason for switch to third-line regimen ValueSet",
-  "status" : "active",
-  "date" : "2026-10-14T17:18:04+00:00"
-}

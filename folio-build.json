@@ -2,12 +2,12 @@
   "$schema": "folio-site-build/v1",
   "instance": "smart-hiv",
   "platform": {
-    "commit": "993aaa6aa1c1bc783880640a48cfa74a5b945035"
+    "commit": "d884f1404a072a162c3e49ffe11f0946ada3a934"
   },
   "source": {
     "repo": "litlfred/smart-hiv",
     "ref": "main",
-    "commit": "9b04dc9faebd85d7977246213406a882ee3eee3e"
+    "commit": "5833be7e1d3aa8f26668d108b0e45dadcf0466ab"
   },
-  "builtAt": "2026-10-14T17:27:20.124Z"
+  "builtAt": "2026-10-15T09:09:37.471Z"
 }

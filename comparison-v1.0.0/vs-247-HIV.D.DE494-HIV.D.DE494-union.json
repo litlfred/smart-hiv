@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-704",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-704",
-  "name" : "UnionHIVDDE494AndHIVDDE494",
-  "title" : "Union of Reason(s) for substitution within third-line regimen ValueSet And Reason(s) for substitution within third-line regimen ValueSet",
-  "status" : "active",
-  "date" : "2026-10-14T17:18:04+00:00"
-}

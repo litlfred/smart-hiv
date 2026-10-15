@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "c943e1f9-4694-48c2-ae80-6bbc91ecbafc-306",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/c943e1f9-4694-48c2-ae80-6bbc91ecbafc-306",
-  "name" : "IntersectionAdverseEventCausalityMethodAndAdverseEventCausalityMethod",
-  "title" : "Intersection of AdverseEventCausalityMethod And AdverseEventCausalityMethod",
-  "status" : "draft",
-  "date" : "2026-10-14T17:18:04+00:00"
-}

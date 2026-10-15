@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Measure-HIVIND92.jsonld",
+  "@type": "fhir:Measure",
+  "dcterms:identifier": "Measure/HIVIND92",
+  "schema:name": "HIVIND92",
+  "dcterms:title": "HIV.IND.92 HCV cured among people living with HIV",
+  "dcterms:description": "% of people living with HIV and co-infected with HCV who were confirmed to be cured of HCV during the reporting period",
+  "schema:version": "0.4.4",
+  "dcterms:type": "Other",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/hiv/Measure/HIVIND92"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../ast-data/resources/Measure/HIVIND92--c95bc5a8.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "03d94684b3007557313fe7ebdf0e80d229709a42"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.hiv",
+    "schema:version": "0.4.4",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/hiv"
+    }
+  }
+}

@@ -222,8 +222,8 @@
                 "const": {
                   "@version": 1.1,
                   "fhir": "http://hl7.org/fhir/",
-                  "HIV.Config.DE12": "http://smart.who.int/base/ValueSet-HIV.Config.DE12.jsonld",
-                  "HIV.Config.DE19": "http://smart.who.int/base/ValueSet-HIV.Config.DE19.jsonld"
+                  "HIV.Config.DE19": "http://smart.who.int/base/ValueSet-HIV.Config.DE19.jsonld",
+                  "HIV.Config.DE12": "http://smart.who.int/base/ValueSet-HIV.Config.DE12.jsonld"
                 }
               }
             }

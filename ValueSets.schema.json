@@ -64,7 +64,7 @@
   ],
   "example": {
     "type": "valueset",
-    "count": 236,
+    "count": 235,
     "schemas": [
       {
         "filename": "ValueSet-HIV.D.DE17.schema.json",
@@ -1185,13 +1185,6 @@
         "description": "JSON Schema for Counselling provided ValueSet ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
         "url": "./ValueSet-HIV.B.DE142.schema.json",
         "valueSetUrl": "http://smart.who.int/hiv/ValueSet/HIV.B.DE142"
-      },
-      {
-        "filename": "ValueSets.schema.json",
-        "id": "#/ValueSets.schema.json",
-        "title": "ValueSet Enumeration Schema",
-        "description": "JSON Schema defining the structure of the ValueSet enumeration endpoint response",
-        "url": "./ValueSets.schema.json"
       },
       {
         "filename": "ValueSet-HIV.D.DE156.schema.json",
