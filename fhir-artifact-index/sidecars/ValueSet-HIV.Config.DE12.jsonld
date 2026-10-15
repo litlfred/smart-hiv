@@ -16,7 +16,7 @@
   },
   "@id": "http://smart.who.int/hiv/ValueSet-HIV.Config.DE12.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-10-15T19:32:16.573363Z",
+  "generatedAt": "2026-10-15T21:02:13.805192Z",
   "@graph": [
     {
       "id": "#HIV.Config.DE13",
