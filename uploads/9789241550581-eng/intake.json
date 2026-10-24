@@ -21,5 +21,41 @@
     "status": "stated",
     "id": "CC-BY-NC-SA-3.0-IGO",
     "basis": "https://iris.who.int/items/d0fe15da-15f9-4ba5-bfe4-73658e98db6a item metadata: dc.rights = 'CC BY-NC-SA 3.0 IGO', dc.rights.uri = 'https://creativecommons.org/licenses/by-nc-sa/3.0/igo'"
-  }
+  },
+  "classifications": [
+    {
+      "scheme": "https://smart.who.int/kg/layer",
+      "code": "l1",
+      "member": true,
+      "source": "context",
+      "basis": "Cited in HIV DAK (9789240085138-eng) Component 1 Table 2 (Ref 16) and input/fsh/plandefinition/HIVB2DT.fsh relatedArtifact as an L1 normative WHO guideline source."
+    },
+    {
+      "scheme": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/guideline-domain",
+      "code": "public-health",
+      "member": true,
+      "source": "declared",
+      "basis": "9789241550581-eng.dc.json dc.subject.mesh = ['Preventive Health Services', 'HIV Testing', 'Guideline'] and dc.description.abstract ('demand creation... facility- and community-based testing, implementation considerations for priority populations, strategic planning... social network-based HIV testing approaches').",
+      "by": "folio-assistant-398x",
+      "at": "2026-10-23"
+    },
+    {
+      "scheme": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/guideline-domain",
+      "code": "clinical",
+      "member": true,
+      "source": "declared",
+      "basis": "9789241550581-eng.dc.json dc.subject.mesh = 'HIV Testing' and dc.description.abstract ('pre- and post-test services... diagnostic testing strategies... western blotting... dual HIV/syphilis rapid diagnostic tests, while emphasizing the WHO 5Cs of HIV testing services: consent, confidentiality, counselling, correct results and connection').",
+      "by": "folio-assistant-398x",
+      "at": "2026-10-23"
+    },
+    {
+      "scheme": "https://litlfred.github.io/folio-assistant-core/v0/ns#glossary/guideline-domain",
+      "code": "health-system-strengthening",
+      "member": true,
+      "source": "declared",
+      "basis": "9789241550581-eng.dc.json dc.description.abstract ('strategic service delivery... quality assurance and programme monitoring... Intended for policy-makers, national programme managers, health-care providers and implementing partners, the guideline supports the expansion of equitable, evidence-informed HIV testing services to improve diagnosis and strengthen national HIV responses').",
+      "by": "folio-assistant-398x",
+      "at": "2026-10-23"
+    }
+  ]
 }
