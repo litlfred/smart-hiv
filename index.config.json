@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "5d9ff3e31cd551fda0069f44ce699be821fd0fa1",
+          "ref": "520a3124b9e820af767e13a1655f3867066e4227",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -158,7 +158,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-02",
-              "ref": "5d9ff3e31cd551fda0069f44ce699be821fd0fa1",
+              "ref": "520a3124b9e820af767e13a1655f3867066e4227",
               "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
             }
           }
