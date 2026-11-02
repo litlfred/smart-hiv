@@ -199,6 +199,14 @@
           }
         }
       }
+    },
+    {
+      "name": "smart-hiv",
+      "source": {
+        "local": {
+          "at": "."
+        }
+      }
     }
   ],
   "site": {
