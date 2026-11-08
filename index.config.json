@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "2a8b67d8aae13fb4f94cc0074d0085b43b10a69d",
+          "ref": "62fe7e771c39686f206b95e04e2590eadd2915ce",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,9 +129,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "2a8b67d8aae13fb4f94cc0074d0085b43b10a69d",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-08",
+              "ref": "62fe7e771c39686f206b95e04e2590eadd2915ce",
+              "evidence": "Owner litlfred, 2026-11-08 10:36Z, project thread 'Expand bibliography entries into detail panels', card 'OK to re-pin core to 62fe7e7 in smart-trust, smart-ips-pilgrimage, smart-hiv?': chose 'A Re-pin core in the 3 PRs'."
             }
           }
         }
