@@ -1,0 +1,19 @@
+# Test only, not for merge: builds this IG's AST with who.template.root#current
+# seeded from litlfred/smart-ig-template (the #68 fix, litlfred/smart-ig-template#1).
+# A build of a branch other than the default branch does not write the AST cache.
+name: Test template fork
+
+on:
+  push:
+    branches: [claude/test-template-fork-68]
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    uses: litlfred/fhir-harness/.github/workflows/ig-ast-refresh.yml@b0150c28d8f166490b53e099338739dfe1102c95 # index.lock.json
+    with:
+      ref: ${{ github.sha }}
+      force: true
+      template-repos: who.template.root=litlfred/smart-ig-template
