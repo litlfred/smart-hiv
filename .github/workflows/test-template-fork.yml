@@ -17,3 +17,4 @@ jobs:
       ref: ${{ github.sha }}
       force: true
       template-repos: who.template.root=litlfred/smart-ig-template
+      pre-export: bash .github/test-template-fork.sh
