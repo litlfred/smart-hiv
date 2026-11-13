@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "168b99206e0efe661ac71987cfaaffeb308ec76b",
+          "ref": "bfea0cc9b8ae3156e3a2808c33d5b8928c8c7a08",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,9 +42,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "168b99206e0efe661ac71987cfaaffeb308ec76b",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-13",
+              "ref": "bfea0cc9b8ae3156e3a2808c33d5b8928c8c7a08",
+              "evidence": "Owner litlfred, 2026-11-13, in session https://claude.ai/code/session_01VQDpPefuU428bYWziAFStW: \"also re-pin smart-hiv past the fix\" (smart-base#323, af46ec5). The other layers move to the pins smart-base main uses, so the set agrees."
             }
           }
         }
@@ -55,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "a378a59bec81f26a159449795d7ba823ff3a5c71",
+          "ref": "cf722fb3f8623aa92872129a1788aa992a887e3f",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -79,9 +79,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "a378a59bec81f26a159449795d7ba823ff3a5c71",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-13",
+              "ref": "cf722fb3f8623aa92872129a1788aa992a887e3f",
+              "evidence": "Owner litlfred, 2026-11-13, in session https://claude.ai/code/session_01VQDpPefuU428bYWziAFStW: \"also re-pin smart-hiv past the fix\" (smart-base#323, af46ec5). The other layers move to the pins smart-base main uses, so the set agrees."
             }
           }
         }
@@ -92,7 +92,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "b0150c28d8f166490b53e099338739dfe1102c95",
+          "ref": "5627fcb1f3f8e40824ecfd370dae4a23af1b8839",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -101,9 +101,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "b0150c28d8f166490b53e099338739dfe1102c95",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-13",
+              "ref": "5627fcb1f3f8e40824ecfd370dae4a23af1b8839",
+              "evidence": "Owner litlfred, 2026-11-13, in session https://claude.ai/code/session_01VQDpPefuU428bYWziAFStW: \"also re-pin smart-hiv past the fix\" (smart-base#323, af46ec5). The other layers move to the pins smart-base main uses, so the set agrees."
             }
           }
         }
@@ -114,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "62fe7e771c39686f206b95e04e2590eadd2915ce",
+          "ref": "856c458eca57c4e72be3346b3402daf755d7990f",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,9 +129,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-08",
-              "ref": "62fe7e771c39686f206b95e04e2590eadd2915ce",
-              "evidence": "Owner litlfred, 2026-11-08 10:36Z, project thread 'Expand bibliography entries into detail panels', card 'OK to re-pin core to 62fe7e7 in smart-trust, smart-ips-pilgrimage, smart-hiv?': chose 'A Re-pin core in the 3 PRs'."
+              "on": "2026-11-13",
+              "ref": "856c458eca57c4e72be3346b3402daf755d7990f",
+              "evidence": "Owner litlfred, 2026-11-13, in session https://claude.ai/code/session_01VQDpPefuU428bYWziAFStW: \"also re-pin smart-hiv past the fix\" (smart-base#323, af46ec5). The other layers move to the pins smart-base main uses, so the set agrees."
             }
           }
         }
@@ -142,7 +142,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "44f49b72babcaa5db257ef84be7963fc868a7456",
+          "ref": "026a6d919add39221387dd0fba0faccf998be9ac",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,9 +157,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "44f49b72babcaa5db257ef84be7963fc868a7456",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-13",
+              "ref": "026a6d919add39221387dd0fba0faccf998be9ac",
+              "evidence": "Owner litlfred, 2026-11-13, in session https://claude.ai/code/session_01VQDpPefuU428bYWziAFStW: \"also re-pin smart-hiv past the fix\" (smart-base#323, af46ec5). The other layers move to the pins smart-base main uses, so the set agrees."
             }
           }
         }
@@ -170,7 +170,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "2b251af566ffe21a705eda0c397c3da8e9bf2a96",
+          "ref": "31e8a3edb90f97938bfacbce02357904ee0a7c4a",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,9 +182,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "2b251af566ffe21a705eda0c397c3da8e9bf2a96",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-13",
+              "ref": "31e8a3edb90f97938bfacbce02357904ee0a7c4a",
+              "evidence": "Owner litlfred, 2026-11-13, in session https://claude.ai/code/session_01VQDpPefuU428bYWziAFStW: \"also re-pin smart-hiv past the fix\" (smart-base#323, af46ec5). The other layers move to the pins smart-base main uses, so the set agrees."
             }
           }
         }
@@ -195,7 +195,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "c90ef456067a874fd7017a370232908ba62e9fcd",
+          "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -204,9 +204,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "c90ef456067a874fd7017a370232908ba62e9fcd",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-13",
+              "ref": "17204fe9ed49e87b165bf0a8b626b6c69329a2a6",
+              "evidence": "Owner litlfred, 2026-11-13, in session https://claude.ai/code/session_01VQDpPefuU428bYWziAFStW: \"also re-pin smart-hiv past the fix\" (smart-base#323, af46ec5). The other layers move to the pins smart-base main uses, so the set agrees."
             }
           }
         }
@@ -217,7 +217,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "076173fe036f16300e8e2767dd35ab81411b46ab",
+          "ref": "0f88368db7560afac6d3e16fd905cbb974350f82",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -229,9 +229,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "076173fe036f16300e8e2767dd35ab81411b46ab",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-13",
+              "ref": "0f88368db7560afac6d3e16fd905cbb974350f82",
+              "evidence": "Owner litlfred, 2026-11-13, in session https://claude.ai/code/session_01VQDpPefuU428bYWziAFStW: \"also re-pin smart-hiv past the fix\" (smart-base#323, af46ec5). The other layers move to the pins smart-base main uses, so the set agrees."
             }
           }
         }
