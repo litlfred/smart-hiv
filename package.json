@@ -1,0 +1,24 @@
+{
+  "_comment": "The root of the checkout, for the layers smart-hiv mounts (index.lock.json). Added 2026-11-13, ported from smart-base#362: site-publish.yml failed with \"Cannot find module '@litlfred/cat-harness-tools/schemas/kg/cat-harness.ts' from fhir-harness/scripts/stage-local-ig.ts\": the mounted layers import each other by package name, and nothing resolves those names without a root workspace.",
+  "name": "@litlfred/smart-hiv-site",
+  "private": true,
+  "type": "module",
+  "_workspaces_comment": "The mounted code layers that carry a package.json, as workspaces; bootstrap declares no dependencies, so it is not listed. smart-base is mounted but is not a workspace: its scripts reach zod and @litlfred/bootstrap-tools through the ONE root node_modules that bunfig.toml's hoisted linker lays out.",
+  "workspaces": [
+    "bootstrap-tools",
+    "cat-harness",
+    "cat-harness-tools",
+    "folio-assistant-core",
+    "fhir-harness",
+    "who-iris"
+  ],
+  "overrides": {
+    "expo": "57.0.29",
+    "zod": "^4.6.6",
+    "undici": "^6.29.1",
+    "@fastify/busboy": "^3.2.1",
+    "csv-parse": "^7.0.2",
+    "katex": "^0.18.2"
+  },
+  "_overrides_comment": "As smart-trust's: expo is reached only through fhir-harness's fhirclient -> isomorphic-webcrypto -> optional expo-random, and expo's latest asks for an @expo/cli npm does not have, so an install with no lockfile fails to resolve without the pin; the others keep the versions the sibling sites resolve."
+}

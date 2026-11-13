@@ -62,3 +62,6 @@ tramp
 /bootstrap/
 /bootstrap-tools/
 # END index mounts
+
+# The root install of the mounted layers (package.json workspaces)
+node_modules/
